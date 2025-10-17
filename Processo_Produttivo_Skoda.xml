@@ -3,7 +3,7 @@
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
         <place id="Disp_Pressa1">
             <graphics>
-                <position x="135.0" y="750.0"/>
+                <position x="172.5" y="750.0"/>
             </graphics>
             <name>
                 <value>Disp_Pressa1</value>
@@ -21,14 +21,94 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Disp_Pressa2">
+            <graphics>
+                <position x="622.5" y="750.0"/>
+            </graphics>
+            <name>
+                <value>Disp_Pressa2</value>
+                <graphics>
+                    <offset x="12.690476190476275" y="52.222222222222214"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Pressa3">
+            <graphics>
+                <position x="1102.5" y="750.0"/>
+            </graphics>
+            <name>
+                <value>Disp_Pressa3</value>
+                <graphics>
+                    <offset x="6.440476190476275" y="48.472222222222214"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Disp_Tagliatrice1">
             <graphics>
-                <position x="135.0" y="1200.0"/>
+                <position x="172.5" y="1200.0"/>
             </graphics>
             <name>
                 <value>Disp_Tagliatrice1</value>
                 <graphics>
-                    <offset x="5.1111111111111995" y="19.333333333333332"/>
+                    <offset x="-7.746031746031655" y="20.76190476190476"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Tagliatrice2">
+            <graphics>
+                <position x="618.2142857142858" y="1199.9999999999998"/>
+            </graphics>
+            <name>
+                <value>Disp_Tagliatrice2</value>
+                <graphics>
+                    <offset x="17.968253968254057" y="39.33333333333333"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Tagliatrice3">
+            <graphics>
+                <position x="1102.5" y="1200.0"/>
+            </graphics>
+            <name>
+                <value>Disp_Tagliatrice3</value>
+                <graphics>
+                    <offset x="2.968253968254057" y="38.08333333333333"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -43,7 +123,7 @@
         </place>
         <place id="Disp Muletto">
             <graphics>
-                <position x="1050.0" y="165.0"/>
+                <position x="1593.75" y="183.75"/>
             </graphics>
             <name>
                 <value>Disp Muletto</value>
@@ -63,7 +143,7 @@
         </place>
         <place id="Lamiere_Caricate">
             <graphics>
-                <position x="510.0" y="180.0"/>
+                <position x="697.5" y="180.0"/>
             </graphics>
             <name>
                 <value>Lamiere_Caricate</value>
@@ -83,7 +163,7 @@
         </place>
         <place id="Lamiere_Caricate2">
             <graphics>
-                <position x="1245.0" y="180.0"/>
+                <position x="1920.0" y="180.0"/>
             </graphics>
             <name>
                 <value>Lamiere_Caricate2</value>
@@ -103,7 +183,7 @@
         </place>
         <place id="Laminati">
             <graphics>
-                <position x="945.0" y="45.0"/>
+                <position x="1488.75" y="63.75"/>
             </graphics>
             <name>
                 <value>Laminati</value>
@@ -123,7 +203,7 @@
         </place>
         <place id="Laminati_Disponibili2">
             <graphics>
-                <position x="1335.0" y="180.0"/>
+                <position x="2010.0" y="180.0"/>
             </graphics>
             <name>
                 <value>Laminati_Disponibili2</value>
@@ -143,7 +223,7 @@
         </place>
         <place id="Laminati su Mulettto">
             <graphics>
-                <position x="945.0" y="165.0"/>
+                <position x="1488.75" y="183.75"/>
             </graphics>
             <name>
                 <value>Laminati su Mulettto</value>
@@ -163,7 +243,7 @@
         </place>
         <place id="Muletto">
             <graphics>
-                <position x="525.0" y="45.0"/>
+                <position x="712.5" y="45.0"/>
             </graphics>
             <name>
                 <value>Muletto</value>
@@ -183,7 +263,7 @@
         </place>
         <place id="Muletto2">
             <graphics>
-                <position x="1260.0" y="45.0"/>
+                <position x="1935.0" y="45.0"/>
             </graphics>
             <name>
                 <value>Muletto2</value>
@@ -221,69 +301,9 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="P27">
-            <graphics>
-                <position x="435.0" y="750.0"/>
-            </graphics>
-            <name>
-                <value>P27</value>
-                <graphics>
-                    <offset x="0.11111111111118532" y="14.999999999999996"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
-        <place id="P28">
-            <graphics>
-                <position x="525.0" y="675.0"/>
-            </graphics>
-            <name>
-                <value>P28</value>
-                <graphics>
-                    <offset x="109.22222222222231" y="13.333333333333329"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
-        <place id="P29">
-            <graphics>
-                <position x="525.0" y="825.0"/>
-            </graphics>
-            <name>
-                <value>P29</value>
-                <graphics>
-                    <offset x="134.4444444444445" y="21.111111111111107"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
         <place id="Pezzi_Caricati_su_Nastro">
             <graphics>
-                <position x="525.0" y="345.0"/>
+                <position x="712.5" y="345.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Caricati_su_Nastro</value>
@@ -303,7 +323,7 @@
         </place>
         <place id="Pezzi_Caricati_su_Nastro2">
             <graphics>
-                <position x="945.0" y="300.0"/>
+                <position x="1488.75" y="318.75"/>
             </graphics>
             <name>
                 <value>Pezzi_Caricati_su_Nastro2</value>
@@ -323,7 +343,7 @@
         </place>
         <place id="Pezzi_Caricati_su_Nastro3">
             <graphics>
-                <position x="1260.0" y="360.0"/>
+                <position x="1935.0" y="360.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Caricati_su_Nastro3</value>
@@ -343,7 +363,7 @@
         </place>
         <place id="Pezzi_Deposito1">
             <graphics>
-                <position x="225.0" y="1575.0"/>
+                <position x="262.5" y="1575.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Deposito1</value>
@@ -361,14 +381,94 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Pezzi_Deposito2">
+            <graphics>
+                <position x="708.2142857142857" y="1575.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Deposito2</value>
+                <graphics>
+                    <offset x="120.00000000000011" y="16.666666666666668"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Deposito3">
+            <graphics>
+                <position x="1192.5" y="1575.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Deposito3</value>
+                <graphics>
+                    <offset x="120.00000000000011" y="16.666666666666668"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Pezzi_Grezzi_Tagliatrice1">
             <graphics>
-                <position x="225.0" y="1125.0"/>
+                <position x="262.5" y="1125.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Grezzi_Tagliatrice1</value>
                 <graphics>
-                    <offset x="168.33333333333357" y="13.555555555555554"/>
+                    <offset x="175.47619047619065" y="22.126984126984123"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Grezzi_Tagliatrice2">
+            <graphics>
+                <position x="708.2142857142857" y="1125.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Grezzi_Tagliatrice2</value>
+                <graphics>
+                    <offset x="179.76190476190487" y="20.69841269841269"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Grezzi_Tagliatrice3">
+            <graphics>
+                <position x="1192.5" y="1125.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Grezzi_Tagliatrice3</value>
+                <graphics>
+                    <offset x="179.76190476190487" y="20.69841269841269"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -383,7 +483,7 @@
         </place>
         <place id="Pezzi_Grezzi1">
             <graphics>
-                <position x="225.0" y="675.0"/>
+                <position x="262.5" y="675.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Grezzi1</value>
@@ -401,14 +501,54 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Pezzi_Nastro1">
+        <place id="Pezzi_Grezzi2">
             <graphics>
-                <position x="225.0" y="510.0"/>
+                <position x="712.5" y="675.0"/>
             </graphics>
             <name>
-                <value>Pezzi_Nastro1</value>
+                <value>Pezzi_Grezzi2</value>
                 <graphics>
-                    <offset x="134.44444444444449" y="18.888888888888903"/>
+                    <offset x="109.22222222222231" y="13.333333333333329"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Grezzi3">
+            <graphics>
+                <position x="1192.5" y="675.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Grezzi3</value>
+                <graphics>
+                    <offset x="120.47222222222231" y="13.333333333333329"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Nastro1.0">
+            <graphics>
+                <position x="262.5" y="510.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Nastro1.0</value>
+                <graphics>
+                    <offset x="118.7301587301588" y="18.888888888888903"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -423,7 +563,7 @@
         </place>
         <place id="Pezzi_Nastro1.1">
             <graphics>
-                <position x="225.0" y="1425.0"/>
+                <position x="262.5" y="1425.0"/>
             </graphics>
             <name>
                 <value>Pezzi_Nastro1.1</value>
@@ -441,14 +581,14 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Pezzi_Nastro2">
+        <place id="Pezzi_Nastro2.0">
             <graphics>
-                <position x="525.0" y="510.0"/>
+                <position x="712.5" y="510.0"/>
             </graphics>
             <name>
-                <value>Pezzi_Nastro2</value>
+                <value>Pezzi_Nastro2.0</value>
                 <graphics>
-                    <offset x="126.66666666666683" y="15.555555555555554"/>
+                    <offset x="119.52380952380967" y="31.26984126984126"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -461,12 +601,32 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Pezzi_Nastro3">
+        <place id="Pezzi_Nastro2.1">
             <graphics>
-                <position x="840.0" y="510.0"/>
+                <position x="708.2142857142857" y="1425.0"/>
             </graphics>
             <name>
-                <value>Pezzi_Nastro3</value>
+                <value>Pezzi_Nastro2.1</value>
+                <graphics>
+                    <offset x="129.20634920634936" y="16.666666666666668"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzi_Nastro3.0">
+            <graphics>
+                <position x="1177.5" y="510.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Nastro3.0</value>
                 <graphics>
                     <offset x="123.33333333333348" y="19.999999999999996"/>
                 </graphics>
@@ -481,9 +641,29 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Pezzi_Nastro3.1">
+            <graphics>
+                <position x="1192.5" y="1425.0"/>
+            </graphics>
+            <name>
+                <value>Pezzi_Nastro3.1</value>
+                <graphics>
+                    <offset x="129.20634920634936" y="16.666666666666668"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Pezzo_Modellato1">
             <graphics>
-                <position x="225.0" y="825.0"/>
+                <position x="262.5" y="825.0"/>
             </graphics>
             <name>
                 <value>Pezzo_Modellato1</value>
@@ -501,9 +681,49 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Pezzo_Modellato2">
+            <graphics>
+                <position x="712.5" y="825.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_Modellato2</value>
+                <graphics>
+                    <offset x="136.03174603174597" y="20.634920634920626"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzo_Modellato3">
+            <graphics>
+                <position x="1192.5" y="825.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_Modellato3</value>
+                <graphics>
+                    <offset x="136.03174603174597" y="20.634920634920626"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Pezzo_Tagliato1">
             <graphics>
-                <position x="225.0" y="1275.0"/>
+                <position x="262.5" y="1275.0"/>
             </graphics>
             <name>
                 <value>Pezzo_Tagliato1</value>
@@ -521,9 +741,49 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Pezzo_Tagliato2">
+            <graphics>
+                <position x="708.2142857142857" y="1275.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_Tagliato2</value>
+                <graphics>
+                    <offset x="126.11111111111117" y="22.888888888888886"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzo_Tagliato3">
+            <graphics>
+                <position x="1192.5" y="1275.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_Tagliato3</value>
+                <graphics>
+                    <offset x="126.11111111111117" y="22.888888888888886"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Posti_Disponibili">
             <graphics>
-                <position x="600.0" y="180.0"/>
+                <position x="787.5" y="180.0"/>
             </graphics>
             <name>
                 <value>Posti_Disponibili</value>
@@ -543,7 +803,7 @@
         </place>
         <place id="Robot1">
             <graphics>
-                <position x="135.0" y="975.0"/>
+                <position x="172.5" y="975.0"/>
             </graphics>
             <name>
                 <value>Robot1</value>
@@ -561,14 +821,54 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Robot2">
+            <graphics>
+                <position x="618.2142857142858" y="975.0000000000001"/>
+            </graphics>
+            <name>
+                <value>Robot2</value>
+                <graphics>
+                    <offset x="-8.33333333333334" y="18.33333333333333"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot3">
+            <graphics>
+                <position x="1102.5" y="975.0"/>
+            </graphics>
+            <name>
+                <value>Robot3</value>
+                <graphics>
+                    <offset x="-8.33333333333334" y="18.33333333333333"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Scarto_Totale">
             <graphics>
-                <position x="600.0" y="1680.0"/>
+                <position x="934.8214285714286" y="1685.3571428571427"/>
             </graphics>
             <name>
                 <value>Scarto_Totale</value>
                 <graphics>
-                    <offset x="0.0" y="0.0"/>
+                    <offset x="-10.0" y="25.0"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -581,12 +881,52 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Trasporto_Pezzi">
+        <place id="Trasporto_Pezzi1">
             <graphics>
-                <position x="225.0" y="975.0"/>
+                <position x="262.5" y="975.0"/>
             </graphics>
             <name>
-                <value>Trasporto_Pezzi</value>
+                <value>Trasporto_Pezzi1</value>
+                <graphics>
+                    <offset x="126.66666666666669" y="19.999999999999996"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Trasporto_Pezzi2">
+            <graphics>
+                <position x="708.2142857142857" y="975.0000000000001"/>
+            </graphics>
+            <name>
+                <value>Trasporto_Pezzi2</value>
+                <graphics>
+                    <offset x="126.66666666666669" y="19.999999999999996"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Trasporto_Pezzi3">
+            <graphics>
+                <position x="1192.5" y="975.0"/>
+            </graphics>
+            <name>
+                <value>Trasporto_Pezzi3</value>
                 <graphics>
                     <offset x="126.66666666666669" y="19.999999999999996"/>
                 </graphics>
@@ -603,7 +943,7 @@
         </place>
         <transition id="Carico_Buffer">
             <graphics>
-                <position x="525.0" y="120.0"/>
+                <position x="712.5" y="120.0"/>
             </graphics>
             <name>
                 <value>Carico_Buffer</value>
@@ -629,7 +969,7 @@
         </transition>
         <transition id="Carico_Laminati2">
             <graphics>
-                <position x="1260.0" y="120.0"/>
+                <position x="1935.0" y="120.0"/>
             </graphics>
             <name>
                 <value>Carico_Laminati2</value>
@@ -655,7 +995,7 @@
         </transition>
         <transition id="Carico_Pressa1">
             <graphics>
-                <position x="225.0" y="585.0"/>
+                <position x="262.5" y="585.0"/>
             </graphics>
             <name>
                 <value>Carico_Pressa1</value>
@@ -679,9 +1019,61 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Carico_Pressa2">
+            <graphics>
+                <position x="712.5" y="585.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Pressa2</value>
+                <graphics>
+                    <offset x="123.888888888889" y="16.11111111111111"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Carico_Pressa3">
+            <graphics>
+                <position x="1192.5" y="585.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Pressa3</value>
+                <graphics>
+                    <offset x="123.888888888889" y="16.11111111111111"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Carico_Tagliatrice1">
             <graphics>
-                <position x="225.0" y="1050.0"/>
+                <position x="262.5" y="1050.0"/>
             </graphics>
             <name>
                 <value>Carico_Tagliatrice1</value>
@@ -705,9 +1097,61 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Carico_Tagliatrice2">
+            <graphics>
+                <position x="708.2142857142857" y="1050.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Tagliatrice2</value>
+                <graphics>
+                    <offset x="137.88888888888894" y="14.999999999999996"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Carico_Tagliatrice3">
+            <graphics>
+                <position x="1192.5" y="1050.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Tagliatrice3</value>
+                <graphics>
+                    <offset x="137.88888888888894" y="14.999999999999996"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Fine trasporto">
             <graphics>
-                <position x="945.0" y="225.0"/>
+                <position x="1488.75" y="243.75"/>
             </graphics>
             <name>
                 <value>Fine trasporto</value>
@@ -733,7 +1177,7 @@
         </transition>
         <transition id="Inizio trasporto">
             <graphics>
-                <position x="945.0" y="105.0"/>
+                <position x="1488.75" y="123.75"/>
             </graphics>
             <name>
                 <value>Inizio trasporto</value>
@@ -757,12 +1201,12 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Pezzo_In_Pressatura1">
+        <transition id="Pezzo_in_Pressatura1">
             <graphics>
-                <position x="225.0" y="750.0"/>
+                <position x="262.5" y="750.0"/>
             </graphics>
             <name>
-                <value>Pezzo_In_Pressatura1</value>
+                <value>Pezzo_in_Pressatura1</value>
                 <graphics>
                     <offset x="156.2222222222225" y="18.333333333333325"/>
                 </graphics>
@@ -783,12 +1227,90 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Pezzo_In_Taglio1">
+        <transition id="Pezzo_in_Pressatura2">
             <graphics>
-                <position x="225.0" y="1200.0"/>
+                <position x="712.5" y="750.0"/>
             </graphics>
             <name>
-                <value>Pezzo_In_Taglio1</value>
+                <value>Pezzo_in_Pressatura2</value>
+                <graphics>
+                    <offset x="156.2222222222225" y="18.333333333333325"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Pezzo_in_Pressatura3">
+            <graphics>
+                <position x="1192.5" y="750.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_in_Pressatura3</value>
+                <graphics>
+                    <offset x="156.2222222222225" y="18.333333333333325"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Pezzo_in_Tagliio3">
+            <graphics>
+                <position x="1192.5" y="1200.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_in_Tagliio3</value>
+                <graphics>
+                    <offset x="136.08333333333343" y="15.222222222222214"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Pezzo_in_Taglio1">
+            <graphics>
+                <position x="262.5" y="1200.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_in_Taglio1</value>
                 <graphics>
                     <offset x="132.3333333333336" y="15.222222222222214"/>
                 </graphics>
@@ -809,9 +1331,35 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Pezzo_in_Taglio2">
+            <graphics>
+                <position x="708.2142857142857" y="1199.9999999999998"/>
+            </graphics>
+            <name>
+                <value>Pezzo_in_Taglio2</value>
+                <graphics>
+                    <offset x="131.08333333333343" y="11.472222222222214"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Pezzo_OK1">
             <graphics>
-                <position x="225.0" y="1500.0"/>
+                <position x="262.5" y="1500.0"/>
             </graphics>
             <name>
                 <value>Pezzo_OK1</value>
@@ -835,9 +1383,61 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Pezzo_OK2">
+            <graphics>
+                <position x="708.2142857142857" y="1499.9999999999995"/>
+            </graphics>
+            <name>
+                <value>Pezzo_OK2</value>
+                <graphics>
+                    <offset x="100.0158730158731" y="24.412698412698404"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Pezzo_OK3">
+            <graphics>
+                <position x="1192.5" y="1500.0"/>
+            </graphics>
+            <name>
+                <value>Pezzo_OK3</value>
+                <graphics>
+                    <offset x="100.0158730158731" y="24.412698412698404"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Riconoscimento_Pezzo1">
             <graphics>
-                <position x="225.0" y="420.0"/>
+                <position x="262.5" y="420.0"/>
             </graphics>
             <name>
                 <value>Riconoscimento_Pezzo1</value>
@@ -863,7 +1463,7 @@
         </transition>
         <transition id="Riconoscimento_Pezzo2">
             <graphics>
-                <position x="525.0" y="420.0"/>
+                <position x="712.5" y="420.0"/>
             </graphics>
             <name>
                 <value>Riconoscimento_Pezzo2</value>
@@ -889,7 +1489,7 @@
         </transition>
         <transition id="Riconoscimento_Pezzo3">
             <graphics>
-                <position x="840.0" y="420.0"/>
+                <position x="1177.5" y="420.0"/>
             </graphics>
             <name>
                 <value>Riconoscimento_Pezzo3</value>
@@ -915,7 +1515,7 @@
         </transition>
         <transition id="Scarico_Buffer">
             <graphics>
-                <position x="525.0" y="270.0"/>
+                <position x="712.5" y="270.0"/>
             </graphics>
             <name>
                 <value>Scarico_Buffer</value>
@@ -941,7 +1541,7 @@
         </transition>
         <transition id="Scarico_Laminati">
             <graphics>
-                <position x="1260.0" y="270.0"/>
+                <position x="1935.0" y="270.0"/>
             </graphics>
             <name>
                 <value>Scarico_Laminati</value>
@@ -967,7 +1567,7 @@
         </transition>
         <transition id="Scarico_Pressa1">
             <graphics>
-                <position x="225.0" y="900.0"/>
+                <position x="262.5" y="900.0"/>
             </graphics>
             <name>
                 <value>Scarico_Pressa1</value>
@@ -991,9 +1591,61 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Scarico_Pressa2">
+            <graphics>
+                <position x="708.2142857142857" y="900.0000000000001"/>
+            </graphics>
+            <name>
+                <value>Scarico_Pressa2</value>
+                <graphics>
+                    <offset x="133.18181818181816" y="14.626262626262637"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Scarico_Pressa3">
+            <graphics>
+                <position x="1192.5" y="900.0"/>
+            </graphics>
+            <name>
+                <value>Scarico_Pressa3</value>
+                <graphics>
+                    <offset x="133.18181818181816" y="14.626262626262637"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Scarico_Tagliatrice1">
             <graphics>
-                <position x="225.0" y="1350.0"/>
+                <position x="262.5" y="1350.0"/>
             </graphics>
             <name>
                 <value>Scarico_Tagliatrice1</value>
@@ -1017,9 +1669,61 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Scarico_Tagliatrice2">
+            <graphics>
+                <position x="708.2142857142857" y="1350.0"/>
+            </graphics>
+            <name>
+                <value>Scarico_Tagliatrice2</value>
+                <graphics>
+                    <offset x="147.8326118326118" y="12.181818181818194"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Scarico_Tagliatrice3">
+            <graphics>
+                <position x="1192.5" y="1350.0"/>
+            </graphics>
+            <name>
+                <value>Scarico_Tagliatrice3</value>
+                <graphics>
+                    <offset x="147.8326118326118" y="12.181818181818194"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Scarto1">
             <graphics>
-                <position x="435.0" y="1650.0"/>
+                <position x="491.25" y="1575.0"/>
             </graphics>
             <name>
                 <value>Scarto1</value>
@@ -1043,14 +1747,14 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="T17">
+        <transition id="T31">
             <graphics>
-                <position x="525.0" y="585.0"/>
+                <position x="930.0" y="1578.75"/>
             </graphics>
             <name>
-                <value>T17</value>
+                <value>T31</value>
                 <graphics>
-                    <offset x="123.888888888889" y="16.11111111111111"/>
+                    <offset x="86.11111111111119" y="19.444444444444443"/>
                 </graphics>
             </name>
             <orientation>
@@ -1069,14 +1773,14 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="T18">
+        <transition id="T32">
             <graphics>
-                <position x="525.0" y="750.0"/>
+                <position x="1432.5" y="1575.0"/>
             </graphics>
             <name>
-                <value>T18</value>
+                <value>T32</value>
                 <graphics>
-                    <offset x="156.2222222222225" y="18.333333333333325"/>
+                    <offset x="86.11111111111119" y="19.444444444444443"/>
                 </graphics>
             </name>
             <orientation>
@@ -1104,8 +1808,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="528" y="133" curvePoint="false"/>
-            <arcpath id="001" x="521" y="175" curvePoint="false"/>
+            <arcpath id="000" x="712" y="130" curvePoint="false"/>
+            <arcpath id="001" x="707" y="172" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Buffer to Muletto" source="Carico_Buffer" target="Muletto">
@@ -1117,9 +1821,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="538" y="125" curvePoint="false"/>
-            <arcpath id="001" x="580" y="85" curvePoint="false"/>
-            <arcpath id="002" x="546" y="61" curvePoint="false"/>
+            <arcpath id="000" x="722" y="122" curvePoint="false"/>
+            <arcpath id="001" x="762" y="80" curvePoint="false"/>
+            <arcpath id="002" x="732" y="60" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Pressa1 to Pezzi_Grezzi1" source="Carico_Pressa1" target="Pezzi_Grezzi1">
@@ -1131,8 +1835,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="238" y="600" curvePoint="false"/>
-            <arcpath id="001" x="235" y="670" curvePoint="false"/>
+            <arcpath id="000" x="272" y="597" curvePoint="false"/>
+            <arcpath id="001" x="270" y="667" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Tagliatrice1 to Pezzi_Grezzi_Tagliatrice1" source="Carico_Tagliatrice1" target="Pezzi_Grezzi_Tagliatrice1">
@@ -1144,8 +1848,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="238" y="1065" curvePoint="false"/>
-            <arcpath id="001" x="235" y="1120" curvePoint="false"/>
+            <arcpath id="000" x="272" y="1062" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1117" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Tagliatrice1 to Robot1" source="Carico_Tagliatrice1" target="Robot1">
@@ -1157,8 +1861,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="228" y="1053" curvePoint="false"/>
-            <arcpath id="001" x="155" y="993" curvePoint="false"/>
+            <arcpath id="000" x="252" y="1057" curvePoint="false"/>
+            <arcpath id="001" x="190" y="992" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Disp_Pressa1 to Carico_Pressa1" source="Disp_Pressa1" target="Carico_Pressa1">
@@ -1170,8 +1874,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="151" y="746" curvePoint="false"/>
-            <arcpath id="001" x="228" y="598" curvePoint="false"/>
+            <arcpath id="000" x="182" y="742" curvePoint="false"/>
+            <arcpath id="001" x="262" y="595" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Disp_Tagliatrice1 to Carico_Tagliatrice1" source="Disp_Tagliatrice1" target="Carico_Tagliatrice1">
@@ -1183,8 +1887,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="151" y="1196" curvePoint="false"/>
-            <arcpath id="001" x="228" y="1063" curvePoint="false"/>
+            <arcpath id="000" x="185" y="1192" curvePoint="false"/>
+            <arcpath id="001" x="262" y="1060" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Disp Muletto to Inizio trasporto" source="Disp Muletto" target="Inizio trasporto">
@@ -1196,8 +1900,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1046" y="166" curvePoint="false"/>
-            <arcpath id="001" x="968" y="115" curvePoint="false"/>
+            <arcpath id="000" x="1587" y="182" curvePoint="false"/>
+            <arcpath id="001" x="1510" y="130" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine trasporto to Disp Muletto" source="Fine trasporto" target="Disp Muletto">
@@ -1209,8 +1913,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="968" y="235" curvePoint="false"/>
-            <arcpath id="001" x="1046" y="183" curvePoint="false"/>
+            <arcpath id="000" x="1510" y="250" curvePoint="false"/>
+            <arcpath id="001" x="1587" y="197" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine trasporto to P23" source="Fine trasporto" target="Pezzi_Caricati_su_Nastro2">
@@ -1222,8 +1926,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="953" y="238" curvePoint="false"/>
-            <arcpath id="001" x="953" y="295" curvePoint="false"/>
+            <arcpath id="000" x="1495" y="255" curvePoint="false"/>
+            <arcpath id="001" x="1495" y="310" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio trasporto to Laminati su Mulettto" source="Inizio trasporto" target="Laminati su Mulettto">
@@ -1235,8 +1939,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="953" y="118" curvePoint="false"/>
-            <arcpath id="001" x="953" y="160" curvePoint="false"/>
+            <arcpath id="000" x="1495" y="135" curvePoint="false"/>
+            <arcpath id="001" x="1495" y="175" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lamiere_Caricate to Scarico_Buffer" source="Lamiere_Caricate" target="Scarico_Buffer">
@@ -1248,8 +1952,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="520" y="203" curvePoint="false"/>
-            <arcpath id="001" x="528" y="273" curvePoint="false"/>
+            <arcpath id="000" x="710" y="200" curvePoint="false"/>
+            <arcpath id="001" x="712" y="270" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lamiere_Disponibili to Carico_Buffer" source="Posti_Disponibili" target="Carico_Buffer">
@@ -1261,8 +1965,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="596" y="180" curvePoint="false"/>
-            <arcpath id="001" x="538" y="135" curvePoint="false"/>
+            <arcpath id="000" x="785" y="172" curvePoint="false"/>
+            <arcpath id="001" x="722" y="132" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Laminati su Mulettto to Fine trasporto" source="Laminati su Mulettto" target="Fine trasporto">
@@ -1274,8 +1978,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="953" y="188" curvePoint="false"/>
-            <arcpath id="001" x="953" y="228" curvePoint="false"/>
+            <arcpath id="000" x="1495" y="205" curvePoint="false"/>
+            <arcpath id="001" x="1495" y="245" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Laminati to Inizio trasporto" source="Laminati" target="Inizio trasporto">
@@ -1287,8 +1991,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="953" y="68" curvePoint="false"/>
-            <arcpath id="001" x="953" y="108" curvePoint="false"/>
+            <arcpath id="000" x="1495" y="85" curvePoint="false"/>
+            <arcpath id="001" x="1495" y="125" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Muletto to Carico_Buffer" source="Muletto" target="Carico_Buffer">
@@ -1300,9 +2004,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="521" y="61" curvePoint="false"/>
-            <arcpath id="001" x="486" y="85" curvePoint="false"/>
-            <arcpath id="002" x="528" y="123" curvePoint="false"/>
+            <arcpath id="000" x="705" y="60" curvePoint="false"/>
+            <arcpath id="001" x="670" y="80" curvePoint="false"/>
+            <arcpath id="002" x="712" y="120" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Muletto to Scarico_Buffer" source="Muletto" target="Scarico_Buffer">
@@ -1314,13 +2018,13 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="520" y="55" curvePoint="false"/>
-            <arcpath id="001" x="385" y="55" curvePoint="false"/>
-            <arcpath id="002" x="385" y="280" curvePoint="false"/>
-            <arcpath id="003" x="518" y="280" curvePoint="false"/>
+            <arcpath id="000" x="705" y="50" curvePoint="false"/>
+            <arcpath id="001" x="567" y="50" curvePoint="false"/>
+            <arcpath id="002" x="567" y="275" curvePoint="false"/>
+            <arcpath id="003" x="702" y="277" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="P13 to T11" source="Pezzi_Grezzi_Tagliatrice1" target="Pezzo_In_Taglio1">
+        <arc id="P13 to T11" source="Pezzi_Grezzi_Tagliatrice1" target="Pezzo_in_Taglio1">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1329,8 +2033,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="1148" curvePoint="false"/>
-            <arcpath id="001" x="233" y="1203" curvePoint="false"/>
+            <arcpath id="000" x="262" y="1145" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1200" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P15 to T9" source="Pezzo_Tagliato1" target="Scarico_Tagliatrice1">
@@ -1342,8 +2046,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="235" y="1298" curvePoint="false"/>
-            <arcpath id="001" x="238" y="1355" curvePoint="false"/>
+            <arcpath id="000" x="262" y="1295" curvePoint="false"/>
+            <arcpath id="001" x="272" y="1352" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P23 to T16" source="Lamiere_Caricate2" target="Scarico_Laminati">
@@ -1355,8 +2059,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1255" y="203" curvePoint="false"/>
-            <arcpath id="001" x="1263" y="273" curvePoint="false"/>
+            <arcpath id="000" x="1927" y="200" curvePoint="false"/>
+            <arcpath id="001" x="1935" y="270" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P24 to T15" source="Laminati_Disponibili2" target="Carico_Laminati2">
@@ -1368,8 +2072,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1331" y="180" curvePoint="false"/>
-            <arcpath id="001" x="1273" y="135" curvePoint="false"/>
+            <arcpath id="000" x="2005" y="177" curvePoint="false"/>
+            <arcpath id="001" x="1945" y="132" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P25 to T15" source="Muletto2" target="Carico_Laminati2">
@@ -1381,11 +2085,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1268" y="68" curvePoint="false"/>
-            <arcpath id="001" x="1268" y="123" curvePoint="false"/>
+            <arcpath id="000" x="1940" y="65" curvePoint="false"/>
+            <arcpath id="001" x="1940" y="120" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="P27 to T17" source="P27" target="T17">
+        <arc id="P27 to T17" source="Disp_Pressa2" target="Carico_Pressa2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1394,11 +2098,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="451" y="746" curvePoint="false"/>
-            <arcpath id="001" x="528" y="598" curvePoint="false"/>
+            <arcpath id="000" x="637" y="745" curvePoint="false"/>
+            <arcpath id="001" x="712" y="595" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="P28 to T18" source="P28" target="T18">
+        <arc id="P28 to T18" source="Pezzi_Grezzi2" target="Pezzo_in_Pressatura2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1407,8 +2111,203 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="698" curvePoint="false"/>
-            <arcpath id="001" x="533" y="753" curvePoint="false"/>
+            <arcpath id="000" x="725" y="695" curvePoint="false"/>
+            <arcpath id="001" x="717" y="750" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P30 to T19" source="Disp_Tagliatrice2" target="Carico_Tagliatrice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="635" y="1195" curvePoint="false"/>
+            <arcpath id="001" x="710" y="1060" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P32 to T20" source="Pezzi_Grezzi_Tagliatrice2" target="Pezzo_in_Taglio2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="722" y="1145" curvePoint="false"/>
+            <arcpath id="001" x="712" y="1200" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P33 to T21" source="Pezzi_Nastro2.1" target="Pezzo_OK2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="722" y="1445" curvePoint="false"/>
+            <arcpath id="001" x="712" y="1500" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P34 to T23" source="Pezzo_Tagliato2" target="Scarico_Tagliatrice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="722" y="1295" curvePoint="false"/>
+            <arcpath id="001" x="717" y="1352" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P35 to T22" source="Robot2" target="Scarico_Pressa2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="637" y="975" curvePoint="false"/>
+            <arcpath id="001" x="710" y="910" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P36 to T19" source="Trasporto_Pezzi2" target="Carico_Tagliatrice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="722" y="995" curvePoint="false"/>
+            <arcpath id="001" x="717" y="1052" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P37 to T24" source="Disp_Pressa3" target="Carico_Pressa3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1117" y="745" curvePoint="false"/>
+            <arcpath id="001" x="1192" y="595" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P38 to T25" source="Pezzi_Grezzi3" target="Pezzo_in_Pressatura3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1205" y="695" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="750" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P39 to T29" source="Pezzo_Modellato3" target="Scarico_Pressa3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1207" y="845" curvePoint="false"/>
+            <arcpath id="001" x="1202" y="902" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P40 to T26" source="Disp_Tagliatrice3" target="Carico_Tagliatrice3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1117" y="1195" curvePoint="false"/>
+            <arcpath id="001" x="1192" y="1060" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P42 to T27" source="Pezzi_Grezzi_Tagliatrice3" target="Pezzo_in_Tagliio3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1205" y="1145" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="1200" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P43 to T28" source="Pezzi_Nastro3.1" target="Pezzo_OK3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1205" y="1445" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="1500" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P44 to T30" source="Pezzo_Tagliato3" target="Scarico_Tagliatrice3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1207" y="1295" curvePoint="false"/>
+            <arcpath id="001" x="1202" y="1352" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P45 to T29" source="Robot3" target="Scarico_Pressa3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1122" y="975" curvePoint="false"/>
+            <arcpath id="001" x="1192" y="910" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P46 to T26" source="Trasporto_Pezzi3" target="Carico_Tagliatrice3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1207" y="995" curvePoint="false"/>
+            <arcpath id="001" x="1202" y="1052" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Caricati_su_Nastro to T8" source="Pezzi_Caricati_su_Nastro" target="Riconoscimento_Pezzo1">
@@ -1420,8 +2319,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="520" y="358" curvePoint="false"/>
-            <arcpath id="001" x="248" y="430" curvePoint="false"/>
+            <arcpath id="000" x="705" y="352" curvePoint="false"/>
+            <arcpath id="001" x="282" y="427" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Caricati_su_Nastro to T9" source="Pezzi_Caricati_su_Nastro" target="Riconoscimento_Pezzo3">
@@ -1433,8 +2332,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="548" y="358" curvePoint="false"/>
-            <arcpath id="001" x="833" y="430" curvePoint="false"/>
+            <arcpath id="000" x="732" y="352" curvePoint="false"/>
+            <arcpath id="001" x="1167" y="427" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Caricati_su_Nastro to Transizione_Temporizzata_Nastro_stazione1" source="Pezzi_Caricati_su_Nastro" target="Riconoscimento_Pezzo2">
@@ -1446,11 +2345,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="368" curvePoint="false"/>
-            <arcpath id="001" x="533" y="423" curvePoint="false"/>
+            <arcpath id="000" x="725" y="365" curvePoint="false"/>
+            <arcpath id="001" x="717" y="420" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Pezzi_Grezzi1 to Pezzo_In_Pressatura1" source="Pezzi_Grezzi1" target="Pezzo_In_Pressatura1">
+        <arc id="Pezzi_Grezzi1 to Pezzo_In_Pressatura1" source="Pezzi_Grezzi1" target="Pezzo_in_Pressatura1">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1459,8 +2358,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="698" curvePoint="false"/>
-            <arcpath id="001" x="233" y="753" curvePoint="false"/>
+            <arcpath id="000" x="262" y="695" curvePoint="false"/>
+            <arcpath id="001" x="267" y="750" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Nastro1.1 to Pezzo_OK1" source="Pezzi_Nastro1.1" target="Pezzo_OK1">
@@ -1472,8 +2371,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="1448" curvePoint="false"/>
-            <arcpath id="001" x="233" y="1503" curvePoint="false"/>
+            <arcpath id="000" x="262" y="1445" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1500" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Nastro1.1 to Scarto1" source="Pezzi_Nastro1.1" target="Scarto1">
@@ -1485,11 +2384,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="245" y="1445" curvePoint="false"/>
-            <arcpath id="001" x="443" y="1653" curvePoint="false"/>
+            <arcpath id="000" x="282" y="1440" curvePoint="false"/>
+            <arcpath id="001" x="497" y="1575" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Pezzi_Nastro1 to Carico_Pressa1" source="Pezzi_Nastro1" target="Carico_Pressa1">
+        <arc id="Pezzi_Nastro1 to Carico_Pressa1" source="Pezzi_Nastro1.0" target="Carico_Pressa1">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1498,11 +2397,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="533" curvePoint="false"/>
-            <arcpath id="001" x="233" y="588" curvePoint="false"/>
+            <arcpath id="000" x="262" y="530" curvePoint="false"/>
+            <arcpath id="001" x="267" y="585" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Pezzi_Nastro2 to T17" source="Pezzi_Nastro2" target="T17">
+        <arc id="Pezzi_Nastro2.1 to T31" source="Pezzi_Nastro2.1" target="T31">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1511,11 +2410,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="533" curvePoint="false"/>
-            <arcpath id="001" x="533" y="588" curvePoint="false"/>
+            <arcpath id="000" x="727" y="1440" curvePoint="false"/>
+            <arcpath id="001" x="935" y="1580" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Pezzo_In_Pressatura1 to Pezzo_Modellato1" source="Pezzo_In_Pressatura1" target="Pezzo_Modellato1">
+        <arc id="Pezzi_Nastro2 to T17" source="Pezzi_Nastro2.0" target="Carico_Pressa2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1524,8 +2423,47 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="763" curvePoint="false"/>
-            <arcpath id="001" x="233" y="820" curvePoint="false"/>
+            <arcpath id="000" x="725" y="530" curvePoint="false"/>
+            <arcpath id="001" x="717" y="585" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Pezzi_Nastro3.0 to Carico_Pressa3" source="Pezzi_Nastro3.0" target="Carico_Pressa3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1192" y="527" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="585" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Pezzi_Nastro3.1 to T32" source="Pezzi_Nastro3.1" target="T32">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1212" y="1440" curvePoint="false"/>
+            <arcpath id="001" x="1437" y="1575" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Pezzo_In_Pressatura1 to Pezzo_Modellato1" source="Pezzo_in_Pressatura1" target="Pezzo_Modellato1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="267" y="760" curvePoint="false"/>
+            <arcpath id="001" x="267" y="817" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzo_Modellato1 to Scarico_Pressa1" source="Pezzo_Modellato1" target="Scarico_Pressa1">
@@ -1537,8 +2475,21 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="235" y="848" curvePoint="false"/>
-            <arcpath id="001" x="238" y="905" curvePoint="false"/>
+            <arcpath id="000" x="262" y="845" curvePoint="false"/>
+            <arcpath id="001" x="272" y="902" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Pezzo_Modellato2 to Scarico_Pressa2" source="Pezzo_Modellato2" target="Scarico_Pressa2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="725" y="845" curvePoint="false"/>
+            <arcpath id="001" x="717" y="902" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzo_OK1 to Pezzi_Deposito1" source="Pezzo_OK1" target="Pezzi_Deposito1">
@@ -1550,11 +2501,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="1513" curvePoint="false"/>
-            <arcpath id="001" x="233" y="1570" curvePoint="false"/>
+            <arcpath id="000" x="267" y="1510" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1567" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Riconoscimento_Pezzo1 to Pezzi_Nastro1" source="Riconoscimento_Pezzo1" target="Pezzi_Nastro1">
+        <arc id="Riconoscimento_Pezzo1 to Pezzi_Nastro1" source="Riconoscimento_Pezzo1" target="Pezzi_Nastro1.0">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1563,11 +2514,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="433" curvePoint="false"/>
-            <arcpath id="001" x="233" y="505" curvePoint="false"/>
+            <arcpath id="000" x="267" y="430" curvePoint="false"/>
+            <arcpath id="001" x="267" y="502" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Riconoscimento_Pezzo2 to Pezzi_Nastro2" source="Riconoscimento_Pezzo2" target="Pezzi_Nastro2">
+        <arc id="Riconoscimento_Pezzo2 to Pezzi_Nastro2" source="Riconoscimento_Pezzo2" target="Pezzi_Nastro2.0">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1576,11 +2527,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="433" curvePoint="false"/>
-            <arcpath id="001" x="533" y="505" curvePoint="false"/>
+            <arcpath id="000" x="717" y="430" curvePoint="false"/>
+            <arcpath id="001" x="717" y="502" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Riconoscimento_Pezzo3 to Pezzi_Nastro3" source="Riconoscimento_Pezzo3" target="Pezzi_Nastro3">
+        <arc id="Riconoscimento_Pezzo3 to Pezzi_Nastro3" source="Riconoscimento_Pezzo3" target="Pezzi_Nastro3.0">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1589,8 +2540,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="848" y="433" curvePoint="false"/>
-            <arcpath id="001" x="848" y="505" curvePoint="false"/>
+            <arcpath id="000" x="1182" y="430" curvePoint="false"/>
+            <arcpath id="001" x="1182" y="502" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot1 to Smistamento_Robot_stazione1" source="Robot1" target="Scarico_Pressa1">
@@ -1602,8 +2553,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="155" y="975" curvePoint="false"/>
-            <arcpath id="001" x="228" y="913" curvePoint="false"/>
+            <arcpath id="000" x="187" y="970" curvePoint="false"/>
+            <arcpath id="001" x="262" y="910" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Buffer to Lamiere_Disponibili" source="Scarico_Buffer" target="Posti_Disponibili">
@@ -1615,8 +2566,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="538" y="275" curvePoint="false"/>
-            <arcpath id="001" x="600" y="200" curvePoint="false"/>
+            <arcpath id="000" x="722" y="272" curvePoint="false"/>
+            <arcpath id="001" x="785" y="197" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Buffer to Muletto" source="Scarico_Buffer" target="Muletto">
@@ -1628,10 +2579,10 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="548" y="280" curvePoint="false"/>
-            <arcpath id="001" x="731" y="281" curvePoint="false"/>
-            <arcpath id="002" x="731" y="56" curvePoint="false"/>
-            <arcpath id="003" x="548" y="55" curvePoint="false"/>
+            <arcpath id="000" x="732" y="277" curvePoint="false"/>
+            <arcpath id="001" x="915" y="277" curvePoint="false"/>
+            <arcpath id="002" x="915" y="52" curvePoint="false"/>
+            <arcpath id="003" x="735" y="52" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Buffer to Pezzi_Caricati_su_Nastro" source="Scarico_Buffer" target="Pezzi_Caricati_su_Nastro">
@@ -1643,8 +2594,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="283" curvePoint="false"/>
-            <arcpath id="001" x="533" y="340" curvePoint="false"/>
+            <arcpath id="000" x="717" y="280" curvePoint="false"/>
+            <arcpath id="001" x="717" y="337" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Laminati to Pezzi_Caricati_su_Nastro3" source="Scarico_Laminati" target="Pezzi_Caricati_su_Nastro3">
@@ -1656,8 +2607,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1268" y="283" curvePoint="false"/>
-            <arcpath id="001" x="1268" y="355" curvePoint="false"/>
+            <arcpath id="000" x="1940" y="280" curvePoint="false"/>
+            <arcpath id="001" x="1940" y="352" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Pressa1 to Disp_Pressa1" source="Scarico_Pressa1" target="Disp_Pressa1">
@@ -1669,11 +2620,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="228" y="903" curvePoint="false"/>
-            <arcpath id="001" x="151" y="771" curvePoint="false"/>
+            <arcpath id="000" x="262" y="900" curvePoint="false"/>
+            <arcpath id="001" x="187" y="770" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Scarico_Pressa1 to Trasporto_Pezzi" source="Scarico_Pressa1" target="Trasporto_Pezzi">
+        <arc id="Scarico_Pressa1 to Trasporto_Pezzi" source="Scarico_Pressa1" target="Trasporto_Pezzi1">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1682,8 +2633,21 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="238" y="915" curvePoint="false"/>
-            <arcpath id="001" x="235" y="970" curvePoint="false"/>
+            <arcpath id="000" x="272" y="912" curvePoint="false"/>
+            <arcpath id="001" x="270" y="967" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scarico_Pressa2 to Disp_Pressa2" source="Scarico_Pressa2" target="Disp_Pressa2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="707" y="900" curvePoint="false"/>
+            <arcpath id="001" x="635" y="770" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Tagliatrice1 to Pezzi_Nastro1.1" source="Scarico_Tagliatrice1" target="Pezzi_Nastro1.1">
@@ -1695,11 +2659,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="1363" curvePoint="false"/>
-            <arcpath id="001" x="233" y="1420" curvePoint="false"/>
+            <arcpath id="000" x="267" y="1360" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1417" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="T11 to P15" source="Pezzo_In_Taglio1" target="Pezzo_Tagliato1">
+        <arc id="Scarto1 to Scarto_Totale" source="Scarto1" target="Scarto_Totale">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1708,8 +2672,21 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="233" y="1213" curvePoint="false"/>
-            <arcpath id="001" x="233" y="1270" curvePoint="false"/>
+            <arcpath id="000" x="512" y="1582" curvePoint="false"/>
+            <arcpath id="001" x="927" y="1687" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T11 to P15" source="Pezzo_in_Taglio1" target="Pezzo_Tagliato1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="267" y="1210" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1267" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T15 to P23" source="Carico_Laminati2" target="Lamiere_Caricate2">
@@ -1721,8 +2698,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1263" y="133" curvePoint="false"/>
-            <arcpath id="001" x="1256" y="175" curvePoint="false"/>
+            <arcpath id="000" x="1935" y="130" curvePoint="false"/>
+            <arcpath id="001" x="1930" y="172" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T16 to P24" source="Scarico_Laminati" target="Laminati_Disponibili2">
@@ -1734,11 +2711,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1273" y="275" curvePoint="false"/>
-            <arcpath id="001" x="1335" y="200" curvePoint="false"/>
+            <arcpath id="000" x="1945" y="272" curvePoint="false"/>
+            <arcpath id="001" x="2007" y="197" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="T17 to P28" source="T17" target="P28">
+        <arc id="T17 to P28" source="Carico_Pressa2" target="Pezzi_Grezzi2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1747,11 +2724,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="538" y="600" curvePoint="false"/>
-            <arcpath id="001" x="535" y="670" curvePoint="false"/>
+            <arcpath id="000" x="722" y="597" curvePoint="false"/>
+            <arcpath id="001" x="720" y="667" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="T18 to P29" source="T18" target="P29">
+        <arc id="T18 to P29" source="Pezzo_in_Pressatura2" target="Pezzo_Modellato2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1760,8 +2737,255 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="533" y="763" curvePoint="false"/>
-            <arcpath id="001" x="533" y="820" curvePoint="false"/>
+            <arcpath id="000" x="717" y="760" curvePoint="false"/>
+            <arcpath id="001" x="717" y="817" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T19 to P32" source="Carico_Tagliatrice2" target="Pezzi_Grezzi_Tagliatrice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="720" y="1062" curvePoint="false"/>
+            <arcpath id="001" x="715" y="1117" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T19 to P35" source="Carico_Tagliatrice2" target="Robot2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="707" y="1050" curvePoint="false"/>
+            <arcpath id="001" x="635" y="990" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T20 to P34" source="Pezzo_in_Taglio2" target="Pezzo_Tagliato2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="715" y="1210" curvePoint="false"/>
+            <arcpath id="001" x="715" y="1267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T21 to P31" source="Pezzo_OK2" target="Pezzi_Deposito2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="715" y="1510" curvePoint="false"/>
+            <arcpath id="001" x="715" y="1567" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T22 to P36" source="Scarico_Pressa2" target="Trasporto_Pezzi2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="720" y="912" curvePoint="false"/>
+            <arcpath id="001" x="715" y="967" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T23 to P30" source="Scarico_Tagliatrice2" target="Disp_Tagliatrice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="707" y="1350" curvePoint="false"/>
+            <arcpath id="001" x="632" y="1220" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T23 to P33" source="Scarico_Tagliatrice2" target="Pezzi_Nastro2.1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="715" y="1360" curvePoint="false"/>
+            <arcpath id="001" x="715" y="1417" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T24 to P38" source="Carico_Pressa3" target="Pezzi_Grezzi3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1202" y="597" curvePoint="false"/>
+            <arcpath id="001" x="1200" y="667" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T25 to P39" source="Pezzo_in_Pressatura3" target="Pezzo_Modellato3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1197" y="760" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="817" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T26 to P42" source="Carico_Tagliatrice3" target="Pezzi_Grezzi_Tagliatrice3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1202" y="1062" curvePoint="false"/>
+            <arcpath id="001" x="1200" y="1117" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T26 to P45" source="Carico_Tagliatrice3" target="Robot3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1192" y="1050" curvePoint="false"/>
+            <arcpath id="001" x="1120" y="990" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T27 to P44" source="Pezzo_in_Tagliio3" target="Pezzo_Tagliato3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1197" y="1210" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="1267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T28 to P41" source="Pezzo_OK3" target="Pezzi_Deposito3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1197" y="1510" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="1567" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T29 to P37" source="Scarico_Pressa3" target="Disp_Pressa3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1192" y="900" curvePoint="false"/>
+            <arcpath id="001" x="1117" y="770" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T29 to P46" source="Scarico_Pressa3" target="Trasporto_Pezzi3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1202" y="912" curvePoint="false"/>
+            <arcpath id="001" x="1200" y="967" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T30 to P40" source="Scarico_Tagliatrice3" target="Disp_Tagliatrice3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1192" y="1350" curvePoint="false"/>
+            <arcpath id="001" x="1117" y="1220" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T30 to P43" source="Scarico_Tagliatrice3" target="Pezzi_Nastro3.1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1197" y="1360" curvePoint="false"/>
+            <arcpath id="001" x="1197" y="1417" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T31 to Scarto_Totale" source="T31" target="Scarto_Totale">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="935" y="1590" curvePoint="false"/>
+            <arcpath id="001" x="940" y="1677" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T32 to Scarto_Totale" source="T32" target="Scarto_Totale">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1422" y="1582" curvePoint="false"/>
+            <arcpath id="001" x="955" y="1687" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T9 to P14" source="Scarico_Tagliatrice1" target="Disp_Tagliatrice1">
@@ -1773,11 +2997,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="228" y="1353" curvePoint="false"/>
-            <arcpath id="001" x="151" y="1221" curvePoint="false"/>
+            <arcpath id="000" x="262" y="1350" curvePoint="false"/>
+            <arcpath id="001" x="187" y="1220" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Trasporto_Pezzi to Carico_Tagliatrice1" source="Trasporto_Pezzi" target="Carico_Tagliatrice1">
+        <arc id="Trasporto_Pezzi to Carico_Tagliatrice1" source="Trasporto_Pezzi1" target="Carico_Tagliatrice1">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1786,8 +3010,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="235" y="998" curvePoint="false"/>
-            <arcpath id="001" x="238" y="1055" curvePoint="false"/>
+            <arcpath id="000" x="262" y="995" curvePoint="false"/>
+            <arcpath id="001" x="267" y="1050" curvePoint="false"/>
             <type value="normal"/>
         </arc>
     </net>
