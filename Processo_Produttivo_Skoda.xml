@@ -1,58 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
 <net id="Net-One" type="P/T net">
 <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-<labels x="120" y="477" width="109" height="184" border="true">
+<labels x="121" y="478" width="110" height="185" border="true">
 <text>Nello posto "Pezzi_Nastrox.o" avremo un massimo di 8 pezzi perché lavoriamo il singolo pallet, quindi si dovrebbe aggiungere la capacità massima
 </text>
 </labels>
-<place id="Ant_DX in Posiz">
+<place id="Ant Dx">
 <graphics>
-<position x="1785.0" y="600.0"/>
+<position x="1781.25" y="543.75"/>
 </graphics>
 <name>
-<value>Ant_DX in Posiz</value>
+<value>Ant Dx</value>
 <graphics>
-<offset x="140.0000000000001" y="16.249999999999996"/>
-</graphics>
-</name>
-<initialMarking>
-<value>Default,0</value>
-<graphics>
-<offset x="0.0" y="0.0"/>
-</graphics>
-</initialMarking>
-<capacity>
-<value>0</value>
-</capacity>
-</place>
-<place id="Ant_SX in Posiz">
-<graphics>
-<position x="1710.0" y="600.0"/>
-</graphics>
-<name>
-<value>Ant_SX in Posiz</value>
-<graphics>
-<offset x="0.0" y="0.0"/>
-</graphics>
-</name>
-<initialMarking>
-<value>Default,0</value>
-<graphics>
-<offset x="0.0" y="0.0"/>
-</graphics>
-</initialMarking>
-<capacity>
-<value>0</value>
-</capacity>
-</place>
-<place id="Ant Divisione Pezzi">
-<graphics>
-<position x="1740.0" y="465.0"/>
-</graphics>
-<name>
-<value>Ant Divisione Pezzi</value>
-<graphics>
-<offset x="138.08333333333331" y="21.00000000000001"/>
+<offset x="85.0" y="16.25"/>
 </graphics>
 </name>
 <initialMarking>
@@ -125,6 +85,26 @@
 <value>0</value>
 </capacity>
 </place>
+<place id="Ant in Posizione">
+<graphics>
+<position x="1661.25" y="476.25"/>
+</graphics>
+<name>
+<value>Ant in Posizione</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
 <place id="Ant Modellato">
 <graphics>
 <position x="1740.0" y="1050.0"/>
@@ -147,12 +127,12 @@
 </place>
 <place id="Ant Nastro IN">
 <graphics>
-<position x="1740.0" y="345.0"/>
+<position x="1740.0" y="382.5"/>
 </graphics>
 <name>
 <value>Ant Nastro IN</value>
 <graphics>
-<offset x="0.0" y="0.0"/>
+<offset x="111.25" y="25.0"/>
 </graphics>
 </name>
 <initialMarking>
@@ -213,6 +193,26 @@
 <value>Ant su Robot</value>
 <graphics>
 <offset x="140.0000000000001" y="13.333333333333329"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Ant Sx">
+<graphics>
+<position x="1661.25" y="600.0"/>
+</graphics>
+<name>
+<value>Ant Sx</value>
+<graphics>
+<offset x="-18.75" y="16.25"/>
 </graphics>
 </name>
 <initialMarking>
@@ -1937,14 +1937,14 @@
 <value>1</value>
 </priority>
 </transition>
-<transition id="Ant ok">
+<transition id="Ant Divisione Pezzi">
 <graphics>
-<position x="1740.0" y="1725.0"/>
+<position x="1740.0" y="438.75"/>
 </graphics>
 <name>
-<value>Ant ok</value>
+<value>Ant Divisione Pezzi</value>
 <graphics>
-<offset x="81.2658730158731" y="28.162698412698404"/>
+<offset x="131.25" y="23.75"/>
 </graphics>
 </name>
 <orientation>
@@ -1963,14 +1963,14 @@
 <value>1</value>
 </priority>
 </transition>
-<transition id="Ant Pezzi su Nastro">
+<transition id="Ant ok">
 <graphics>
-<position x="1740.0" y="405.0"/>
+<position x="1740.0" y="1725.0"/>
 </graphics>
 <name>
-<value>Ant Pezzi su Nastro</value>
+<value>Ant ok</value>
 <graphics>
-<offset x="136.91666666666677" y="33.91666666666667"/>
+<offset x="81.2658730158731" y="28.162698412698404"/>
 </graphics>
 </name>
 <orientation>
@@ -2023,6 +2023,58 @@
 <value>Ant Press</value>
 <graphics>
 <offset x="92.47222222222251" y="23.333333333333325"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Ant Ricon_Pezzo">
+<graphics>
+<position x="1740.0" y="326.25"/>
+</graphics>
+<name>
+<value>Ant Ricon_Pezzo</value>
+<graphics>
+<offset x="-13.75" y="30.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Ant Rotazione">
+<graphics>
+<position x="1657.5" y="540.0"/>
+</graphics>
+<name>
+<value>Ant Rotazione</value>
+<graphics>
+<offset x="-8.75" y="16.25"/>
 </graphics>
 </name>
 <orientation>
@@ -2105,32 +2157,6 @@
 </name>
 <orientation>
 <value>0</value>
-</orientation>
-<rate>
-<value>1.0</value>
-</rate>
-<timed>
-<value>false</value>
-</timed>
-<infiniteServer>
-<value>false</value>
-</infiniteServer>
-<priority>
-<value>1</value>
-</priority>
-</transition>
-<transition id="Ant SX/DX">
-<graphics>
-<position x="1740.0" y="525.0"/>
-</graphics>
-<name>
-<value>Ant SX/DX</value>
-<graphics>
-<offset x="102.0" y="24.75"/>
-</graphics>
-</name>
-<orientation>
-<value>90</value>
 </orientation>
 <rate>
 <value>1.0</value>
@@ -3003,6 +3029,32 @@
 <value>1</value>
 </priority>
 </transition>
+<transition id="Lat Ricon_Pezzo">
+<graphics>
+<position x="2250.0" y="420.0"/>
+</graphics>
+<name>
+<value>Lat Ricon_Pezzo</value>
+<graphics>
+<offset x="105.58585858585857" y="4.2171717171717376"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
 <transition id="Pezzi_in_Pressatura1">
 <graphics>
 <position x="270.0" y="750.0"/>
@@ -3219,32 +3271,6 @@
 <value>Pezzo_OK3</value>
 <graphics>
 <offset x="100.0158730158731" y="24.412698412698404"/>
-</graphics>
-</name>
-<orientation>
-<value>90</value>
-</orientation>
-<rate>
-<value>1.0</value>
-</rate>
-<timed>
-<value>false</value>
-</timed>
-<infiniteServer>
-<value>false</value>
-</infiniteServer>
-<priority>
-<value>1</value>
-</priority>
-</transition>
-<transition id="Ricon_Pezzo">
-<graphics>
-<position x="2250.0" y="420.0"/>
-</graphics>
-<name>
-<value>Ricon_Pezzo</value>
-<graphics>
-<offset x="105.58585858585857" y="5.4671717171717376"/>
 </graphics>
 </name>
 <orientation>
@@ -3627,71 +3653,6 @@
 <value>1</value>
 </priority>
 </transition>
-<arc id="Ant_DX Carico Pressa to Ant_DX in posizione" source="Ant SX/DX" target="Ant_DX in Posiz">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="1755" y="541" curvePoint="false"/>
-<arcpath id="001" x="1787" y="597" curvePoint="false"/>
-<type value="normal"/>
-</arc>
-<arc id="Ant_DX in posizione to Ant_SX Presa Robot" source="Ant_DX in Posiz" target="Ant Presa Robot">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="1786" y="622" curvePoint="false"/>
-<arcpath id="001" x="1755" y="666" curvePoint="false"/>
-<type value="normal"/>
-</arc>
-<arc id="Ant_DX Presa Robot to Ant_DX su Robot" source="Ant Pezzi su Nastro" target="Ant Divisione Pezzi">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="1750" y="420" curvePoint="false"/>
-<arcpath id="001" x="1750" y="461" curvePoint="false"/>
-<type value="normal"/>
-</arc>
-<arc id="Ant_DX su Robot to Ant_DX Carico Pressa" source="Ant Divisione Pezzi" target="Ant SX/DX">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="1750" y="490" curvePoint="false"/>
-<arcpath id="001" x="1750" y="530" curvePoint="false"/>
-<type value="normal"/>
-</arc>
-<arc id="Ant_SX in Posiz to Ant Presa Robot" source="Ant_SX in Posiz" target="Ant Presa Robot">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="1726" y="623" curvePoint="false"/>
-<arcpath id="001" x="1745" y="665" curvePoint="false"/>
-<type value="normal"/>
-</arc>
 <arc id="Ant_SX Presa Robot to Ant_SX su Robot" source="Ant Presa Robot" target="Ant su Robot">
 <graphics/>
 <inscription>
@@ -3731,7 +3692,7 @@
 <arcpath id="001" x="1672" y="755" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="Ant Nastro IN to Ant_DX Presa Robot" source="Ant Nastro IN" target="Ant Pezzi su Nastro">
+<arc id="Ant Divisione Pezzi to Ant Dx" source="Ant Divisione Pezzi" target="Ant Dx">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -3740,8 +3701,73 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="1750" y="370" curvePoint="false"/>
-<arcpath id="001" x="1750" y="410" curvePoint="false"/>
+<arcpath id="000" x="1750" y="453" curvePoint="false"/>
+<arcpath id="001" x="1786" y="540" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant Divisione Pezzi to Ant in Posizione" source="Ant Divisione Pezzi" target="Ant in Posizione">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1735" y="450" curvePoint="false"/>
+<arcpath id="001" x="1685" y="478" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant Dx to Ant Presa Robot" source="Ant Dx" target="Ant Presa Robot">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1787" y="568" curvePoint="false"/>
+<arcpath id="001" x="1755" y="666" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant in Posizione to Ant Rotazione" source="Ant in Posizione" target="Ant Rotazione">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1671" y="501" curvePoint="false"/>
+<arcpath id="001" x="1667" y="545" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant Nastro IN to Ant Divisione Pezzi" source="Ant Nastro IN" target="Ant Divisione Pezzi">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1750" y="407" curvePoint="false"/>
+<arcpath id="001" x="1750" y="443" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant Ricon_Pezzo to Ant Nastro IN" source="Ant Ricon_Pezzo" target="Ant Nastro IN">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1750" y="341" curvePoint="false"/>
+<arcpath id="001" x="1750" y="378" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="Ant Robot to Ant_SX Presa Robot" source="Ant Robot" target="Ant Presa Robot">
@@ -3757,7 +3783,7 @@
 <arcpath id="001" x="1745" y="675" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="Ant SX/DX to Ant_SX in Posiz" source="Ant SX/DX" target="Ant_SX in Posiz">
+<arc id="Ant Rotazione to Ant Sx" source="Ant Rotazione" target="Ant Sx">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -3766,8 +3792,21 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="1745" y="540" curvePoint="false"/>
-<arcpath id="001" x="1725" y="596" curvePoint="false"/>
+<arcpath id="000" x="1667" y="555" curvePoint="false"/>
+<arcpath id="001" x="1671" y="596" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Ant Sx to Ant Presa Robot" source="Ant Sx" target="Ant Presa Robot">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1683" y="620" curvePoint="false"/>
+<arcpath id="001" x="1745" y="665" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="Carico_Buffer to Lamiere_Caricate" source="Carico_Buffer" target="Lamiere_Caricate">
@@ -3810,7 +3849,20 @@
 <arcpath id="001" x="2905" y="146" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="Carico_Pezzi_Nastro to Ricon_Pezzo" source="Carico_Pezzi_Nastro" target="Ricon_Pezzo">
+<arc id="Carico_Pezzi_Nastro to Ant Ricon_Pezzo" source="Carico_Pezzi_Nastro" target="Ant Ricon_Pezzo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="2231" y="340" curvePoint="false"/>
+<arcpath id="001" x="1765" y="337" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carico_Pezzi_Nastro to Ricon_Pezzo" source="Carico_Pezzi_Nastro" target="Lat Ricon_Pezzo">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -5217,20 +5269,7 @@
 <arcpath id="001" x="2110" y="656" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="Ricon_Pezzo to Ant Nastro IN" source="Ricon_Pezzo" target="Ant Nastro IN">
-<graphics/>
-<inscription>
-<value>Default,1</value>
-<graphics/>
-</inscription>
-<tagged>
-<value>false</value>
-</tagged>
-<arcpath id="000" x="2245" y="431" curvePoint="false"/>
-<arcpath id="001" x="1765" y="357" curvePoint="false"/>
-<type value="normal"/>
-</arc>
-<arc id="Ricon_Pezzo to P53" source="Ricon_Pezzo" target="Lat_DX Nastro IN">
+<arc id="Ricon_Pezzo to P53" source="Lat Ricon_Pezzo" target="Lat_DX Nastro IN">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -5739,7 +5778,7 @@
 <arcpath id="001" x="2110" y="956" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="T36 to P48" source="Ricon_Pezzo" target="Lat_SX Nastro IN">
+<arc id="T36 to P48" source="Lat Ricon_Pezzo" target="Lat_SX Nastro IN">
 <graphics/>
 <inscription>
 <value>Default,1</value>
