@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="P13">
+            <graphics>
+                <position x="555.0" y="1083.75"/>
+            </graphics>
+            <name>
+                <value>P13</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_di_Presa">
+            <graphics>
+                <position x="555.0" y="15.0"/>
+            </graphics>
+            <name>
+                <value>Robot_di_Presa</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Preassemblaggio">
+            <graphics>
+                <position x="690.0" y="465.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Preassemblaggio</value>
+                <graphics>
+                    <offset x="151.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Saldatura_a_Punti">
+            <graphics>
+                <position x="690.0" y="963.75"/>
+            </graphics>
+            <name>
+                <value>Robot_Saldatura_a_Punti</value>
+                <graphics>
+                    <offset x="155.0" y="-1.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Caricata_Saldatura">
+            <graphics>
+                <position x="555.0" y="870.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Caricata_Saldatura</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Inf_Lat_Preassemblata">
+            <graphics>
+                <position x="555.0" y="555.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Inf_Lat_Preassemblata</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Inferiore">
+            <graphics>
+                <position x="555.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Inferiore</value>
+                <graphics>
+                    <offset x="54.0" y="-9.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Inferiore_in_Presa">
+            <graphics>
+                <position x="555.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Inferiore_in_Presa</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Lat_Dx">
+            <graphics>
+                <position x="255.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Lat_Dx</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Lat_Dx_in_Presa">
+            <graphics>
+                <position x="255.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Lat_Dx_in_Presa</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Lat_Sx">
+            <graphics>
+                <position x="855.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Lat_Sx</value>
+                <graphics>
+                    <offset x="114.0" y="-3.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Lat_Sx_in_Presa">
+            <graphics>
+                <position x="855.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Lat_Sx_in_Presa</value>
+                <graphics>
+                    <offset x="-18.75" y="26.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Scocca_Scaricata">
+            <graphics>
+                <position x="555.0" y="720.0"/>
+            </graphics>
+            <name>
+                <value>Scocca_Scaricata</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Stazione_Preassemblaggio_Libera">
+            <graphics>
+                <position x="956.25" y="217.5"/>
+            </graphics>
+            <name>
+                <value>Stazione_Preassemblaggio_Libera</value>
+                <graphics>
+                    <offset x="213.75" y="17.5"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Stazione_Saldatura_Libera">
+            <graphics>
+                <position x="1012.5" y="960.0"/>
+            </graphics>
+            <name>
+                <value>Stazione_Saldatura_Libera</value>
+                <graphics>
+                    <offset x="163.75" y="5.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Carico_Scocca_Saldatura">
+            <graphics>
+                <position x="555.0" y="795.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Scocca_Saldatura</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics>
+                <position x="558.75" y="210.0"/>
+            </graphics>
+            <name>
+                <value>Carico_Scocca_Staz_Preassemblaggio</value>
+                <graphics>
+                    <offset x="-18.75" y="15.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Saldatura_a_Punti">
+            <graphics>
+                <position x="555.0" y="963.75"/>
+            </graphics>
+            <name>
+                <value>Saldatura_a_Punti</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Saldatura_Preassemblaggio">
+            <graphics>
+                <position x="555.0" y="465.0"/>
+            </graphics>
+            <name>
+                <value>Saldatura_Preassemblaggio</value>
+                <graphics>
+                    <offset x="-10.0" y="21.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Scarico_Scocca_Saldatura">
+            <graphics>
+                <position x="551.25" y="1173.75"/>
+            </graphics>
+            <name>
+                <value>Scarico_Scocca_Saldatura</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Scarico_Scocca_Staz_Preassemblaggio">
+            <graphics>
+                <position x="555.0" y="633.75"/>
+            </graphics>
+            <name>
+                <value>Scarico_Scocca_Staz_Preassemblaggio</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Carico_Scocca_Saldatura to Scocca_Caricata_Saldatura" source="Carico_Scocca_Saldatura" target="Scocca_Caricata_Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="566" y="811" curvePoint="false"/>
+            <arcpath id="001" x="566" y="866" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carico_Scocca_Staz_Preassemblaggio to Robot_di_Presa" source="Carico_Scocca_Staz_Preassemblaggio" target="Robot_di_Presa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="583" y="221" curvePoint="false"/>
+            <arcpath id="001" x="671" y="277" curvePoint="false"/>
+            <arcpath id="002" x="671" y="15" curvePoint="false"/>
+            <arcpath id="003" x="580" y="23" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carico_Scocca_Staz_Preassemblaggio to Scocca_Inferiore_in_Presa" source="Carico_Scocca_Staz_Preassemblaggio" target="Scocca_Inferiore_in_Presa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="568" y="225" curvePoint="false"/>
+            <arcpath id="001" x="566" y="311" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carico_Scocca_Staz_Preassemblaggio to Scocca_Lat_Dx_in_Presa" source="Carico_Scocca_Staz_Preassemblaggio" target="Scocca_Lat_Dx_in_Presa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="553" y="221" curvePoint="false"/>
+            <arcpath id="001" x="280" y="320" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carico_Scocca_Staz_Preassemblaggio to Scocca_Lat_Sx_in_Presa" source="Carico_Scocca_Staz_Preassemblaggio" target="Scocca_Lat_Sx_in_Presa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="583" y="221" curvePoint="false"/>
+            <arcpath id="001" x="851" y="320" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P13 to Scarico_Scocca_Saldatura" source="P13" target="Scarico_Scocca_Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="1108" curvePoint="false"/>
+            <arcpath id="001" x="561" y="1178" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_di_Presa to Carico_Scocca_Staz_Preassemblaggio" source="Robot_di_Presa" target="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="553" y="35" curvePoint="false"/>
+            <arcpath id="001" x="427" y="127" curvePoint="false"/>
+            <arcpath id="002" x="558" y="215" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Preassemblaggio to Saldatura_Preassemblaggio" source="Robot_Preassemblaggio" target="Saldatura_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="686" y="470" curvePoint="false"/>
+            <arcpath id="001" x="581" y="431" curvePoint="false"/>
+            <arcpath id="002" x="568" y="471" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Saldatura_a_Punti to Saldatura_a_Punti" source="Robot_Saldatura_a_Punti" target="Saldatura_a_Punti">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="686" y="970" curvePoint="false"/>
+            <arcpath id="001" x="577" y="933" curvePoint="false"/>
+            <arcpath id="002" x="570" y="970" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Saldatura_a_Punti to P13" source="Saldatura_a_Punti" target="P13">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="560" y="978" curvePoint="false"/>
+            <arcpath id="001" x="565" y="1080" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Saldatura_a_Punti to Robot_Saldatura_a_Punti" source="Saldatura_a_Punti" target="Robot_Saldatura_a_Punti">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="570" y="980" curvePoint="false"/>
+            <arcpath id="001" x="577" y="1027" curvePoint="false"/>
+            <arcpath id="002" x="686" y="980" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Saldatura_Preassemblaggio to Robot_Preassemblaggio" source="Saldatura_Preassemblaggio" target="Robot_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="571" y="481" curvePoint="false"/>
+            <arcpath id="001" x="581" y="521" curvePoint="false"/>
+            <arcpath id="002" x="686" y="481" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Saldatura_Preassemblaggio to Scocca_Inf_Lat_Preassemblata" source="Saldatura_Preassemblaggio" target="Scocca_Inf_Lat_Preassemblata">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="561" y="480" curvePoint="false"/>
+            <arcpath id="001" x="565" y="551" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scarico_Scocca_Saldatura to Stazione_Saldatura_Libera" source="Scarico_Scocca_Saldatura" target="Stazione_Saldatura_Libera">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="561" y="1188" curvePoint="false"/>
+            <arcpath id="001" x="652" y="1271" curvePoint="false"/>
+            <arcpath id="002" x="1011" y="980" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scarico_Scocca_Staz_Preassemblaggio to Scocca_Scaricata" source="Scarico_Scocca_Staz_Preassemblaggio" target="Scocca_Scaricata">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="648" curvePoint="false"/>
+            <arcpath id="001" x="565" y="716" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scarico_Scocca_Staz_Preassemblaggio to Stazione_Preassemblaggio_Libera" source="Scarico_Scocca_Staz_Preassemblaggio" target="Stazione_Preassemblaggio_Libera">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="580" y="645" curvePoint="false"/>
+            <arcpath id="001" x="990" y="577" curvePoint="false"/>
+            <arcpath id="002" x="967" y="242" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Caricata_Saldatura to Saldatura_a_Punti" source="Scocca_Caricata_Saldatura" target="Saldatura_a_Punti">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="895" curvePoint="false"/>
+            <arcpath id="001" x="560" y="968" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Inf_Lat_Preassemblata to Scarico_Scocca_Staz_Preassemblaggio" source="Scocca_Inf_Lat_Preassemblata" target="Scarico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="580" curvePoint="false"/>
+            <arcpath id="001" x="565" y="638" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Inferiore_in_Presa to Saldatura_Preassemblaggio" source="Scocca_Inferiore_in_Presa" target="Saldatura_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="340" curvePoint="false"/>
+            <arcpath id="001" x="562" y="470" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Inferiore to Carico_Scocca_Staz_Preassemblaggio" source="Scocca_Inferiore" target="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="566" y="145" curvePoint="false"/>
+            <arcpath id="001" x="568" y="215" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Lat_Dx_in_Presa to Saldatura_Preassemblaggio" source="Scocca_Lat_Dx_in_Presa" target="Saldatura_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="280" y="331" curvePoint="false"/>
+            <arcpath id="001" x="506" y="416" curvePoint="false"/>
+            <arcpath id="002" x="557" y="470" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Lat_Dx to Carico_Scocca_Staz_Preassemblaggio" source="Scocca_Lat_Dx" target="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="280" y="133" curvePoint="false"/>
+            <arcpath id="001" x="521" y="183" curvePoint="false"/>
+            <arcpath id="002" x="563" y="215" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Lat_Sx_in_Presa to Saldatura_Preassemblaggio" source="Scocca_Lat_Sx_in_Presa" target="Saldatura_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="851" y="331" curvePoint="false"/>
+            <arcpath id="001" x="626" y="416" curvePoint="false"/>
+            <arcpath id="002" x="575" y="471" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Lat_Sx to Carico_Scocca_Staz_Preassemblaggio" source="Scocca_Lat_Sx" target="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="851" y="133" curvePoint="false"/>
+            <arcpath id="001" x="596" y="183" curvePoint="false"/>
+            <arcpath id="002" x="573" y="216" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Scocca_Scaricata to Carico_Scocca_Saldatura" source="Scocca_Scaricata" target="Carico_Scocca_Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="745" curvePoint="false"/>
+            <arcpath id="001" x="561" y="800" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Stazione_Preassemblaggio_Libera to Carico_Scocca_Staz_Preassemblaggio" source="Stazione_Preassemblaggio_Libera" target="Carico_Scocca_Staz_Preassemblaggio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="952" y="226" curvePoint="false"/>
+            <arcpath id="001" x="633" y="183" curvePoint="false"/>
+            <arcpath id="002" x="578" y="216" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Stazione_Saldatura_Libera to Carico_Scocca_Saldatura" source="Stazione_Saldatura_Libera" target="Carico_Scocca_Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1010" y="963" curvePoint="false"/>
+            <arcpath id="001" x="596" y="765" curvePoint="false"/>
+            <arcpath id="002" x="571" y="801" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
