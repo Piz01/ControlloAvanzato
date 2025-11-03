@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="125" y="482" width="114" height="189" border="true">
+        <labels x="1504" y="302" width="105" height="132" border="true">
+            <text>Anche qui cambiare il peso degli archi di "Pezzo_Ant_sul_Nastro" e "Ant_Grezzi_Pressa"
+</text>
+        </labels>
+        <labels x="2461" y="99" width="105" height="116" border="true">
+            <text>Cambiare peso token, inizio trasporto ne prende 8 e fine trasporto ne toglie 8, il resto è tutto peso 1</text>
+        </labels>
+        <labels x="126" y="483" width="115" height="190" border="true">
             <text>Nello posto "Pezzi_Nastrox.o" avremo un massimo di 8 pezzi perché lavoriamo il singolo pallet, quindi si dovrebbe aggiungere la capacità massima
 </text>
         </labels>
@@ -367,7 +374,7 @@
         </place>
         <place id="Buffer_Ant_Dx">
             <graphics>
-                <position x="1836.4285714285716" y="2175.0"/>
+                <position x="1830.0" y="2175.0"/>
             </graphics>
             <name>
                 <value>Buffer_Ant_Dx</value>
@@ -2427,7 +2434,7 @@
         </place>
         <transition id="Ant_Dx_Trasp">
             <graphics>
-                <position x="1836.4285714285716" y="2085.0"/>
+                <position x="1830.0" y="2085.0"/>
             </graphics>
             <name>
                 <value>Ant_Dx_Trasp</value>
@@ -4683,8 +4690,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1845" y="2098" curvePoint="false"/>
-            <arcpath id="001" x="1845" y="2170" curvePoint="false"/>
+            <arcpath id="000" x="1838" y="2098" curvePoint="false"/>
+            <arcpath id="001" x="1838" y="2170" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Ant_Dx to Ant_Dx_Trasp" source="Ant_Dx" target="Ant_Dx_Trasp">
@@ -4696,8 +4703,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1842" y="2004" curvePoint="false"/>
-            <arcpath id="001" x="1844" y="2088" curvePoint="false"/>
+            <arcpath id="000" x="1838" y="2004" curvePoint="false"/>
+            <arcpath id="001" x="1838" y="2088" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Ant_Identificazione to Ant_Dx" source="Ant_Identificazione" target="Ant_Dx">
@@ -4749,7 +4756,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1875" y="1797" curvePoint="false"/>
-            <arcpath id="001" x="1791" y="1681" curvePoint="false"/>
+            <arcpath id="001" x="1789" y="1679" curvePoint="false"/>
             <arcpath id="002" x="1752" y="1729" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -4763,7 +4770,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1881" y="1794" curvePoint="false"/>
-            <arcpath id="001" x="1865" y="1715" curvePoint="false"/>
+            <arcpath id="001" x="1864" y="1714" curvePoint="false"/>
             <arcpath id="002" x="1924" y="1695" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -4959,7 +4966,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1929" y="1704" curvePoint="false"/>
-            <arcpath id="001" x="1921" y="1787" curvePoint="false"/>
+            <arcpath id="001" x="1919" y="1785" curvePoint="false"/>
             <arcpath id="002" x="1897" y="1801" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -4999,7 +5006,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="732" y="124" curvePoint="false"/>
-            <arcpath id="001" x="804" y="75" curvePoint="false"/>
+            <arcpath id="001" x="802" y="74" curvePoint="false"/>
             <arcpath id="002" x="744" y="58" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5312,7 +5319,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2448" y="1678" curvePoint="false"/>
-            <arcpath id="001" x="2338" y="1888" curvePoint="false"/>
+            <arcpath id="001" x="2337" y="1887" curvePoint="false"/>
             <arcpath id="002" x="2274" y="1897" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5352,7 +5359,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2354" y="1679" curvePoint="false"/>
-            <arcpath id="001" x="2264" y="1851" curvePoint="false"/>
+            <arcpath id="001" x="2262" y="1849" curvePoint="false"/>
             <arcpath id="002" x="2260" y="1884" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5379,8 +5386,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2274" y="1895" curvePoint="false"/>
-            <arcpath id="001" x="2335" y="1879" curvePoint="false"/>
-            <arcpath id="002" x="2414" y="1645" curvePoint="false"/>
+            <arcpath id="001" x="2334" y="1878" curvePoint="false"/>
+            <arcpath id="002" x="2412" y="1644" curvePoint="false"/>
             <arcpath id="003" x="2448" y="1668" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5394,7 +5401,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2265" y="1885" curvePoint="false"/>
-            <arcpath id="001" x="2395" y="1645" curvePoint="false"/>
+            <arcpath id="001" x="2394" y="1644" curvePoint="false"/>
             <arcpath id="002" x="2352" y="1669" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5408,8 +5415,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2245" y="1894" curvePoint="false"/>
-            <arcpath id="001" x="2184" y="1871" curvePoint="false"/>
-            <arcpath id="002" x="2095" y="1645" curvePoint="false"/>
+            <arcpath id="001" x="2182" y="1869" curvePoint="false"/>
+            <arcpath id="002" x="2094" y="1644" curvePoint="false"/>
             <arcpath id="003" x="2068" y="1669" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5423,7 +5430,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2251" y="1885" curvePoint="false"/>
-            <arcpath id="001" x="2114" y="1645" curvePoint="false"/>
+            <arcpath id="001" x="2112" y="1644" curvePoint="false"/>
             <arcpath id="002" x="2148" y="1668" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5489,7 +5496,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2068" y="1679" curvePoint="false"/>
-            <arcpath id="001" x="2180" y="1888" curvePoint="false"/>
+            <arcpath id="001" x="2178" y="1887" curvePoint="false"/>
             <arcpath id="002" x="2244" y="1897" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5568,8 +5575,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2154" y="1678" curvePoint="false"/>
-            <arcpath id="001" x="2264" y="1869" curvePoint="false"/>
-            <arcpath id="002" x="2261" y="1884" curvePoint="false"/>
+            <arcpath id="001" x="2262" y="1868" curvePoint="false"/>
+            <arcpath id="002" x="2260" y="1884" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_SX scarto to Tot Scarti" source="Lat_SX scarto" target="Tot Scarti">
@@ -5634,7 +5641,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="714" y="58" curvePoint="false"/>
-            <arcpath id="001" x="665" y="75" curvePoint="false"/>
+            <arcpath id="001" x="664" y="74" curvePoint="false"/>
             <arcpath id="002" x="722" y="124" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -5648,8 +5655,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="714" y="52" curvePoint="false"/>
-            <arcpath id="001" x="564" y="45" curvePoint="false"/>
-            <arcpath id="002" x="564" y="270" curvePoint="false"/>
+            <arcpath id="001" x="562" y="44" curvePoint="false"/>
+            <arcpath id="002" x="562" y="268" curvePoint="false"/>
             <arcpath id="003" x="714" y="280" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -6820,8 +6827,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2702" y="1811" curvePoint="false"/>
-            <arcpath id="001" x="2769" y="1719" curvePoint="false"/>
-            <arcpath id="002" x="2845" y="1738" curvePoint="false"/>
+            <arcpath id="001" x="2768" y="1718" curvePoint="false"/>
+            <arcpath id="002" x="2844" y="1737" curvePoint="false"/>
             <arcpath id="003" x="2868" y="1758" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -6835,7 +6842,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2694" y="1809" curvePoint="false"/>
-            <arcpath id="001" x="2695" y="1719" curvePoint="false"/>
+            <arcpath id="001" x="2694" y="1718" curvePoint="false"/>
             <arcpath id="002" x="2608" y="1709" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -6875,7 +6882,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2598" y="1709" curvePoint="false"/>
-            <arcpath id="001" x="2545" y="1738" curvePoint="false"/>
+            <arcpath id="001" x="2544" y="1737" curvePoint="false"/>
             <arcpath id="002" x="2681" y="1817" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -6889,7 +6896,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2599" y="1699" curvePoint="false"/>
-            <arcpath id="001" x="2384" y="1694" curvePoint="false"/>
+            <arcpath id="001" x="2382" y="1692" curvePoint="false"/>
             <arcpath id="002" x="2272" y="1729" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -6994,8 +7001,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="744" y="280" curvePoint="false"/>
-            <arcpath id="001" x="909" y="274" curvePoint="false"/>
-            <arcpath id="002" x="909" y="48" curvePoint="false"/>
+            <arcpath id="001" x="908" y="272" curvePoint="false"/>
+            <arcpath id="002" x="908" y="47" curvePoint="false"/>
             <arcpath id="003" x="744" y="54" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -7789,8 +7796,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1934" y="1689" curvePoint="false"/>
-            <arcpath id="001" x="2114" y="1688" curvePoint="false"/>
-            <arcpath id="002" x="2244" y="1729" curvePoint="false"/>
+            <arcpath id="001" x="2112" y="1687" curvePoint="false"/>
+            <arcpath id="002" x="2245" y="1729" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T68 to P100" source="Post_Carico_Pressa" target="Post_Robot">
