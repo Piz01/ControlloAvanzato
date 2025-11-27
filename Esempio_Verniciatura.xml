@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="434" y="4491" width="105" height="52" border="true">
+            <text>AGGIUNGERE CONTROLLO QUALITA'</text>
+        </labels>
         <place id="Ant_Aperto">
             <graphics>
                 <position x="795.0" y="1770.0"/>
@@ -89,6 +92,46 @@
                 <value>Carrozzeria_1_Verniciata</value>
                 <graphics>
                     <offset x="-16.25" y="20.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_Asciugata">
+            <graphics>
+                <position x="495.0" y="4410.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_Asciugata</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_in_Asciugatura">
+            <graphics>
+                <position x="495.0" y="4230.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_in_Asciugatura</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -403,7 +446,7 @@
         </place>
         <place id="P48">
             <graphics>
-                <position x="495.0" y="4200.0"/>
+                <position x="300.0" y="4980.0"/>
             </graphics>
             <name>
                 <value>P48</value>
@@ -823,7 +866,7 @@
         </place>
         <place id="Stazione_Asciugatura">
             <graphics>
-                <position x="495.0" y="4050.0"/>
+                <position x="495.0" y="4065.0"/>
             </graphics>
             <name>
                 <value>Stazione_Asciugatura</value>
@@ -873,6 +916,26 @@
             </name>
             <initialMarking>
                 <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ventole_Asciugatura">
+            <graphics>
+                <position x="615.0" y="4215.0"/>
+            </graphics>
+            <name>
+                <value>Ventole_Asciugatura</value>
+                <graphics>
+                    <offset x="136.0" y="1.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -987,14 +1050,14 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Baule_Apertura">
+        <transition id="Avvio_Ventole_Asciugatura">
             <graphics>
-                <position x="330.0" y="1665.0"/>
+                <position x="495.0" y="4140.0"/>
             </graphics>
             <name>
-                <value>Baule_Apertura</value>
+                <value>Avvio_Ventole_Asciugatura</value>
                 <graphics>
-                    <offset x="111.0" y="46.00000000000001"/>
+                    <offset x="-5.0" y="18.0"/>
                 </graphics>
             </name>
             <orientation>
@@ -1013,14 +1076,14 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Carrozzeria_Ruotata">
+        <transition id="Baule_Apertura">
             <graphics>
-                <position x="495.0" y="4140.0"/>
+                <position x="330.0" y="1665.0"/>
             </graphics>
             <name>
-                <value>Carrozzeria_Ruotata</value>
+                <value>Baule_Apertura</value>
                 <graphics>
-                    <offset x="-5.0" y="35.0"/>
+                    <offset x="111.0" y="46.00000000000001"/>
                 </graphics>
             </name>
             <orientation>
@@ -1195,6 +1258,32 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Fine_Ventole_Asciugatura">
+            <graphics>
+                <position x="495.0" y="4320.0"/>
+            </graphics>
+            <name>
+                <value>Fine_Ventole_Asciugatura</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Fine_Verniciatura_Ant">
             <graphics>
                 <position x="795.0" y="2145.0"/>
@@ -1301,7 +1390,7 @@
         </transition>
         <transition id="Giro_Giostra">
             <graphics>
-                <position x="495.0" y="3975.0"/>
+                <position x="495.0" y="3990.0"/>
             </graphics>
             <name>
                 <value>Giro_Giostra</value>
@@ -1637,6 +1726,45 @@
                 <value>1</value>
             </priority>
         </transition>
+        <arc id="Avvio_Ventole_Asciugatura to Carrozzeria_in_Asciugatura" source="Avvio_Ventole_Asciugatura" target="Carrozzeria_in_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="501" y="4156" curvePoint="false"/>
+            <arcpath id="001" x="506" y="4227" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Avvio_Ventole_Asciugatura to Ventole_Asciugatura" source="Avvio_Ventole_Asciugatura" target="Ventole_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="511" y="4157" curvePoint="false"/>
+            <arcpath id="001" x="614" y="4219" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_in_Asciugatura to Fine_Ventole_Asciugatura" source="Carrozzeria_in_Asciugatura" target="Fine_Ventole_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="505" y="4256" curvePoint="false"/>
+            <arcpath id="001" x="501" y="4326" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
         <arc id="Carrozzeria_Pronta to Inizio_Trasporto" source="Carrozzeria_Pronta" target="Inizio_Trasporto">
             <graphics/>
             <inscription>
@@ -1659,8 +1787,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="507" y="3911" curvePoint="false"/>
-            <arcpath id="001" x="511" y="3982" curvePoint="false"/>
+            <arcpath id="000" x="506" y="3911" curvePoint="false"/>
+            <arcpath id="001" x="506" y="3996" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_sul_Nastro to Fine_Trasporto" source="Carrozzeria_sul_Nastro" target="Fine_Trasporto">
@@ -1685,8 +1813,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="552" y="2321" curvePoint="false"/>
-            <arcpath id="001" x="556" y="2377" curvePoint="false"/>
+            <arcpath id="000" x="551" y="2321" curvePoint="false"/>
+            <arcpath id="001" x="551" y="2376" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_Aperto to Inizio_Verniciatura_Cofano" source="Cofano_Aperto" target="Inizio_Verniciatura_Cofano">
@@ -1792,9 +1920,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="516" y="3381" curvePoint="false"/>
-            <arcpath id="001" x="250" y="2351" curvePoint="false"/>
-            <arcpath id="002" x="367" y="2772" curvePoint="false"/>
+            <arcpath id="000" x="506" y="3387" curvePoint="false"/>
+            <arcpath id="001" x="280" y="3371" curvePoint="false"/>
+            <arcpath id="002" x="369" y="2801" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Lucidatura_Post to Robot_Lucidatura_Post" source="Fine_Lucidatura_Post" target="Robot_Lucidatura_Post">
@@ -1861,6 +1989,19 @@
             </tagged>
             <arcpath id="000" x="551" y="342" curvePoint="false"/>
             <arcpath id="001" x="734" y="454" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Ventole_Asciugatura to Carrozzeria_Asciugata" source="Fine_Ventole_Asciugatura" target="Carrozzeria_Asciugata">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="506" y="4336" curvePoint="false"/>
+            <arcpath id="001" x="506" y="4407" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Ant to Carrozzeria_Verniciata" source="Fine_Verniciatura_Ant" target="Carrozzeria_Verniciata">
@@ -2025,9 +2166,22 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="501" y="3981" curvePoint="false"/>
-            <arcpath id="001" x="40" y="1556" curvePoint="false"/>
-            <arcpath id="002" x="101" y="2817" curvePoint="false"/>
+            <arcpath id="000" x="491" y="4002" curvePoint="false"/>
+            <arcpath id="001" x="115" y="3971" curvePoint="false"/>
+            <arcpath id="002" x="102" y="2846" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Giro_Giostra to Stazione_Asciugatura" source="Giro_Giostra" target="Stazione_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="506" y="4006" curvePoint="false"/>
+            <arcpath id="001" x="506" y="4062" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Lucidatura_Ant to Lucidatura_Ant" source="Inizio_Lucidatura_Ant" target="Lucidatura_Ant">
@@ -2156,8 +2310,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="522" y="3311" curvePoint="false"/>
-            <arcpath id="001" x="526" y="3382" curvePoint="false"/>
+            <arcpath id="000" x="521" y="3311" curvePoint="false"/>
+            <arcpath id="001" x="521" y="3381" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lucidatura_Lat to Inizio_Lucidatura_Post" source="Lucidatura_Lat" target="Inizio_Lucidatura_Post">
@@ -2416,9 +2570,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="102" y="2817" curvePoint="false"/>
-            <arcpath id="001" x="146" y="1676" curvePoint="false"/>
-            <arcpath id="002" x="546" y="2376" curvePoint="false"/>
+            <arcpath id="000" x="101" y="2817" curvePoint="false"/>
+            <arcpath id="001" x="86" y="2381" curvePoint="false"/>
+            <arcpath id="002" x="536" y="2382" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Post_Aperto to Inizio_Verniciatura_Post" source="Post_Aperto" target="Inizio_Verniciatura_Post">
@@ -2602,6 +2756,19 @@
             </tagged>
             <arcpath id="000" x="987" y="777" curvePoint="false"/>
             <arcpath id="001" x="776" y="777" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Stazione_Asciugatura to Avvio_Ventole_Asciugatura" source="Stazione_Asciugatura" target="Avvio_Ventole_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="506" y="4091" curvePoint="false"/>
+            <arcpath id="001" x="506" y="4146" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Stazione_Lucidatura to Inizio_Lucidatura_Ant" source="Stazione_Lucidatura" target="Inizio_Lucidatura_Ant">
@@ -2846,6 +3013,19 @@
             </tagged>
             <arcpath id="000" x="521" y="3731" curvePoint="false"/>
             <arcpath id="001" x="521" y="3801" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ventole_Asciugatura to Fine_Ventole_Asciugatura" source="Ventole_Asciugatura" target="Fine_Ventole_Asciugatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="615" y="4236" curvePoint="false"/>
+            <arcpath id="001" x="511" y="4327" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Verniciatura_Cofano to Cofano_Apertura" source="Verniciatura_Cofano" target="Cofano_Apertura">
