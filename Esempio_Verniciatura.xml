@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="Carrozzeria_Pronta">
+            <graphics>
+                <position x="525.0" y="30.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_Pronta</value>
+                <graphics>
+                    <offset x="-16.25" y="20.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_sul_Nastro">
+            <graphics>
+                <position x="525.0" y="240.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_sul_Nastro</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cofano_Aperto">
+            <graphics>
+                <position x="270.0" y="645.0"/>
+            </graphics>
+            <name>
+                <value>Cofano_Aperto</value>
+                <graphics>
+                    <offset x="110.0" y="2.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cofano_in_Verniciatura">
+            <graphics>
+                <position x="285.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>Cofano_in_Verniciatura</value>
+                <graphics>
+                    <offset x="2.0" y="-5.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Nastro_Trasportatore">
+            <graphics>
+                <position x="645.0" y="240.0"/>
+            </graphics>
+            <name>
+                <value>Nastro_Trasportatore</value>
+                <graphics>
+                    <offset x="129.0" y="4.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Post_Aperto">
+            <graphics>
+                <position x="750.0" y="645.0"/>
+            </graphics>
+            <name>
+                <value>Post_Aperto</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Post_in_Verniciatura">
+            <graphics>
+                <position x="750.0" y="890.0"/>
+            </graphics>
+            <name>
+                <value>Post_in_Verniciatura</value>
+                <graphics>
+                    <offset x="145.0" y="5.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Cofano">
+            <graphics>
+                <position x="120.0" y="540.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Cofano</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Portabagagli">
+            <graphics>
+                <position x="210.0" y="1725.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Portabagagli</value>
+                <graphics>
+                    <offset x="172.0" y="4.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Sport_Ant_Dx">
+            <graphics>
+                <position x="210.0" y="1785.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Sport_Ant_Dx</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Sport_Ant_Sx">
+            <graphics>
+                <position x="210.0" y="1650.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Sport_Ant_Sx</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Sport_Post_Dx">
+            <graphics>
+                <position x="546.6666666666667" y="555.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Sport_Post_Dx</value>
+                <graphics>
+                    <offset x="82.1111111111112" y="-10.222222222222225"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Apert_Sport_Post_Sx">
+            <graphics>
+                <position x="885.0" y="555.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Apert_Sport_Post_Sx</value>
+                <graphics>
+                    <offset x="171.0" y="-9.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Verniciatura_1">
+            <graphics>
+                <position x="120.0" y="765.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Verniciatura_1</value>
+                <graphics>
+                    <offset x="15.0" y="-8.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Verniciatura_2">
+            <graphics>
+                <position x="405.0" y="825.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Verniciatura_2</value>
+                <graphics>
+                    <offset x="139.0" y="49.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Verniciatura_3">
+            <graphics>
+                <position x="615.0" y="815.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Verniciatura_3</value>
+                <graphics>
+                    <offset x="74.0" y="48.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Robot_Verniciatura_4">
+            <graphics>
+                <position x="990.0" y="770.0"/>
+            </graphics>
+            <name>
+                <value>Robot_Verniciatura_4</value>
+                <graphics>
+                    <offset x="153.0" y="1.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Verniciatura_Cofano">
+            <graphics>
+                <position x="315.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>Verniciatura_Cofano</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Verniciatura_Post">
+            <graphics>
+                <position x="735.0" y="450.0"/>
+            </graphics>
+            <name>
+                <value>Verniciatura_Post</value>
+                <graphics>
+                    <offset x="133.0" y="-6.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Cofano_Apertura">
+            <graphics>
+                <position x="285.0" y="540.0"/>
+            </graphics>
+            <name>
+                <value>Cofano_Apertura</value>
+                <graphics>
+                    <offset x="111.0" y="36.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Fine_Trasporto">
+            <graphics>
+                <position x="525.0" y="330.0"/>
+            </graphics>
+            <name>
+                <value>Fine_Trasporto</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Fine_Verniciatura_Cofano">
+            <graphics>
+                <position x="285.0" y="1035.0"/>
+            </graphics>
+            <name>
+                <value>Fine_Verniciatura_Cofano</value>
+                <graphics>
+                    <offset x="170.0" y="27.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Fine_Verniciatura_Post">
+            <graphics>
+                <position x="750.0" y="1025.0"/>
+            </graphics>
+            <name>
+                <value>Fine_Verniciatura_Post</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Inizio_Trasporto">
+            <graphics>
+                <position x="525.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>Inizio_Trasporto</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Inizio_Verniciatura_Cofano">
+            <graphics>
+                <position x="285.0" y="765.0"/>
+            </graphics>
+            <name>
+                <value>Inizio_Verniciatura_Cofano</value>
+                <graphics>
+                    <offset x="161.0" y="-3.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Inizio_Verniciatura_Post">
+            <graphics>
+                <position x="750.0" y="765.0"/>
+            </graphics>
+            <name>
+                <value>Inizio_Verniciatura_Post</value>
+                <graphics>
+                    <offset x="161.0" y="4.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Post_Apertura">
+            <graphics>
+                <position x="750.0" y="540.0"/>
+            </graphics>
+            <name>
+                <value>Post_Apertura</value>
+                <graphics>
+                    <offset x="12.0" y="36.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Carrozzeria_Pronta to Inizio_Trasporto" source="Carrozzeria_Pronta" target="Inizio_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="535" y="55" curvePoint="false"/>
+            <arcpath id="001" x="534" y="155" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_sul_Nastro to Fine_Trasporto" source="Carrozzeria_sul_Nastro" target="Fine_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="534" y="265" curvePoint="false"/>
+            <arcpath id="001" x="530" y="335" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cofano_Aperto to Inizio_Verniciatura_Cofano" source="Cofano_Aperto" target="Inizio_Verniciatura_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="282" y="670" curvePoint="false"/>
+            <arcpath id="001" x="294" y="770" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cofano_Apertura to Cofano_Aperto" source="Cofano_Apertura" target="Cofano_Aperto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="295" y="555" curvePoint="false"/>
+            <arcpath id="001" x="282" y="641" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cofano_in_Verniciatura to Fine_Verniciatura_Cofano" source="Cofano_in_Verniciatura" target="Fine_Verniciatura_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="294" y="970" curvePoint="false"/>
+            <arcpath id="001" x="290" y="1040" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Nastro_Trasportatore" source="Fine_Trasporto" target="Nastro_Trasportatore">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="540" y="335" curvePoint="false"/>
+            <arcpath id="001" x="643" y="258" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Verniciatura_Cofano" source="Fine_Trasporto" target="Verniciatura_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="520" y="341" curvePoint="false"/>
+            <arcpath id="001" x="338" y="438" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Verniciatura_Post" source="Fine_Trasporto" target="Verniciatura_Post">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="550" y="341" curvePoint="false"/>
+            <arcpath id="001" x="732" y="452" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Cofano to Robot_Apert_Cofano" source="Fine_Verniciatura_Cofano" target="Robot_Apert_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="280" y="1045" curvePoint="false"/>
+            <arcpath id="001" x="11" y="1015" curvePoint="false"/>
+            <arcpath id="002" x="14" y="558" curvePoint="false"/>
+            <arcpath id="003" x="115" y="551" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Cofano to Robot_Verniciatura_1" source="Fine_Verniciatura_Cofano" target="Robot_Verniciatura_1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="280" y="1045" curvePoint="false"/>
+            <arcpath id="001" x="56" y="956" curvePoint="false"/>
+            <arcpath id="002" x="56" y="776" curvePoint="false"/>
+            <arcpath id="003" x="115" y="775" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Cofano to Robot_Verniciatura_2" source="Fine_Verniciatura_Cofano" target="Robot_Verniciatura_2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="300" y="1041" curvePoint="false"/>
+            <arcpath id="001" x="416" y="971" curvePoint="false"/>
+            <arcpath id="002" x="415" y="851" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Post to Robot_Apert_Sport_Post_Dx" source="Fine_Verniciatura_Post" target="Robot_Apert_Sport_Post_Dx">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="745" y="1035" curvePoint="false"/>
+            <arcpath id="001" x="563" y="1030" curvePoint="false"/>
+            <arcpath id="002" x="557" y="580" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Post to Robot_Apert_Sport_Post_Sx" source="Fine_Verniciatura_Post" target="Robot_Apert_Sport_Post_Sx">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="775" y="1036" curvePoint="false"/>
+            <arcpath id="001" x="1076" y="986" curvePoint="false"/>
+            <arcpath id="002" x="1076" y="581" curvePoint="false"/>
+            <arcpath id="003" x="910" y="566" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Post to Robot_Verniciatura_3" source="Fine_Verniciatura_Post" target="Robot_Verniciatura_3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="754" y="1030" curvePoint="false"/>
+            <arcpath id="001" x="626" y="941" curvePoint="false"/>
+            <arcpath id="002" x="625" y="841" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Verniciatura_Post to Robot_Verniciatura_4" source="Fine_Verniciatura_Post" target="Robot_Verniciatura_4">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="775" y="1036" curvePoint="false"/>
+            <arcpath id="001" x="1001" y="986" curvePoint="false"/>
+            <arcpath id="002" x="1001" y="795" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Inizio_Trasporto to Carrozzeria_sul_Nastro" source="Inizio_Trasporto" target="Carrozzeria_sul_Nastro">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="530" y="165" curvePoint="false"/>
+            <arcpath id="001" x="534" y="235" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Inizio_Verniciatura_Cofano to Cofano_in_Verniciatura" source="Inizio_Verniciatura_Cofano" target="Cofano_in_Verniciatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="295" y="780" curvePoint="false"/>
+            <arcpath id="001" x="295" y="941" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Inizio_Verniciatura_Post to Post_in_Verniciatura" source="Inizio_Verniciatura_Post" target="Post_in_Verniciatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="760" y="780" curvePoint="false"/>
+            <arcpath id="001" x="760" y="885" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Nastro_Trasportatore to Inizio_Trasporto" source="Nastro_Trasportatore" target="Inizio_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="643" y="241" curvePoint="false"/>
+            <arcpath id="001" x="540" y="165" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Post_Aperto to Inizio_Verniciatura_Post" source="Post_Aperto" target="Inizio_Verniciatura_Post">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="760" y="670" curvePoint="false"/>
+            <arcpath id="001" x="760" y="770" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Post_Apertura to Post_Aperto" source="Post_Apertura" target="Post_Aperto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="760" y="555" curvePoint="false"/>
+            <arcpath id="001" x="760" y="641" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Post_in_Verniciatura to Fine_Verniciatura_Post" source="Post_in_Verniciatura" target="Fine_Verniciatura_Post">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="761" y="915" curvePoint="false"/>
+            <arcpath id="001" x="764" y="1031" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Apert_Cofano to Cofano_Apertura" source="Robot_Apert_Cofano" target="Cofano_Apertura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="145" y="550" curvePoint="false"/>
+            <arcpath id="001" x="280" y="551" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Apert_Sport_Post_Dx to Post_Apertura" source="Robot_Apert_Sport_Post_Dx" target="Post_Apertura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="572" y="564" curvePoint="false"/>
+            <arcpath id="001" x="745" y="551" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Apert_Sport_Post_Sx to Post_Apertura" source="Robot_Apert_Sport_Post_Sx" target="Post_Apertura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="881" y="563" curvePoint="false"/>
+            <arcpath id="001" x="775" y="551" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Verniciatura_1 to Inizio_Verniciatura_Cofano" source="Robot_Verniciatura_1" target="Inizio_Verniciatura_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="145" y="775" curvePoint="false"/>
+            <arcpath id="001" x="280" y="775" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Verniciatura_2 to Inizio_Verniciatura_Cofano" source="Robot_Verniciatura_2" target="Inizio_Verniciatura_Cofano">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="402" y="827" curvePoint="false"/>
+            <arcpath id="001" x="310" y="776" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Verniciatura_3 to Inizio_Verniciatura_Post" source="Robot_Verniciatura_3" target="Inizio_Verniciatura_Post">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="638" y="820" curvePoint="false"/>
+            <arcpath id="001" x="745" y="775" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Robot_Verniciatura_4 to Inizio_Verniciatura_Post" source="Robot_Verniciatura_4" target="Inizio_Verniciatura_Post">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="985" y="780" curvePoint="false"/>
+            <arcpath id="001" x="775" y="776" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Verniciatura_Cofano to Cofano_Apertura" source="Verniciatura_Cofano" target="Cofano_Apertura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="321" y="460" curvePoint="false"/>
+            <arcpath id="001" x="294" y="545" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Verniciatura_Post to Post_Apertura" source="Verniciatura_Post" target="Post_Apertura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="747" y="475" curvePoint="false"/>
+            <arcpath id="001" x="760" y="545" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
