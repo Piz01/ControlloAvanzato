@@ -81,9 +81,49 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Carr_Verniciata_da_Ispezionare">
+            <graphics>
+                <position x="540.0000000000001" y="4685.454545454545"/>
+            </graphics>
+            <name>
+                <value>Carr_Verniciata_da_Ispezionare</value>
+                <graphics>
+                    <offset x="-6.3636363636363615" y="12.727272727272727"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carr_Verniciata_Ispezionata">
+            <graphics>
+                <position x="540.0" y="4800.0"/>
+            </graphics>
+            <name>
+                <value>Carr_Verniciata_Ispezionata</value>
+                <graphics>
+                    <offset x="-8.181818181818189" y="13.636363636363635"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Carrozzeria_1_Verniciata">
             <graphics>
-                <position x="570.0" y="1155.0"/>
+                <position x="283.63636363636374" y="1100.4545454545453"/>
             </graphics>
             <name>
                 <value>Carrozzeria_1_Verniciata</value>
@@ -101,9 +141,69 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Carrozzeria_2_Verniciata">
+            <graphics>
+                <position x="750.0" y="1101.8181818181818"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_2_Verniciata</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_3_Verniciata">
+            <graphics>
+                <position x="335.45454545454555" y="2240.454545454545"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_3_Verniciata</value>
+                <graphics>
+                    <offset x="-11.428571428571427" y="19.999999999999996"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_4_Verniciata">
+            <graphics>
+                <position x="795.0" y="2235.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_4_Verniciata</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Carrozzeria_Asciugata_Stazione_CQ">
             <graphics>
-                <position x="540.0" y="4533.333333333333"/>
+                <position x="540.0" y="4530.0"/>
             </graphics>
             <name>
                 <value>Carrozzeria_Asciugata_Stazione_CQ</value>
@@ -141,9 +241,49 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Carrozzeria_fine_Nastro">
+            <graphics>
+                <position x="511.3636363636363" y="339.5454545454545"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_fine_Nastro</value>
+                <graphics>
+                    <offset x="0.0" y="13.636363636363633"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_fine_Nastro_2">
+            <graphics>
+                <position x="570.0" y="1395.0"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_fine_Nastro_2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Carrozzeria_in_Asciugatura">
             <graphics>
-                <position x="540.0" y="4353.333333333333"/>
+                <position x="540.0" y="4350.0"/>
             </graphics>
             <name>
                 <value>Carrozzeria_in_Asciugatura</value>
@@ -163,7 +303,7 @@
         </place>
         <place id="Carrozzeria_Pronta">
             <graphics>
-                <position x="525.0" y="30.0"/>
+                <position x="511.3636363636363" y="57.272727272727266"/>
             </graphics>
             <name>
                 <value>Carrozzeria_Pronta</value>
@@ -183,7 +323,7 @@
         </place>
         <place id="Carrozzeria_su_Giostra">
             <graphics>
-                <position x="538.3333333333334" y="4020.0"/>
+                <position x="540.0" y="4020.0"/>
             </graphics>
             <name>
                 <value>Carrozzeria_su_Giostra</value>
@@ -223,12 +363,12 @@
         </place>
         <place id="Carrozzeria_sul_Nastro">
             <graphics>
-                <position x="525.0" y="240.0"/>
+                <position x="511.3636363636363" y="199.09090909090907"/>
             </graphics>
             <name>
                 <value>Carrozzeria_sul_Nastro</value>
                 <graphics>
-                    <offset x="0.0" y="0.0"/>
+                    <offset x="-5.454545454545452" y="14.545454545454543"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -243,52 +383,12 @@
         </place>
         <place id="Carrozzeria_sul_Nastro_2">
             <graphics>
-                <position x="570.0" y="1365.0"/>
+                <position x="570.0000000000001" y="1255.909090909091"/>
             </graphics>
             <name>
                 <value>Carrozzeria_sul_Nastro_2</value>
                 <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
-        <place id="Carrozzeria_Verniciata">
-            <graphics>
-                <position x="540.0" y="2295.0"/>
-            </graphics>
-            <name>
-                <value>Carrozzeria_Verniciata</value>
-                <graphics>
-                    <offset x="-11.428571428571427" y="19.999999999999996"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
-        <place id="Carrozzeria_Verniciata_in_Ispezione">
-            <graphics>
-                <position x="540.0" y="4743.333333333333"/>
-            </graphics>
-            <name>
-                <value>Carrozzeria_Verniciata_in_Ispezione</value>
-                <graphics>
-                    <offset x="-9.999999999999998" y="0.0"/>
+                    <offset x="-1.818181818181818" y="14.545454545454541"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -463,7 +563,7 @@
         </place>
         <place id="Nastro_Trasportatore">
             <graphics>
-                <position x="615.0" y="240.0"/>
+                <position x="601.3636363636363" y="280.9090909090909"/>
             </graphics>
             <name>
                 <value>Nastro_Trasportatore</value>
@@ -483,7 +583,7 @@
         </place>
         <place id="Nastro_Trasportatore_2">
             <graphics>
-                <position x="660.0" y="1365.0"/>
+                <position x="646.3636363636364" y="1324.0909090909092"/>
             </graphics>
             <name>
                 <value>Nastro_Trasportatore_2</value>
@@ -523,7 +623,7 @@
         </place>
         <place id="Operatore_CQ_Verniciatura">
             <graphics>
-                <position x="731.6666666666666" y="4628.333333333333"/>
+                <position x="694.0909090909091" y="4730.454545454543"/>
             </graphics>
             <name>
                 <value>Operatore_CQ_Verniciatura</value>
@@ -943,7 +1043,7 @@
         </place>
         <place id="Stazione_Asciugatura">
             <graphics>
-                <position x="540.0" y="4188.333333333333"/>
+                <position x="540.0" y="4185.0"/>
             </graphics>
             <name>
                 <value>Stazione_Asciugatura</value>
@@ -1003,7 +1103,7 @@
         </place>
         <place id="Ventole_Asciugatura">
             <graphics>
-                <position x="630.0" y="4353.333333333333"/>
+                <position x="630.0" y="4350.0"/>
             </graphics>
             <name>
                 <value>Ventole_Asciugatura</value>
@@ -1129,7 +1229,7 @@
         </transition>
         <transition id="Avvio_Ventole_Asciugatura">
             <graphics>
-                <position x="540.0" y="4263.333333333333"/>
+                <position x="540.0" y="4260.0"/>
             </graphics>
             <name>
                 <value>Avvio_Ventole_Asciugatura</value>
@@ -1171,6 +1271,32 @@
             </rate>
             <timed>
                 <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Carr_Verniciata_in_Ispezione">
+            <graphics>
+                <position x="540.0" y="4740.0"/>
+            </graphics>
+            <name>
+                <value>Carr_Verniciata_in_Ispezione</value>
+                <graphics>
+                    <offset x="-3.1818181818181817" y="20.45454545454545"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1285,7 +1411,7 @@
         </transition>
         <transition id="Fine_Trasporto">
             <graphics>
-                <position x="525.0" y="330.0"/>
+                <position x="511.3636363636363" y="411.8181818181818"/>
             </graphics>
             <name>
                 <value>Fine_Trasporto</value>
@@ -1337,7 +1463,7 @@
         </transition>
         <transition id="Fine_Trasporto_su_Giostra">
             <graphics>
-                <position x="548.3333333333334" y="3920.0"/>
+                <position x="541.3636363636364" y="3914.9999999999995"/>
             </graphics>
             <name>
                 <value>Fine_Trasporto_su_Giostra</value>
@@ -1363,7 +1489,7 @@
         </transition>
         <transition id="Fine_Ventole_Asciugatura">
             <graphics>
-                <position x="540.0" y="4443.333333333333"/>
+                <position x="540.0" y="4440.0"/>
             </graphics>
             <name>
                 <value>Fine_Ventole_Asciugatura</value>
@@ -1493,12 +1619,38 @@
         </transition>
         <transition id="Giro_Giostra">
             <graphics>
-                <position x="540.0" y="4098.333333333333"/>
+                <position x="540.0" y="4095.0"/>
             </graphics>
             <name>
                 <value>Giro_Giostra</value>
                 <graphics>
                     <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Inizio_Ispezione_Verniciatura">
+            <graphics>
+                <position x="540.0" y="4607.727272727272"/>
+            </graphics>
+            <name>
+                <value>Inizio_Ispezione_Verniciatura</value>
+                <graphics>
+                    <offset x="-3.1818181818181817" y="15.909090909090901"/>
                 </graphics>
             </name>
             <orientation>
@@ -1597,7 +1749,7 @@
         </transition>
         <transition id="Inizio_Trasporto">
             <graphics>
-                <position x="525.0" y="150.0"/>
+                <position x="511.3636363636363" y="122.72727272727272"/>
             </graphics>
             <name>
                 <value>Inizio_Trasporto</value>
@@ -1623,7 +1775,7 @@
         </transition>
         <transition id="Inizio_Trasporto_2">
             <graphics>
-                <position x="570.0" y="1275.0"/>
+                <position x="570.0000000000001" y="1179.5454545454536"/>
             </graphics>
             <name>
                 <value>Inizio_Trasporto_2</value>
@@ -1803,14 +1955,14 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Ispezione_Verniciatura_Carrozzeria">
+        <transition id="Nastro_in_Movimento">
             <graphics>
-                <position x="540.0" y="4635.0"/>
+                <position x="511.3636363636363" y="265.9090909090909"/>
             </graphics>
             <name>
-                <value>Ispezione_Verniciatura_Carrozzeria</value>
+                <value>Nastro_in_Movimento</value>
                 <graphics>
-                    <offset x="-5.0" y="35.0"/>
+                    <offset x="-5.0" y="16.81818181818181"/>
                 </graphics>
             </name>
             <orientation>
@@ -1820,7 +1972,33 @@
                 <value>1.0</value>
             </rate>
             <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
                 <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Nastro_in_Movimento_2">
+            <graphics>
+                <position x="570.0" y="1321.3636363636365"/>
+            </graphics>
+            <name>
+                <value>Nastro_in_Movimento_2</value>
+                <graphics>
+                    <offset x="-10.454545454545455" y="16.818181818181824"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1916,8 +2094,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="545" y="4278" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4348" curvePoint="false"/>
+            <arcpath id="000" x="546" y="4276" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4346" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Avvio_Ventole_Asciugatura to Ventole_Asciugatura" source="Avvio_Ventole_Asciugatura" target="Ventole_Asciugatura">
@@ -1929,11 +2107,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="555" y="4278" curvePoint="false"/>
-            <arcpath id="001" x="630" y="4353" curvePoint="false"/>
+            <arcpath id="000" x="556" y="4276" curvePoint="false"/>
+            <arcpath id="001" x="630" y="4350" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Carrozzeria_Asciugata_Stazione_CQ to Ispezione_Verniciatura_Carrozzeria" source="Carrozzeria_Asciugata_Stazione_CQ" target="Ispezione_Verniciatura_Carrozzeria">
+        <arc id="Carr_Verniciata_da_Ispezionare to Carr_Verniciata_in_Ispezione" source="Carr_Verniciata_da_Ispezionare" target="Carr_Verniciata_in_Ispezione">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1942,8 +2120,112 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4558" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4640" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4711" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4746" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carr_Verniciata_in_Ispezione to Carr_Verniciata_Ispezionata" source="Carr_Verniciata_in_Ispezione" target="Carr_Verniciata_Ispezionata">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="550" y="4756" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4796" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carr_Verniciata_Ispezionata to Verniciatura_KO" source="Carr_Verniciata_Ispezionata" target="Verniciatura_KO">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="565" y="4817" curvePoint="false"/>
+            <arcpath id="001" x="686" y="4871" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carr_Verniciata_Ispezionata to Verniciatura_OK" source="Carr_Verniciata_Ispezionata" target="Verniciatura_OK">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="550" y="4826" curvePoint="false"/>
+            <arcpath id="001" x="545" y="4866" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_2_Verniciata to Inizio_Trasporto_2" source="Carrozzeria_2_Verniciata" target="Inizio_Trasporto_2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="748" y="1120" curvePoint="false"/>
+            <arcpath id="001" x="596" y="1191" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_4_Verniciata to Inizio_Trasporto_Lucidatura" source="Carrozzeria_4_Verniciata" target="Inizio_Trasporto_Lucidatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="793" y="2253" curvePoint="false"/>
+            <arcpath id="001" x="566" y="2381" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_Asciugata_Stazione_CQ to Ispezione_Verniciatura_Carrozzeria" source="Carrozzeria_Asciugata_Stazione_CQ" target="Inizio_Ispezione_Verniciatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="550" y="4556" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4613" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_fine_Nastro_2 to Fine_Trasporto_2" source="Carrozzeria_fine_Nastro_2" target="Fine_Trasporto_2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="580" y="1420" curvePoint="false"/>
+            <arcpath id="001" x="575" y="1460" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_fine_Nastro to Fine_Trasporto" source="Carrozzeria_fine_Nastro" target="Fine_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="520" y="365" curvePoint="false"/>
+            <arcpath id="001" x="517" y="418" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_in_Asciugatura to Fine_Ventole_Asciugatura" source="Carrozzeria_in_Asciugatura" target="Fine_Ventole_Asciugatura">
@@ -1955,8 +2237,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="548" y="4378" curvePoint="false"/>
-            <arcpath id="001" x="544" y="4448" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4376" curvePoint="false"/>
+            <arcpath id="001" x="545" y="4446" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_Pronta to Inizio_Trasporto" source="Carrozzeria_Pronta" target="Inizio_Trasporto">
@@ -1968,8 +2250,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="535" y="55" curvePoint="false"/>
-            <arcpath id="001" x="534" y="155" curvePoint="false"/>
+            <arcpath id="000" x="522" y="83" curvePoint="false"/>
+            <arcpath id="001" x="521" y="129" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_su_Giostra to Giro_Giostra" source="Carrozzeria_su_Giostra" target="Giro_Giostra">
@@ -1981,8 +2263,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="548" y="4045" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4103" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4046" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4100" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_su_Nastro_2 to Fine_Trasporto_su_Giostra" source="Carrozzeria_su_Nastro_2" target="Fine_Trasporto_su_Giostra">
@@ -1994,11 +2276,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="552" y="3850" curvePoint="false"/>
-            <arcpath id="001" x="557" y="3925" curvePoint="false"/>
+            <arcpath id="000" x="551" y="3851" curvePoint="false"/>
+            <arcpath id="001" x="551" y="3920" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Carrozzeria_sul_Nastro to Fine_Trasporto" source="Carrozzeria_sul_Nastro" target="Fine_Trasporto">
+        <arc id="Carrozzeria_sul_Nastro_2 to Nastro_in_Movimento_2" source="Carrozzeria_sul_Nastro_2" target="Nastro_in_Movimento_2">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2007,11 +2289,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="534" y="265" curvePoint="false"/>
-            <arcpath id="001" x="530" y="335" curvePoint="false"/>
+            <arcpath id="000" x="580" y="1281" curvePoint="false"/>
+            <arcpath id="001" x="580" y="1327" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Carrozzeria_Verniciata_in_Ispezione to Verniciatura_KO" source="Carrozzeria_Verniciata_in_Ispezione" target="Verniciatura_KO">
+        <arc id="Carrozzeria_sul_Nastro to Nastro_in_Movimento" source="Carrozzeria_sul_Nastro" target="Nastro_in_Movimento">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2020,11 +2302,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="562" y="4763" curvePoint="false"/>
-            <arcpath id="001" x="694" y="4865" curvePoint="false"/>
+            <arcpath id="000" x="522" y="225" curvePoint="false"/>
+            <arcpath id="001" x="521" y="271" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Carrozzeria_Verniciata_in_Ispezione to Verniciatura_OK" source="Carrozzeria_Verniciata_in_Ispezione" target="Verniciatura_OK">
+        <arc id="Carrozzeria_Verniciata to Inizio_Trasporto_Lucidatura" source="Carrozzeria_3_Verniciata" target="Inizio_Trasporto_Lucidatura">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2033,21 +2315,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4768" curvePoint="false"/>
-            <arcpath id="001" x="544" y="4865" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Carrozzeria_Verniciata to Inizio_Trasporto_Lucidatura" source="Carrozzeria_Verniciata" target="Inizio_Trasporto_Lucidatura">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="550" y="2320" curvePoint="false"/>
-            <arcpath id="001" x="550" y="2375" curvePoint="false"/>
+            <arcpath id="000" x="359" y="2260" curvePoint="false"/>
+            <arcpath id="001" x="550" y="2376" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_Aperto to Inizio_Verniciatura_Cofano" source="Cofano_Aperto" target="Inizio_Verniciatura_Cofano">
@@ -2059,8 +2328,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="295" y="670" curvePoint="false"/>
-            <arcpath id="001" x="294" y="770" curvePoint="false"/>
+            <arcpath id="000" x="296" y="670" curvePoint="false"/>
+            <arcpath id="001" x="295" y="770" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_Apertura to Cofano_Aperto" source="Cofano_Apertura" target="Cofano_Aperto">
@@ -2072,8 +2341,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="295" y="555" curvePoint="false"/>
-            <arcpath id="001" x="295" y="641" curvePoint="false"/>
+            <arcpath id="000" x="296" y="556" curvePoint="false"/>
+            <arcpath id="001" x="296" y="641" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_in_Verniciatura to Fine_Verniciatura_Cofano" source="Cofano_in_Verniciatura" target="Fine_Verniciatura_Cofano">
@@ -2085,7 +2354,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="294" y="970" curvePoint="false"/>
+            <arcpath id="000" x="295" y="970" curvePoint="false"/>
             <arcpath id="001" x="290" y="1040" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2098,8 +2367,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="2955" curvePoint="false"/>
-            <arcpath id="001" x="550" y="3025" curvePoint="false"/>
+            <arcpath id="000" x="550" y="2956" curvePoint="false"/>
+            <arcpath id="001" x="550" y="3026" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Lucidatura_Ant to Robot_Lucidatura_Ant" source="Fine_Lucidatura_Ant" target="Robot_Lucidatura_Ant">
@@ -2111,9 +2380,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="565" y="2951" curvePoint="false"/>
-            <arcpath id="001" x="776" y="2946" curvePoint="false"/>
-            <arcpath id="002" x="775" y="2561" curvePoint="false"/>
+            <arcpath id="000" x="566" y="2951" curvePoint="false"/>
+            <arcpath id="001" x="777" y="2947" curvePoint="false"/>
+            <arcpath id="002" x="776" y="2561" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Lucidatura_Lat to Lucidatura_Post" source="Fine_Lucidatura_Lat" target="Lucidatura_Post">
@@ -2125,7 +2394,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="3345" curvePoint="false"/>
+            <arcpath id="000" x="550" y="3346" curvePoint="false"/>
             <arcpath id="001" x="550" y="3431" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2138,8 +2407,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="565" y="3341" curvePoint="false"/>
-            <arcpath id="001" x="666" y="3290" curvePoint="false"/>
+            <arcpath id="000" x="566" y="3341" curvePoint="false"/>
+            <arcpath id="001" x="667" y="3290" curvePoint="false"/>
             <arcpath id="002" x="670" y="2800" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2152,7 +2421,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="535" y="3341" curvePoint="false"/>
+            <arcpath id="000" x="536" y="3341" curvePoint="false"/>
             <arcpath id="001" x="363" y="3271" curvePoint="false"/>
             <arcpath id="002" x="370" y="2800" curvePoint="false"/>
             <type value="normal"/>
@@ -2166,8 +2435,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="554" y="3545" curvePoint="false"/>
-            <arcpath id="001" x="662" y="3397" curvePoint="false"/>
+            <arcpath id="000" x="555" y="3546" curvePoint="false"/>
+            <arcpath id="001" x="662" y="3398" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Lucidatura_Post to Uscita_Stazione_Verniciatura" source="Fine_Lucidatura_Post" target="Uscita_Stazione_Verniciatura">
@@ -2179,8 +2448,21 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="3555" curvePoint="false"/>
+            <arcpath id="000" x="550" y="3556" curvePoint="false"/>
             <arcpath id="001" x="550" y="3641" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto_2 to Nastro_Trasportatore_2" source="Fine_Trasporto_2" target="Nastro_Trasportatore_2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="585" y="1461" curvePoint="false"/>
+            <arcpath id="001" x="650" y="1348" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Trasporto_su_Giostra to Carrozzeria_su_Giostra" source="Fine_Trasporto_su_Giostra" target="Carrozzeria_su_Giostra">
@@ -2192,8 +2474,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="558" y="3935" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4015" curvePoint="false"/>
+            <arcpath id="000" x="552" y="3930" curvePoint="false"/>
+            <arcpath id="001" x="551" y="4016" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Trasporto_su_Giostra to Nastro_Trasportatore_3" source="Fine_Trasporto_su_Giostra" target="Nastro_Trasportatore_3">
@@ -2205,9 +2487,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="543" y="3931" curvePoint="false"/>
-            <arcpath id="001" x="263" y="3846" curvePoint="false"/>
-            <arcpath id="002" x="265" y="3445" curvePoint="false"/>
+            <arcpath id="000" x="537" y="3926" curvePoint="false"/>
+            <arcpath id="001" x="263" y="3847" curvePoint="false"/>
+            <arcpath id="002" x="266" y="3446" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Trasporto to Nastro_Trasportatore" source="Fine_Trasporto" target="Nastro_Trasportatore">
@@ -2219,8 +2501,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="540" y="335" curvePoint="false"/>
-            <arcpath id="001" x="614" y="261" curvePoint="false"/>
+            <arcpath id="000" x="527" y="418" curvePoint="false"/>
+            <arcpath id="001" x="604" y="304" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Trasporto to Verniciatura_Cofano" source="Fine_Trasporto" target="Verniciatura_Cofano">
@@ -2232,8 +2514,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="520" y="341" curvePoint="false"/>
-            <arcpath id="001" x="324" y="438" curvePoint="false"/>
+            <arcpath id="000" x="507" y="423" curvePoint="false"/>
+            <arcpath id="001" x="326" y="444" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Trasporto to Verniciatura_Post" source="Fine_Trasporto" target="Verniciatura_Post">
@@ -2245,8 +2527,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="341" curvePoint="false"/>
-            <arcpath id="001" x="732" y="438" curvePoint="false"/>
+            <arcpath id="000" x="537" y="423" curvePoint="false"/>
+            <arcpath id="001" x="731" y="444" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Ventole_Asciugatura to Carrozzeria_Asciugata" source="Fine_Ventole_Asciugatura" target="Carrozzeria_Asciugata_Stazione_CQ">
@@ -2258,11 +2540,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4458" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4528" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4456" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4526" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Fine_Verniciatura_Ant to Carrozzeria_Verniciata" source="Fine_Verniciatura_Ant" target="Carrozzeria_Verniciata">
+        <arc id="Fine_Verniciatura_Ant to Carrozzeria_4_Verniciata" source="Fine_Verniciatura_Ant" target="Carrozzeria_4_Verniciata">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2271,11 +2553,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="805" y="2160" curvePoint="false"/>
-            <arcpath id="001" x="563" y="2297" curvePoint="false"/>
+            <arcpath id="000" x="806" y="2160" curvePoint="false"/>
+            <arcpath id="001" x="806" y="2231" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Fine_Verniciatura_Baule to Carrozzeria_Verniciata" source="Fine_Verniciatura_Baule" target="Carrozzeria_Verniciata">
+        <arc id="Fine_Verniciatura_Baule to Carrozzeria_Verniciata" source="Fine_Verniciatura_Baule" target="Carrozzeria_3_Verniciata">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2284,8 +2566,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="340" y="2175" curvePoint="false"/>
-            <arcpath id="001" x="537" y="2297" curvePoint="false"/>
+            <arcpath id="000" x="340" y="2176" curvePoint="false"/>
+            <arcpath id="001" x="345" y="2237" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Cofano to Carrozzeria_1_Verniciata" source="Fine_Verniciatura_Cofano" target="Carrozzeria_1_Verniciata">
@@ -2297,8 +2579,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="310" y="1046" curvePoint="false"/>
-            <arcpath id="001" x="566" y="1160" curvePoint="false"/>
+            <arcpath id="000" x="296" y="1050" curvePoint="false"/>
+            <arcpath id="001" x="295" y="1097" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Cofano to Robot_Apert_Cofano" source="Fine_Verniciatura_Cofano" target="Robot_Apert_Cofano">
@@ -2310,10 +2592,10 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="280" y="1045" curvePoint="false"/>
+            <arcpath id="000" x="280" y="1046" curvePoint="false"/>
             <arcpath id="001" x="10" y="1015" curvePoint="false"/>
-            <arcpath id="002" x="13" y="557" curvePoint="false"/>
-            <arcpath id="003" x="115" y="551" curvePoint="false"/>
+            <arcpath id="002" x="13" y="558" curvePoint="false"/>
+            <arcpath id="003" x="116" y="551" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Cofano to Robot_Verniciatura_1" source="Fine_Verniciatura_Cofano" target="Robot_Verniciatura_1">
@@ -2325,8 +2607,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="280" y="1045" curvePoint="false"/>
-            <arcpath id="001" x="140" y="956" curvePoint="false"/>
+            <arcpath id="000" x="280" y="1046" curvePoint="false"/>
+            <arcpath id="001" x="140" y="957" curvePoint="false"/>
             <arcpath id="002" x="131" y="790" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2340,10 +2622,10 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="300" y="1041" curvePoint="false"/>
-            <arcpath id="001" x="362" y="937" curvePoint="false"/>
+            <arcpath id="001" x="363" y="939" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Fine_Verniciatura_Post to Carrozzeria_1_Verniciata" source="Fine_Verniciatura_Post" target="Carrozzeria_1_Verniciata">
+        <arc id="Fine_Verniciatura_Post to Carrozzeria_2_Verniciata" source="Fine_Verniciatura_Post" target="Carrozzeria_2_Verniciata">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2352,8 +2634,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="760" y="1035" curvePoint="false"/>
-            <arcpath id="001" x="592" y="1156" curvePoint="false"/>
+            <arcpath id="000" x="760" y="1036" curvePoint="false"/>
+            <arcpath id="001" x="760" y="1098" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Post to Robot_Apert_Sport_Post_Dx" source="Fine_Verniciatura_Post" target="Robot_Apert_Sport_Post_Dx">
@@ -2365,10 +2647,10 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="775" y="1031" curvePoint="false"/>
-            <arcpath id="001" x="1076" y="986" curvePoint="false"/>
-            <arcpath id="002" x="1076" y="564" curvePoint="false"/>
-            <arcpath id="003" x="910" y="551" curvePoint="false"/>
+            <arcpath id="000" x="776" y="1031" curvePoint="false"/>
+            <arcpath id="001" x="1077" y="987" curvePoint="false"/>
+            <arcpath id="002" x="1077" y="564" curvePoint="false"/>
+            <arcpath id="003" x="910" y="552" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Post to Robot_Apert_Sport_Post_Sx" source="Fine_Verniciatura_Post" target="Robot_Apert_Sport_Post_Sx">
@@ -2380,9 +2662,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="745" y="1031" curvePoint="false"/>
-            <arcpath id="001" x="556" y="960" curvePoint="false"/>
-            <arcpath id="002" x="551" y="565" curvePoint="false"/>
+            <arcpath id="000" x="746" y="1031" curvePoint="false"/>
+            <arcpath id="001" x="557" y="960" curvePoint="false"/>
+            <arcpath id="002" x="551" y="566" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Post to Robot_Verniciatura_3" source="Fine_Verniciatura_Post" target="Robot_Verniciatura_3">
@@ -2394,8 +2676,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="754" y="1025" curvePoint="false"/>
-            <arcpath id="001" x="678" y="907" curvePoint="false"/>
+            <arcpath id="000" x="755" y="1026" curvePoint="false"/>
+            <arcpath id="001" x="679" y="909" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Verniciatura_Post to Robot_Verniciatura_4" source="Fine_Verniciatura_Post" target="Robot_Verniciatura_4">
@@ -2407,9 +2689,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="775" y="1031" curvePoint="false"/>
-            <arcpath id="001" x="916" y="953" curvePoint="false"/>
-            <arcpath id="002" x="924" y="790" curvePoint="false"/>
+            <arcpath id="000" x="776" y="1031" curvePoint="false"/>
+            <arcpath id="001" x="917" y="953" curvePoint="false"/>
+            <arcpath id="002" x="925" y="790" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Giro_Giostra to Stazione_Asciugatura" source="Giro_Giostra" target="Stazione_Asciugatura">
@@ -2421,8 +2703,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4113" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4184" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4110" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4181" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Lucidatura_Ant to Lucidatura_Ant" source="Inizio_Lucidatura_Ant" target="Lucidatura_Ant">
@@ -2435,7 +2717,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="550" y="2550" curvePoint="false"/>
-            <arcpath id="001" x="550" y="2635" curvePoint="false"/>
+            <arcpath id="001" x="550" y="2636" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Lucidatura_Lat to Lucidatura_Lat/Ant" source="Inizio_Lucidatura_Lat" target="Lucidatura_Lat/Ant">
@@ -2448,7 +2730,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="550" y="2760" curvePoint="false"/>
-            <arcpath id="001" x="550" y="2845" curvePoint="false"/>
+            <arcpath id="001" x="550" y="2846" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Lucidatura_Post to Lucidatura_Lat/Post" source="Inizio_Lucidatura_Post" target="Lucidatura_Lat/Post">
@@ -2460,7 +2742,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="546" y="3135" curvePoint="false"/>
+            <arcpath id="000" x="547" y="3136" curvePoint="false"/>
             <arcpath id="001" x="550" y="3221" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2473,8 +2755,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="2385" curvePoint="false"/>
-            <arcpath id="001" x="550" y="2455" curvePoint="false"/>
+            <arcpath id="000" x="550" y="2386" curvePoint="false"/>
+            <arcpath id="001" x="550" y="2456" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Trasporto to Carrozzeria_sul_Nastro" source="Inizio_Trasporto" target="Carrozzeria_sul_Nastro">
@@ -2486,8 +2768,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="530" y="165" curvePoint="false"/>
-            <arcpath id="001" x="534" y="235" curvePoint="false"/>
+            <arcpath id="000" x="517" y="139" curvePoint="false"/>
+            <arcpath id="001" x="521" y="195" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Verniciatura_Cofano to Cofano_in_Verniciatura" source="Inizio_Verniciatura_Cofano" target="Cofano_in_Verniciatura">
@@ -2512,11 +2794,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="765" y="781" curvePoint="false"/>
+            <arcpath id="000" x="766" y="781" curvePoint="false"/>
             <arcpath id="001" x="761" y="881" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Ispezione_Verniciatura_Carrozzeria to Carrozzeria_Verniciata_in_Ispezione" source="Ispezione_Verniciatura_Carrozzeria" target="Carrozzeria_Verniciata_in_Ispezione">
+        <arc id="Ispezione_Verniciatura_Carrozzeria to Carrozzeria_Verniciata_in_Ispezione" source="Inizio_Ispezione_Verniciatura" target="Carr_Verniciata_da_Ispezionare">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2525,8 +2807,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4650" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4738" curvePoint="false"/>
+            <arcpath id="000" x="546" y="4623" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4681" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lucidatura_Ant to Inizio_Lucidatura_Lat" source="Lucidatura_Ant" target="Inizio_Lucidatura_Lat">
@@ -2538,7 +2820,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="2665" curvePoint="false"/>
+            <arcpath id="000" x="550" y="2666" curvePoint="false"/>
             <arcpath id="001" x="550" y="2750" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2551,8 +2833,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="2875" curvePoint="false"/>
-            <arcpath id="001" x="550" y="2945" curvePoint="false"/>
+            <arcpath id="000" x="550" y="2876" curvePoint="false"/>
+            <arcpath id="001" x="550" y="2946" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lucidatura_Lat/Post to Fine_Lucidatura_Lat" source="Lucidatura_Lat/Post" target="Fine_Lucidatura_Lat">
@@ -2565,7 +2847,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="550" y="3250" curvePoint="false"/>
-            <arcpath id="001" x="550" y="3335" curvePoint="false"/>
+            <arcpath id="001" x="550" y="3336" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lucidatura_Lat to Inizio_Lucidatura_Post" source="Lucidatura_Lat" target="Inizio_Lucidatura_Post">
@@ -2577,8 +2859,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="3055" curvePoint="false"/>
-            <arcpath id="001" x="551" y="3125" curvePoint="false"/>
+            <arcpath id="000" x="550" y="3056" curvePoint="false"/>
+            <arcpath id="001" x="551" y="3126" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lucidatura_Post to Fine_Lucidatura_Post" source="Lucidatura_Post" target="Fine_Lucidatura_Post">
@@ -2591,7 +2873,33 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="550" y="3460" curvePoint="false"/>
-            <arcpath id="001" x="544" y="3545" curvePoint="false"/>
+            <arcpath id="001" x="545" y="3546" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Nastro_in_Movimento_2 to Carrozzeria_fine_Nastro_2" source="Nastro_in_Movimento_2" target="Carrozzeria_fine_Nastro_2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="580" y="1337" curvePoint="false"/>
+            <arcpath id="001" x="580" y="1391" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Nastro_in_Movimento to Carrozzeria_fine_Nastro" source="Nastro_in_Movimento" target="Carrozzeria_fine_Nastro">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="522" y="281" curvePoint="false"/>
+            <arcpath id="001" x="522" y="336" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Nastro_Trasportatore to Inizio_Trasporto" source="Nastro_Trasportatore" target="Inizio_Trasporto">
@@ -2603,11 +2911,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="614" y="240" curvePoint="false"/>
-            <arcpath id="001" x="540" y="165" curvePoint="false"/>
+            <arcpath id="000" x="605" y="279" curvePoint="false"/>
+            <arcpath id="001" x="527" y="139" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Operatore_CQ_Verniciatura to Ispezione_Verniciatura_Carrozzeria" source="Operatore_CQ_Verniciatura" target="Ispezione_Verniciatura_Carrozzeria">
+        <arc id="Operatore_CQ_Verniciatura to Ispezione_Verniciatura_Carrozzeria" source="Operatore_CQ_Verniciatura" target="Inizio_Ispezione_Verniciatura">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2616,8 +2924,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="727" y="4640" curvePoint="false"/>
-            <arcpath id="001" x="565" y="4646" curvePoint="false"/>
+            <arcpath id="000" x="693" y="4732" curvePoint="false"/>
+            <arcpath id="001" x="556" y="4624" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P20 to T8" source="Carrozzeria_1_Verniciata" target="Inizio_Trasporto_2">
@@ -2629,8 +2937,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="580" y="1180" curvePoint="false"/>
-            <arcpath id="001" x="580" y="1280" curvePoint="false"/>
+            <arcpath id="000" x="309" y="1116" curvePoint="false"/>
+            <arcpath id="001" x="566" y="1190" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P21 to T8" source="Nastro_Trasportatore_2" target="Inizio_Trasporto_2">
@@ -2642,8 +2950,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="660" y="1364" curvePoint="false"/>
-            <arcpath id="001" x="585" y="1291" curvePoint="false"/>
+            <arcpath id="000" x="650" y="1321" curvePoint="false"/>
+            <arcpath id="001" x="586" y="1196" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P22 to T12" source="Robot_Apert_Sport_Ant_Dx" target="Ant_Apertura">
@@ -2655,8 +2963,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="925" y="1675" curvePoint="false"/>
-            <arcpath id="001" x="820" y="1676" curvePoint="false"/>
+            <arcpath id="000" x="926" y="1676" curvePoint="false"/>
+            <arcpath id="001" x="820" y="1677" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P23 to T12" source="Robot_Apert_Sport_Ant_Sx" target="Ant_Apertura">
@@ -2668,8 +2976,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="625" y="1675" curvePoint="false"/>
-            <arcpath id="001" x="790" y="1675" curvePoint="false"/>
+            <arcpath id="000" x="626" y="1676" curvePoint="false"/>
+            <arcpath id="001" x="790" y="1676" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P24 to T13" source="Robot_Apert_Baule" target="Baule_Apertura">
@@ -2681,8 +2989,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="190" y="1675" curvePoint="false"/>
-            <arcpath id="001" x="325" y="1675" curvePoint="false"/>
+            <arcpath id="000" x="190" y="1676" curvePoint="false"/>
+            <arcpath id="001" x="326" y="1676" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P25 to T11" source="Robot_Verniciatura_5" target="Inizio_Verniciatura_Baule">
@@ -2694,8 +3002,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="190" y="1927" curvePoint="false"/>
-            <arcpath id="001" x="325" y="1901" curvePoint="false"/>
+            <arcpath id="000" x="190" y="1928" curvePoint="false"/>
+            <arcpath id="001" x="326" y="1901" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P26 to T11" source="Robot_Verniciatura_6" target="Inizio_Verniciatura_Baule">
@@ -2707,8 +3015,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="408" y="2022" curvePoint="false"/>
-            <arcpath id="001" x="345" y="1905" curvePoint="false"/>
+            <arcpath id="000" x="409" y="2023" curvePoint="false"/>
+            <arcpath id="001" x="346" y="1906" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P27 to T15" source="Robot_Verniciatura_7" target="Inizio_Verniciatura_Ant">
@@ -2720,8 +3028,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="765" y="2006" curvePoint="false"/>
-            <arcpath id="001" x="800" y="1905" curvePoint="false"/>
+            <arcpath id="000" x="766" y="2007" curvePoint="false"/>
+            <arcpath id="001" x="800" y="1906" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P28 to T15" source="Robot_Verniciatura_8" target="Inizio_Verniciatura_Ant">
@@ -2733,21 +3041,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="955" y="1927" curvePoint="false"/>
+            <arcpath id="000" x="956" y="1928" curvePoint="false"/>
             <arcpath id="001" x="820" y="1901" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="P29 to T9" source="Carrozzeria_sul_Nastro_2" target="Fine_Trasporto_2">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="578" y="1390" curvePoint="false"/>
-            <arcpath id="001" x="574" y="1460" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P30 to T13" source="Verniciatura_Baule" target="Baule_Apertura">
@@ -2759,7 +3054,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="365" y="1584" curvePoint="false"/>
+            <arcpath id="000" x="367" y="1585" curvePoint="false"/>
             <arcpath id="001" x="340" y="1670" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2772,7 +3067,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="805" y="2035" curvePoint="false"/>
+            <arcpath id="000" x="806" y="2036" curvePoint="false"/>
             <arcpath id="001" x="810" y="2151" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2785,8 +3080,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="338" y="2095" curvePoint="false"/>
-            <arcpath id="001" x="334" y="2165" curvePoint="false"/>
+            <arcpath id="000" x="340" y="2096" curvePoint="false"/>
+            <arcpath id="001" x="335" y="2166" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P33 to T11" source="Baule_Apert" target="Inizio_Verniciatura_Baule">
@@ -2798,8 +3093,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="340" y="1795" curvePoint="false"/>
-            <arcpath id="001" x="340" y="1895" curvePoint="false"/>
+            <arcpath id="000" x="340" y="1796" curvePoint="false"/>
+            <arcpath id="001" x="340" y="1896" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P34 to T15" source="Ant_Aperto" target="Inizio_Verniciatura_Ant">
@@ -2811,8 +3106,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="805" y="1795" curvePoint="false"/>
-            <arcpath id="001" x="804" y="1895" curvePoint="false"/>
+            <arcpath id="000" x="806" y="1796" curvePoint="false"/>
+            <arcpath id="001" x="805" y="1896" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P35 to T12" source="Verniciatura_Ant" target="Ant_Apertura">
@@ -2825,7 +3120,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="793" y="1600" curvePoint="false"/>
-            <arcpath id="001" x="804" y="1670" curvePoint="false"/>
+            <arcpath id="001" x="805" y="1670" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P37 to Inizio_Trasporto_Lucidatura" source="Nastro_Trasportatore_3" target="Inizio_Trasporto_Lucidatura">
@@ -2837,9 +3132,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="265" y="3415" curvePoint="false"/>
+            <arcpath id="000" x="266" y="3416" curvePoint="false"/>
             <arcpath id="001" x="270" y="2381" curvePoint="false"/>
-            <arcpath id="002" x="535" y="2381" curvePoint="false"/>
+            <arcpath id="002" x="536" y="2381" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Post_Aperto to Inizio_Verniciatura_Post" source="Post_Aperto" target="Inizio_Verniciatura_Post">
@@ -2864,7 +3159,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="760" y="555" curvePoint="false"/>
+            <arcpath id="000" x="760" y="556" curvePoint="false"/>
             <arcpath id="001" x="760" y="641" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2878,7 +3173,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="761" y="910" curvePoint="false"/>
-            <arcpath id="001" x="764" y="1025" curvePoint="false"/>
+            <arcpath id="001" x="765" y="1026" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Apert_Cofano to Cofano_Apertura" source="Robot_Apert_Cofano" target="Cofano_Apertura">
@@ -2890,7 +3185,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="145" y="550" curvePoint="false"/>
+            <arcpath id="000" x="146" y="550" curvePoint="false"/>
             <arcpath id="001" x="280" y="551" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2904,7 +3199,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="881" y="551" curvePoint="false"/>
-            <arcpath id="001" x="775" y="551" curvePoint="false"/>
+            <arcpath id="001" x="776" y="551" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Apert_Sport_Post_Sx to Post_Apertura" source="Robot_Apert_Sport_Post_Sx" target="Post_Apertura">
@@ -2916,8 +3211,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="565" y="550" curvePoint="false"/>
-            <arcpath id="001" x="745" y="551" curvePoint="false"/>
+            <arcpath id="000" x="566" y="550" curvePoint="false"/>
+            <arcpath id="001" x="746" y="551" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Lucidatura_Ant to Inizio_Lucidatura_Ant" source="Robot_Lucidatura_Ant" target="Inizio_Lucidatura_Ant">
@@ -2929,8 +3224,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="761" y="2545" curvePoint="false"/>
-            <arcpath id="001" x="565" y="2546" curvePoint="false"/>
+            <arcpath id="000" x="761" y="2546" curvePoint="false"/>
+            <arcpath id="001" x="566" y="2547" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Lucidatura_Lat_Dx to Inizio_Lucidatura_Lat" source="Robot_Lucidatura_Lat_Dx" target="Inizio_Lucidatura_Lat">
@@ -2942,8 +3237,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="656" y="2781" curvePoint="false"/>
-            <arcpath id="001" x="565" y="2756" curvePoint="false"/>
+            <arcpath id="000" x="657" y="2782" curvePoint="false"/>
+            <arcpath id="001" x="566" y="2757" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Lucidatura_Lat_Sx to Inizio_Lucidatura_Lat" source="Robot_Lucidatura_Lat_Sx" target="Inizio_Lucidatura_Lat">
@@ -2955,8 +3250,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="385" y="2783" curvePoint="false"/>
-            <arcpath id="001" x="535" y="2755" curvePoint="false"/>
+            <arcpath id="000" x="386" y="2783" curvePoint="false"/>
+            <arcpath id="001" x="536" y="2756" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Lucidatura_Post to Inizio_Lucidatura_Post" source="Robot_Lucidatura_Post" target="Inizio_Lucidatura_Post">
@@ -2968,8 +3263,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="664" y="3372" curvePoint="false"/>
-            <arcpath id="001" x="556" y="3135" curvePoint="false"/>
+            <arcpath id="000" x="665" y="3372" curvePoint="false"/>
+            <arcpath id="001" x="557" y="3136" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Verniciatura_1 to Inizio_Verniciatura_Cofano" source="Robot_Verniciatura_1" target="Inizio_Verniciatura_Cofano">
@@ -2981,8 +3276,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="145" y="775" curvePoint="false"/>
-            <arcpath id="001" x="280" y="775" curvePoint="false"/>
+            <arcpath id="000" x="146" y="776" curvePoint="false"/>
+            <arcpath id="001" x="280" y="776" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Verniciatura_2 to Inizio_Verniciatura_Cofano" source="Robot_Verniciatura_2" target="Inizio_Verniciatura_Cofano">
@@ -3007,8 +3302,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="678" y="883" curvePoint="false"/>
-            <arcpath id="001" x="755" y="780" curvePoint="false"/>
+            <arcpath id="000" x="680" y="884" curvePoint="false"/>
+            <arcpath id="001" x="756" y="780" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Verniciatura_4 to Inizio_Verniciatura_Post" source="Robot_Verniciatura_4" target="Inizio_Verniciatura_Post">
@@ -3020,8 +3315,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="911" y="775" curvePoint="false"/>
-            <arcpath id="001" x="775" y="776" curvePoint="false"/>
+            <arcpath id="000" x="911" y="776" curvePoint="false"/>
+            <arcpath id="001" x="776" y="777" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Stazione_Asciugatura to Avvio_Ventole_Asciugatura" source="Stazione_Asciugatura" target="Avvio_Ventole_Asciugatura">
@@ -3033,8 +3328,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4213" curvePoint="false"/>
-            <arcpath id="001" x="550" y="4268" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4210" curvePoint="false"/>
+            <arcpath id="001" x="550" y="4266" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Stazione_Lucidatura to Inizio_Lucidatura_Ant" source="Stazione_Lucidatura" target="Inizio_Lucidatura_Ant">
@@ -3046,7 +3341,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="2485" curvePoint="false"/>
+            <arcpath id="000" x="550" y="2486" curvePoint="false"/>
             <arcpath id="001" x="550" y="2540" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3059,10 +3354,10 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="820" y="2156" curvePoint="false"/>
-            <arcpath id="001" x="1066" y="2105" curvePoint="false"/>
-            <arcpath id="002" x="1066" y="1680" curvePoint="false"/>
-            <arcpath id="003" x="955" y="1675" curvePoint="false"/>
+            <arcpath id="000" x="820" y="2157" curvePoint="false"/>
+            <arcpath id="001" x="1067" y="2105" curvePoint="false"/>
+            <arcpath id="002" x="1067" y="1680" curvePoint="false"/>
+            <arcpath id="003" x="956" y="1677" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T10 to P23" source="Fine_Verniciatura_Ant" target="Robot_Apert_Sport_Ant_Sx">
@@ -3074,8 +3369,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="790" y="2155" curvePoint="false"/>
-            <arcpath id="001" x="616" y="2103" curvePoint="false"/>
+            <arcpath id="000" x="790" y="2156" curvePoint="false"/>
+            <arcpath id="001" x="617" y="2103" curvePoint="false"/>
             <arcpath id="002" x="611" y="1690" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3089,7 +3384,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="800" y="2150" curvePoint="false"/>
-            <arcpath id="001" x="764" y="2034" curvePoint="false"/>
+            <arcpath id="001" x="765" y="2035" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T10 to P28" source="Fine_Verniciatura_Ant" target="Robot_Verniciatura_8">
@@ -3101,9 +3396,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="820" y="2156" curvePoint="false"/>
-            <arcpath id="001" x="955" y="2087" curvePoint="false"/>
-            <arcpath id="002" x="968" y="1945" curvePoint="false"/>
+            <arcpath id="000" x="820" y="2157" curvePoint="false"/>
+            <arcpath id="001" x="955" y="2088" curvePoint="false"/>
+            <arcpath id="002" x="969" y="1946" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T11 to P32" source="Inizio_Verniciatura_Baule" target="Baule_in_Verniciatura">
@@ -3115,8 +3410,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="335" y="1905" curvePoint="false"/>
-            <arcpath id="001" x="340" y="2065" curvePoint="false"/>
+            <arcpath id="000" x="336" y="1906" curvePoint="false"/>
+            <arcpath id="001" x="340" y="2066" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T12 to P34" source="Ant_Apertura" target="Ant_Aperto">
@@ -3128,8 +3423,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="805" y="1680" curvePoint="false"/>
-            <arcpath id="001" x="805" y="1765" curvePoint="false"/>
+            <arcpath id="000" x="806" y="1680" curvePoint="false"/>
+            <arcpath id="001" x="806" y="1766" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T13 to P33" source="Baule_Apertura" target="Baule_Apert">
@@ -3142,7 +3437,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="340" y="1680" curvePoint="false"/>
-            <arcpath id="001" x="340" y="1765" curvePoint="false"/>
+            <arcpath id="001" x="340" y="1766" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T14 to P24" source="Fine_Verniciatura_Baule" target="Robot_Apert_Baule">
@@ -3154,10 +3449,10 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="325" y="2171" curvePoint="false"/>
+            <arcpath id="000" x="326" y="2171" curvePoint="false"/>
             <arcpath id="001" x="95" y="2123" curvePoint="false"/>
-            <arcpath id="002" x="87" y="1691" curvePoint="false"/>
-            <arcpath id="003" x="161" y="1677" curvePoint="false"/>
+            <arcpath id="002" x="88" y="1691" curvePoint="false"/>
+            <arcpath id="003" x="161" y="1679" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T14 to P25" source="Fine_Verniciatura_Baule" target="Robot_Verniciatura_5">
@@ -3169,9 +3464,9 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="325" y="2171" curvePoint="false"/>
+            <arcpath id="000" x="326" y="2171" curvePoint="false"/>
             <arcpath id="001" x="180" y="2080" curvePoint="false"/>
-            <arcpath id="002" x="175" y="1945" curvePoint="false"/>
+            <arcpath id="002" x="176" y="1946" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T14 to P26" source="Fine_Verniciatura_Baule" target="Robot_Verniciatura_6">
@@ -3183,8 +3478,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="344" y="2165" curvePoint="false"/>
-            <arcpath id="001" x="407" y="2048" curvePoint="false"/>
+            <arcpath id="000" x="345" y="2166" curvePoint="false"/>
+            <arcpath id="001" x="409" y="2049" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T15 to P31" source="Inizio_Verniciatura_Ant" target="Ant_in_Verniciatura">
@@ -3196,8 +3491,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="810" y="1905" curvePoint="false"/>
-            <arcpath id="001" x="805" y="2005" curvePoint="false"/>
+            <arcpath id="000" x="810" y="1906" curvePoint="false"/>
+            <arcpath id="001" x="807" y="2006" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T8 to P29" source="Inizio_Trasporto_2" target="Carrozzeria_sul_Nastro_2">
@@ -3209,21 +3504,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="575" y="1290" curvePoint="false"/>
-            <arcpath id="001" x="580" y="1361" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="T9 to P21" source="Fine_Trasporto_2" target="Nastro_Trasportatore_2">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="584" y="1461" curvePoint="false"/>
-            <arcpath id="001" x="660" y="1385" curvePoint="false"/>
+            <arcpath id="000" x="576" y="1195" curvePoint="false"/>
+            <arcpath id="001" x="580" y="1252" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T9 to P30" source="Fine_Trasporto_2" target="Verniciatura_Baule">
@@ -3235,8 +3517,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="565" y="1465" curvePoint="false"/>
-            <arcpath id="001" x="383" y="1563" curvePoint="false"/>
+            <arcpath id="000" x="566" y="1466" curvePoint="false"/>
+            <arcpath id="001" x="384" y="1564" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T9 to P35" source="Fine_Trasporto_2" target="Verniciatura_Ant">
@@ -3248,8 +3530,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="595" y="1466" curvePoint="false"/>
-            <arcpath id="001" x="777" y="1577" curvePoint="false"/>
+            <arcpath id="000" x="596" y="1467" curvePoint="false"/>
+            <arcpath id="001" x="778" y="1578" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Trasporto_su_Giostra to Carrozzeria_su_Giostra" source="Inizio_Trasporto_su_Giostra" target="Carrozzeria_su_Nastro_2">
@@ -3287,8 +3569,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="630" y="4374" curvePoint="false"/>
-            <arcpath id="001" x="554" y="4448" curvePoint="false"/>
+            <arcpath id="000" x="630" y="4371" curvePoint="false"/>
+            <arcpath id="001" x="555" y="4446" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Verniciatura_Cofano to Cofano_Apertura" source="Verniciatura_Cofano" target="Cofano_Apertura">
@@ -3300,8 +3582,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="307" y="460" curvePoint="false"/>
-            <arcpath id="001" x="294" y="545" curvePoint="false"/>
+            <arcpath id="000" x="309" y="460" curvePoint="false"/>
+            <arcpath id="001" x="295" y="546" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Verniciatura_KO to Carrozzeria_da_Riverniciare" source="Verniciatura_KO" target="Carrozzeria_da_Riverniciare">
@@ -3313,7 +3595,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="700" y="4875" curvePoint="false"/>
+            <arcpath id="000" x="700" y="4876" curvePoint="false"/>
             <arcpath id="001" x="700" y="4961" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3326,8 +3608,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="704" y="4865" curvePoint="false"/>
-            <arcpath id="001" x="740" y="4653" curvePoint="false"/>
+            <arcpath id="000" x="700" y="4866" curvePoint="false"/>
+            <arcpath id="001" x="704" y="4756" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Verniciatura_OK to Carrozzeria_Verniciata_Pronta" source="Verniciatura_OK" target="Carrozzeria_Verniciata_Pronta">
@@ -3339,7 +3621,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="550" y="4875" curvePoint="false"/>
+            <arcpath id="000" x="550" y="4876" curvePoint="false"/>
             <arcpath id="001" x="550" y="4961" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3352,8 +3634,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="554" y="4865" curvePoint="false"/>
-            <arcpath id="001" x="732" y="4650" curvePoint="false"/>
+            <arcpath id="000" x="555" y="4866" curvePoint="false"/>
+            <arcpath id="001" x="693" y="4751" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Verniciatura_Post to Post_Apertura" source="Verniciatura_Post" target="Post_Apertura">
@@ -3365,8 +3647,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="747" y="460" curvePoint="false"/>
-            <arcpath id="001" x="760" y="545" curvePoint="false"/>
+            <arcpath id="000" x="748" y="460" curvePoint="false"/>
+            <arcpath id="001" x="760" y="546" curvePoint="false"/>
             <type value="normal"/>
         </arc>
     </net>
