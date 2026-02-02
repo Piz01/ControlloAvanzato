@@ -648,7 +648,7 @@
             <name>
                 <value>Stazione_Preassemblaggio</value>
                 <graphics>
-                    <offset x="168.1944444444444" y="45.277777777777736"/>
+                    <offset x="159.4444444444444" y="49.027777777777736"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -990,7 +990,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1016,7 +1016,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1042,7 +1042,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1214,7 +1214,7 @@
             <name>
                 <value>Inizio_Ispezione_Carr</value>
                 <graphics>
-                    <offset x="-2.0833333333333313" y="15.833333333333334"/>
+                    <offset x="-9.583333333333332" y="18.333333333333336"/>
                 </graphics>
             </name>
             <orientation>
@@ -1380,7 +1380,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1406,7 +1406,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1432,7 +1432,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1458,7 +1458,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1484,7 +1484,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1571,12 +1571,12 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Trasf_Nastro">
+        <transition id="Trasp_Nastro">
             <graphics>
-                <position x="465.0" y="2820.0"/>
+                <position x="465.0" y="2782.5"/>
             </graphics>
             <name>
-                <value>Trasf_Nastro</value>
+                <value>Trasp_Nastro</value>
                 <graphics>
                     <offset x="-6.25" y="13.75"/>
                 </graphics>
@@ -1588,7 +1588,7 @@
                 <value>1.0</value>
             </rate>
             <timed>
-                <value>false</value>
+                <value>true</value>
             </timed>
             <infiniteServer>
                 <value>false</value>
@@ -1632,8 +1632,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="3583" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3655" curvePoint="false"/>
+            <arcpath id="000" x="470" y="3585" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3656" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Assemblaggio_Sportelli to Sportelli_Assemblati" source="Assemblaggio_Sportelli" target="Sportelli_Assemblati">
@@ -1645,8 +1645,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3748" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3805" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3750" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3806" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Buffer_Ant_Dx to Assemblaggio_Sportelli" source="Buffer_Ant_Dx" target="Carico_Sportelli">
@@ -1658,8 +1658,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="353" y="3526" curvePoint="false"/>
-            <arcpath id="001" x="458" y="3580" curvePoint="false"/>
+            <arcpath id="000" x="353" y="3527" curvePoint="false"/>
+            <arcpath id="001" x="460" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Buffer_Ant_Sx to Assemblaggio_Sportelli" source="Buffer_Ant_Sx" target="Carico_Sportelli">
@@ -1671,8 +1671,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="248" y="3523" curvePoint="false"/>
-            <arcpath id="001" x="458" y="3580" curvePoint="false"/>
+            <arcpath id="000" x="250" y="3525" curvePoint="false"/>
+            <arcpath id="001" x="460" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Buffer_Post_Dx to Assemblaggio_Sportelli" source="Buffer_Post_Dx" target="Carico_Sportelli">
@@ -1684,8 +1684,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="670" y="3523" curvePoint="false"/>
-            <arcpath id="001" x="488" y="3580" curvePoint="false"/>
+            <arcpath id="000" x="671" y="3525" curvePoint="false"/>
+            <arcpath id="001" x="490" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Buffer_Post_Sx to Assemblaggio_Sportelli" source="Buffer_Post_Sx" target="Carico_Sportelli">
@@ -1697,8 +1697,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="566" y="3528" curvePoint="false"/>
-            <arcpath id="001" x="488" y="3580" curvePoint="false"/>
+            <arcpath id="000" x="568" y="3528" curvePoint="false"/>
+            <arcpath id="001" x="490" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Scocca_Saldatura to Scocca_Caricata_Saldatura" source="Inizio_Saldatura" target="Pezzi_in_Saldatura">
@@ -1710,8 +1710,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="1528" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1600" curvePoint="false"/>
+            <arcpath id="000" x="470" y="1530" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1601" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Scocca to Scocca_su_Robot" source="Carico_Scocca" target="Scocca_su_Robot">
@@ -1723,8 +1723,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="2983" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3055" curvePoint="false"/>
+            <arcpath id="000" x="470" y="2985" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3056" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Staz_Preassemblaggio to Robot_di_Presa" source="Carico_Staz_Preassemblaggio" target="Robot_di_Presa">
@@ -1736,8 +1736,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="650" curvePoint="false"/>
-            <arcpath id="001" x="571" y="486" curvePoint="false"/>
+            <arcpath id="000" x="480" y="651" curvePoint="false"/>
+            <arcpath id="001" x="573" y="488" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Staz_Preassemblaggio to Telaio_in_Presa" source="Carico_Staz_Preassemblaggio" target="Telaio_in_Presa">
@@ -1749,8 +1749,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="658" curvePoint="false"/>
-            <arcpath id="001" x="473" y="730" curvePoint="false"/>
+            <arcpath id="000" x="475" y="660" curvePoint="false"/>
+            <arcpath id="001" x="475" y="731" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_Completa to Fine_Assemblaggio" source="Sportelli_in_Posizione" target="Assemblaggio_Sportelli">
@@ -1762,8 +1762,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3683" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3738" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3685" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3740" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_da_Assemblare to Assemblaggio_Sportelli" source="Carrozzeria" target="Carico_Sportelli">
@@ -1775,8 +1775,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3518" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3573" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3520" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3575" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_da_Ispezionare to Carrozzeria_in_Ispezione" source="Carrozzeria_da_Ispezionare" target="Carrozzeria_in_Ispezione">
@@ -1788,8 +1788,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="4133" curvePoint="false"/>
-            <arcpath id="001" x="473" y="4173" curvePoint="false"/>
+            <arcpath id="000" x="475" y="4135" curvePoint="false"/>
+            <arcpath id="001" x="475" y="4175" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_in_Ispezione to Carrozzeria_Ispezionata" source="Carrozzeria_in_Ispezione" target="Carrozzeria_Ispezionata">
@@ -1801,8 +1801,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="4183" curvePoint="false"/>
-            <arcpath id="001" x="473" y="4240" curvePoint="false"/>
+            <arcpath id="000" x="475" y="4185" curvePoint="false"/>
+            <arcpath id="001" x="475" y="4241" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_Ispezionata to Carrozzeria_OK" source="Carrozzeria_Ispezionata" target="Carrozzeria_OK">
@@ -1814,8 +1814,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="4268" curvePoint="false"/>
-            <arcpath id="001" x="468" y="4308" curvePoint="false"/>
+            <arcpath id="000" x="473" y="4270" curvePoint="false"/>
+            <arcpath id="001" x="470" y="4310" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_KO to Carrozzeria_da_Riparare" source="Carrozzeria_KO" target="Carrozzeria_da_Riparare">
@@ -1827,8 +1827,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="638" y="4318" curvePoint="false"/>
-            <arcpath id="001" x="638" y="4390" curvePoint="false"/>
+            <arcpath id="000" x="640" y="4320" curvePoint="false"/>
+            <arcpath id="001" x="640" y="4391" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_KO to Operatore_CQ_Ass" source="Carrozzeria_KO" target="Operatore_CQ_Ass">
@@ -1840,8 +1840,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="643" y="4310" curvePoint="false"/>
-            <arcpath id="001" x="640" y="4148" curvePoint="false"/>
+            <arcpath id="000" x="645" y="4311" curvePoint="false"/>
+            <arcpath id="001" x="641" y="4150" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_OK to Carrozzeria_Pronta" source="Carrozzeria_OK" target="Carrozzeria_Pronta">
@@ -1853,8 +1853,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="4318" curvePoint="false"/>
-            <arcpath id="001" x="473" y="4390" curvePoint="false"/>
+            <arcpath id="000" x="475" y="4320" curvePoint="false"/>
+            <arcpath id="001" x="475" y="4391" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carrozzeria_OK to Operatore_CQ_Ass" source="Carrozzeria_OK" target="Operatore_CQ_Ass">
@@ -1866,8 +1866,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="4310" curvePoint="false"/>
-            <arcpath id="001" x="628" y="4145" curvePoint="false"/>
+            <arcpath id="000" x="480" y="4311" curvePoint="false"/>
+            <arcpath id="001" x="630" y="4146" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_Ant to Carico_Scocca" source="Cofano_Ant" target="Carico_Scocca">
@@ -1879,8 +1879,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="203" y="2908" curvePoint="false"/>
-            <arcpath id="001" x="458" y="2980" curvePoint="false"/>
+            <arcpath id="000" x="205" y="2910" curvePoint="false"/>
+            <arcpath id="001" x="460" y="2981" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cofano_Post to Carico_Scocca" source="Cofano_Post" target="Carico_Scocca">
@@ -1892,8 +1892,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="410" y="2915" curvePoint="false"/>
-            <arcpath id="001" x="468" y="2973" curvePoint="false"/>
+            <arcpath id="000" x="411" y="2916" curvePoint="false"/>
+            <arcpath id="001" x="470" y="2975" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Controllo_Negativo to Scocca_Guasta" source="Telaio_Scarto" target="Tot_Scarti">
@@ -1905,8 +1905,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="608" y="2578" curvePoint="false"/>
-            <arcpath id="001" x="676" y="2681" curvePoint="false"/>
+            <arcpath id="000" x="610" y="2580" curvePoint="false"/>
+            <arcpath id="001" x="677" y="2682" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Controllo_Positivo to Scocca_Pronta" source="Telaio_Ok" target="Telaio_Pronto">
@@ -1918,8 +1918,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2578" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2680" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2580" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2681" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Controllo_Qualità_Assembl to Ispezione_Carr" source="Carrozzeria_Scaricata" target="Inizio_Ispezione_Carr">
@@ -1931,8 +1931,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3983" curvePoint="false"/>
-            <arcpath id="001" x="473" y="4038" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3985" curvePoint="false"/>
+            <arcpath id="001" x="475" y="4040" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Controllo_Qualità to Scocca_Controllata" source="Inizio_Ispezione" target="Telaio_da_Ispezionare">
@@ -1944,8 +1944,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="2233" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2305" curvePoint="false"/>
+            <arcpath id="000" x="470" y="2235" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2306" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Ispezione to Carrozzeria_KO" source="Carrozzeria_da_Ispezionare" target="Carrozzeria_KO">
@@ -1957,8 +1957,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="483" y="4130" curvePoint="false"/>
-            <arcpath id="001" x="633" y="4308" curvePoint="false"/>
+            <arcpath id="000" x="485" y="4132" curvePoint="false"/>
+            <arcpath id="001" x="635" y="4310" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Preassemblaggio to Telaio_Preassemblato" source="Fine_Preassemblaggio" target="Telaio_Preassemblato">
@@ -1970,8 +1970,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1168" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1240" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1170" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1241" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Fine_Saldatura to Robot_Saldatura_a_Punti" source="Fine_Saldatura" target="Robot_Saldatura_a_Punti">
@@ -1983,8 +1983,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="1865" curvePoint="false"/>
-            <arcpath id="001" x="543" y="1703" curvePoint="false"/>
+            <arcpath id="000" x="480" y="1866" curvePoint="false"/>
+            <arcpath id="001" x="545" y="1705" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inf_Buffer to Inizio_Trasporto" source="Inf_Buffer" target="Inizio_Trasporto">
@@ -1996,8 +1996,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="203" curvePoint="false"/>
-            <arcpath id="001" x="471" y="303" curvePoint="false"/>
+            <arcpath id="000" x="475" y="205" curvePoint="false"/>
+            <arcpath id="001" x="473" y="305" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Inizio_Trasporto to Pezzi_in_Presa" source="Inizio_Trasporto" target="Pezzi_in_Presa">
@@ -2009,8 +2009,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="313" curvePoint="false"/>
-            <arcpath id="001" x="473" y="385" curvePoint="false"/>
+            <arcpath id="000" x="470" y="315" curvePoint="false"/>
+            <arcpath id="001" x="475" y="386" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Ispezione_Carr to Fine_Ispezione" source="Inizio_Ispezione_Carr" target="Carrozzeria_da_Ispezionare">
@@ -2022,8 +2022,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="4048" curvePoint="false"/>
-            <arcpath id="001" x="473" y="4105" curvePoint="false"/>
+            <arcpath id="000" x="475" y="4050" curvePoint="false"/>
+            <arcpath id="001" x="475" y="4106" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_Dx_Buffer to Inizio_Trasporto" source="Lat_Dx_Buffer" target="Inizio_Trasporto">
@@ -2035,8 +2035,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="551" y="256" curvePoint="false"/>
-            <arcpath id="001" x="480" y="305" curvePoint="false"/>
+            <arcpath id="000" x="552" y="258" curvePoint="false"/>
+            <arcpath id="001" x="481" y="306" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_Sx_Buffer to Inizio_Trasporto" source="Lat_Sx_Buffer" target="Inizio_Trasporto">
@@ -2048,8 +2048,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="396" y="258" curvePoint="false"/>
-            <arcpath id="001" x="465" y="303" curvePoint="false"/>
+            <arcpath id="000" x="397" y="258" curvePoint="false"/>
+            <arcpath id="001" x="467" y="305" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Operatore_CQ_Ass to Ispezione_Carr" source="Operatore_CQ_Ass" target="Inizio_Ispezione_Carr">
@@ -2061,8 +2061,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="626" y="4126" curvePoint="false"/>
-            <arcpath id="001" x="488" y="4045" curvePoint="false"/>
+            <arcpath id="000" x="627" y="4127" curvePoint="false"/>
+            <arcpath id="001" x="490" y="4046" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Operatore_CQ to Inizio_Ispezione" source="Operatore_CQ" target="Inizio_Ispezione">
@@ -2074,8 +2074,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="628" y="2383" curvePoint="false"/>
-            <arcpath id="001" x="478" y="2235" curvePoint="false"/>
+            <arcpath id="000" x="630" y="2385" curvePoint="false"/>
+            <arcpath id="001" x="480" y="2236" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P13 to Scarico_Scocca_Saldatura" source="Telaio_Saldato" target="Scarico_Telaio_Saldatura">
@@ -2087,8 +2087,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1973" curvePoint="false"/>
-            <arcpath id="001" x="468" y="2043" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1975" curvePoint="false"/>
+            <arcpath id="001" x="470" y="2045" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P37 to T20" source="Robot_Preassemblaggio" target="Inizio_Preassemblaggio">
@@ -2100,8 +2100,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="556" y="985" curvePoint="false"/>
-            <arcpath id="001" x="475" y="825" curvePoint="false"/>
+            <arcpath id="000" x="558" y="987" curvePoint="false"/>
+            <arcpath id="001" x="476" y="826" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P38 to T21" source="Pezzi_in_Preassemblaggio" target="Preassemblaggio">
@@ -2113,8 +2113,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="923" curvePoint="false"/>
-            <arcpath id="001" x="473" y="978" curvePoint="false"/>
+            <arcpath id="000" x="475" y="925" curvePoint="false"/>
+            <arcpath id="001" x="475" y="980" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P39 to T19" source="Pezzi_Preassemblati" target="Fine_Preassemblaggio">
@@ -2126,8 +2126,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1088" curvePoint="false"/>
-            <arcpath id="001" x="468" y="1158" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1090" curvePoint="false"/>
+            <arcpath id="001" x="470" y="1160" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_in_Presa to Trasporto_Pezzi" source="Pezzi_in_Presa" target="Trasporto_Pezzi">
@@ -2139,8 +2139,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="413" curvePoint="false"/>
-            <arcpath id="001" x="473" y="468" curvePoint="false"/>
+            <arcpath id="000" x="475" y="415" curvePoint="false"/>
+            <arcpath id="001" x="475" y="470" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_in_Saldatura to Saldatura" source="Pezzi_in_Saldatura" target="Saldatura">
@@ -2152,8 +2152,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1628" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1683" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1630" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1685" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Saldati to Fine_Saldatura" source="Pezzi_Saldati" target="Fine_Saldatura">
@@ -2165,8 +2165,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1793" curvePoint="false"/>
-            <arcpath id="001" x="468" y="1863" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1795" curvePoint="false"/>
+            <arcpath id="001" x="470" y="1865" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Pezzi_Trasportati to Carico_Staz_Preassemblaggio" source="Pezzi_Trasportati" target="Carico_Staz_Preassemblaggio">
@@ -2178,8 +2178,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="578" curvePoint="false"/>
-            <arcpath id="001" x="468" y="648" curvePoint="false"/>
+            <arcpath id="000" x="475" y="580" curvePoint="false"/>
+            <arcpath id="001" x="470" y="650" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Ass_Scocca to Carico_Scocca" source="Robot_Ass_Scocca" target="Carico_Scocca">
@@ -2191,8 +2191,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="571" y="3131" curvePoint="false"/>
-            <arcpath id="001" x="478" y="2985" curvePoint="false"/>
+            <arcpath id="000" x="572" y="3132" curvePoint="false"/>
+            <arcpath id="001" x="480" y="2986" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Ass_Sportelli to Carico_Sportelli" source="Robot_Ass_Sportelli" target="Carico_Sportelli">
@@ -2204,8 +2204,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="571" y="3731" curvePoint="false"/>
-            <arcpath id="001" x="478" y="3585" curvePoint="false"/>
+            <arcpath id="000" x="572" y="3732" curvePoint="false"/>
+            <arcpath id="001" x="480" y="3586" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_di_Presa to Inizio_Trasporto" source="Robot_di_Presa" target="Inizio_Trasporto">
@@ -2217,8 +2217,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="571" y="461" curvePoint="false"/>
-            <arcpath id="001" x="478" y="315" curvePoint="false"/>
+            <arcpath id="000" x="572" y="462" curvePoint="false"/>
+            <arcpath id="001" x="480" y="316" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Robot_Saldatura_a_Punti to Inizio_Saldatura" source="Robot_Saldatura_a_Punti" target="Inizio_Saldatura">
@@ -2230,8 +2230,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="543" y="1675" curvePoint="false"/>
-            <arcpath id="001" x="476" y="1530" curvePoint="false"/>
+            <arcpath id="000" x="545" y="1677" curvePoint="false"/>
+            <arcpath id="001" x="477" y="1531" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Saldatura_a_Punti to P13" source="Fine_Saldatura" target="Telaio_Saldato">
@@ -2243,8 +2243,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1873" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1945" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1875" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1946" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Saldatura_Cof_Tett to Carrozzeria_da_Assemblare" source="Saldatura_Cof_Tett" target="Carrozzeria">
@@ -2256,8 +2256,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3448" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3490" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3450" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3491" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Saldatura to Pezzi_Saldati" source="Saldatura" target="Pezzi_Saldati">
@@ -2269,8 +2269,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1693" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1765" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1695" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1766" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Carrozzeria to Carrozzeria_Scaricata" source="Scarico_Carrozzeria" target="Carrozzeria_Scaricata">
@@ -2282,8 +2282,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3898" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3955" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3900" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3956" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Carrozzeria to Robot_Ass_Sportelli" source="Scarico_Carrozzeria" target="Robot_Ass_Sportelli">
@@ -2295,8 +2295,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="3890" curvePoint="false"/>
-            <arcpath id="001" x="570" y="3756" curvePoint="false"/>
+            <arcpath id="000" x="480" y="3891" curvePoint="false"/>
+            <arcpath id="001" x="572" y="3757" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Scocca_Saldatura to Scocca_Saldata_Scaricata" source="Scarico_Telaio_Saldatura" target="Telaio_Saldato_Scaricato">
@@ -2308,8 +2308,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2053" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2125" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2055" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2126" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Scocca_Staz_Preassemblaggio to Stazione_Preassemblaggio_Libera" source="Scarico_Staz_Preassemblaggio" target="Stazione_Preassemblaggio">
@@ -2321,8 +2321,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="1340" curvePoint="false"/>
-            <arcpath id="001" x="705" y="1041" curvePoint="false"/>
+            <arcpath id="000" x="480" y="1341" curvePoint="false"/>
+            <arcpath id="001" x="706" y="1042" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Staz_Preassemblaggio to Telaio_Scaricato" source="Scarico_Staz_Preassemblaggio" target="Telaio_Scaricato">
@@ -2334,8 +2334,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1348" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1420" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1350" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1421" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Telaio_Saldatura to Stazione_Saldatura" source="Scarico_Telaio_Saldatura" target="Stazione_Saldatura">
@@ -2347,8 +2347,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="2045" curvePoint="false"/>
-            <arcpath id="001" x="690" y="1731" curvePoint="false"/>
+            <arcpath id="000" x="480" y="2046" curvePoint="false"/>
+            <arcpath id="001" x="692" y="1732" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Telaio to Robot_Ass_Scocca" source="Scarico_Telaio" target="Robot_Ass_Scocca">
@@ -2360,8 +2360,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="3290" curvePoint="false"/>
-            <arcpath id="001" x="570" y="3156" curvePoint="false"/>
+            <arcpath id="000" x="480" y="3291" curvePoint="false"/>
+            <arcpath id="001" x="572" y="3157" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scarico_Telaio to Telaio_Assemblato" source="Scarico_Telaio" target="Telaio_Assemblato">
@@ -2373,8 +2373,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3298" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3355" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3300" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3356" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scocca_Assemblata to Scarico_Telaio" source="Scocca_Assemblata" target="Scarico_Telaio">
@@ -2386,8 +2386,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3233" curvePoint="false"/>
-            <arcpath id="001" x="468" y="3288" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3235" curvePoint="false"/>
+            <arcpath id="001" x="470" y="3290" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scocca_Scaricata to Carico_Scocca_Saldatura" source="Telaio_Scaricato" target="Inizio_Saldatura">
@@ -2399,8 +2399,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="475" y="1448" curvePoint="false"/>
-            <arcpath id="001" x="475" y="1520" curvePoint="false"/>
+            <arcpath id="000" x="476" y="1450" curvePoint="false"/>
+            <arcpath id="001" x="476" y="1521" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Scocca_su_Robot to Assemblaggio_Scocca" source="Scocca_su_Robot" target="Assemblaggio_Scocca">
@@ -2412,8 +2412,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3083" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3138" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3085" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3140" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Sportelli_Assemblati to Scarico_Carrozzeria" source="Sportelli_Assemblati" target="Scarico_Carrozzeria">
@@ -2425,8 +2425,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3833" curvePoint="false"/>
-            <arcpath id="001" x="468" y="3888" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3835" curvePoint="false"/>
+            <arcpath id="001" x="470" y="3890" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Stazione_Preassemblaggio to Inizio_Preassemblaggio" source="Stazione_Preassemblaggio" target="Inizio_Preassemblaggio">
@@ -2438,8 +2438,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="703" y="1020" curvePoint="false"/>
-            <arcpath id="001" x="481" y="825" curvePoint="false"/>
+            <arcpath id="000" x="703" y="1021" curvePoint="false"/>
+            <arcpath id="001" x="483" y="826" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Stazione_Saldatura to Inizio_Saldatura" source="Stazione_Saldatura" target="Inizio_Saldatura">
@@ -2451,8 +2451,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="688" y="1710" curvePoint="false"/>
-            <arcpath id="001" x="483" y="1530" curvePoint="false"/>
+            <arcpath id="000" x="688" y="1711" curvePoint="false"/>
+            <arcpath id="001" x="483" y="1531" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T19 to P37" source="Fine_Preassemblaggio" target="Robot_Preassemblaggio">
@@ -2464,8 +2464,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="1160" curvePoint="false"/>
-            <arcpath id="001" x="556" y="1011" curvePoint="false"/>
+            <arcpath id="000" x="480" y="1161" curvePoint="false"/>
+            <arcpath id="001" x="558" y="1013" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T20 to P38" source="Inizio_Preassemblaggio" target="Pezzi_in_Preassemblaggio">
@@ -2477,8 +2477,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="468" y="823" curvePoint="false"/>
-            <arcpath id="001" x="473" y="895" curvePoint="false"/>
+            <arcpath id="000" x="468" y="825" curvePoint="false"/>
+            <arcpath id="001" x="475" y="896" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T21 to P39" source="Preassemblaggio" target="Pezzi_Preassemblati">
@@ -2490,8 +2490,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="988" curvePoint="false"/>
-            <arcpath id="001" x="473" y="1060" curvePoint="false"/>
+            <arcpath id="000" x="475" y="990" curvePoint="false"/>
+            <arcpath id="001" x="475" y="1061" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T24 to P42" source="Assemblaggio_Scocca" target="Scocca_Assemblata">
@@ -2503,8 +2503,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3148" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3205" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3150" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3206" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Assemblato to Saldatura_Cof_Tett" source="Telaio_Assemblato" target="Saldatura_Cof_Tett">
@@ -2516,8 +2516,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="3383" curvePoint="false"/>
-            <arcpath id="001" x="473" y="3438" curvePoint="false"/>
+            <arcpath id="000" x="475" y="3385" curvePoint="false"/>
+            <arcpath id="001" x="475" y="3440" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_da_Ispezionare to Telaio_in_Ispezione" source="Telaio_da_Ispezionare" target="Telaio_in_Ispezione">
@@ -2529,8 +2529,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2333" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2388" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2335" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2390" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_in_Ispezione to Telaio_Ispeazionato" source="Telaio_in_Ispezione" target="Telaio_Ispeazionato">
@@ -2542,8 +2542,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2398" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2470" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2400" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2471" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_in_Presa to Inizio_Preassemblaggio" source="Telaio_in_Presa" target="Inizio_Preassemblaggio">
@@ -2555,8 +2555,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="758" curvePoint="false"/>
-            <arcpath id="001" x="473" y="813" curvePoint="false"/>
+            <arcpath id="000" x="475" y="760" curvePoint="false"/>
+            <arcpath id="001" x="475" y="815" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Ispeazionato to Telaio_Ok" source="Telaio_Ispeazionato" target="Telaio_Ok">
@@ -2568,8 +2568,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2498" curvePoint="false"/>
-            <arcpath id="001" x="468" y="2568" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2500" curvePoint="false"/>
+            <arcpath id="001" x="470" y="2570" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Ispeazionato to Telaio_Scarto" source="Telaio_Ispeazionato" target="Telaio_Scarto">
@@ -2581,8 +2581,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="486" y="2491" curvePoint="false"/>
-            <arcpath id="001" x="603" y="2568" curvePoint="false"/>
+            <arcpath id="000" x="488" y="2493" curvePoint="false"/>
+            <arcpath id="001" x="605" y="2570" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Ok to Operatore_CQ" source="Telaio_Ok" target="Operatore_CQ">
@@ -2594,8 +2594,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="478" y="2570" curvePoint="false"/>
-            <arcpath id="001" x="628" y="2405" curvePoint="false"/>
+            <arcpath id="000" x="480" y="2571" curvePoint="false"/>
+            <arcpath id="001" x="630" y="2406" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Preassemblato to Scarico_Staz_Preassemblaggio" source="Telaio_Preassemblato" target="Scarico_Staz_Preassemblaggio">
@@ -2607,11 +2607,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="1268" curvePoint="false"/>
-            <arcpath id="001" x="468" y="1338" curvePoint="false"/>
+            <arcpath id="000" x="475" y="1270" curvePoint="false"/>
+            <arcpath id="001" x="470" y="1340" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Telaio_Pronto to Trasf_Nastro" source="Telaio_Pronto" target="Trasf_Nastro">
+        <arc id="Telaio_Pronto to Trasf_Nastro" source="Telaio_Pronto" target="Trasp_Nastro">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2620,8 +2620,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2708" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2823" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2710" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2787" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Saldato_Scaricato to Inizio_Ispezione" source="Telaio_Saldato_Scaricato" target="Inizio_Ispezione">
@@ -2633,8 +2633,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2153" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2223" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2155" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2225" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio_Scarto to Operatore_CQ" source="Telaio_Scarto" target="Operatore_CQ">
@@ -2646,8 +2646,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="613" y="2570" curvePoint="false"/>
-            <arcpath id="001" x="636" y="2408" curvePoint="false"/>
+            <arcpath id="000" x="615" y="2571" curvePoint="false"/>
+            <arcpath id="001" x="638" y="2410" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Telaio to Carico_Scocca" source="Telaio" target="Carico_Scocca">
@@ -2659,8 +2659,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="475" y="2918" curvePoint="false"/>
-            <arcpath id="001" x="478" y="2975" curvePoint="false"/>
+            <arcpath id="000" x="476" y="2920" curvePoint="false"/>
+            <arcpath id="001" x="480" y="2976" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Tettuccio to Carico_Scocca" source="Tettuccio" target="Carico_Scocca">
@@ -2672,11 +2672,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="293" y="2910" curvePoint="false"/>
-            <arcpath id="001" x="458" y="2980" curvePoint="false"/>
+            <arcpath id="000" x="295" y="2911" curvePoint="false"/>
+            <arcpath id="001" x="460" y="2981" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Trasf_Nastro to Posizione_Telaio" source="Trasf_Nastro" target="Telaio">
+        <arc id="Trasf_Nastro to Posizione_Telaio" source="Trasp_Nastro" target="Telaio">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -2685,8 +2685,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="2833" curvePoint="false"/>
-            <arcpath id="001" x="473" y="2890" curvePoint="false"/>
+            <arcpath id="000" x="475" y="2797" curvePoint="false"/>
+            <arcpath id="001" x="475" y="2891" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Trasporto_Pezzi to Pezzi_Trasportati" source="Trasporto_Pezzi" target="Pezzi_Trasportati">
@@ -2698,8 +2698,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="473" y="478" curvePoint="false"/>
-            <arcpath id="001" x="473" y="550" curvePoint="false"/>
+            <arcpath id="000" x="475" y="480" curvePoint="false"/>
+            <arcpath id="001" x="475" y="551" curvePoint="false"/>
             <type value="normal"/>
         </arc>
     </net>
