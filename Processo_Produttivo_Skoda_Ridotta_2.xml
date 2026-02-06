@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1231" y="4426" width="108" height="71" border="true">
+        <labels x="1230" y="4425" width="107" height="70" border="true">
             <text>A SX LAV COFANO-BAULE A DX LAV SPORT POST E ANT</text>
         </labels>
-        <labels x="2063" y="3958" width="108" height="23" border="true">
+        <labels x="2062" y="3957" width="107" height="22" border="true">
             <text>TRASPORTO</text>
         </labels>
-        <labels x="2030" y="5258" width="108" height="55" border="true">
+        <labels x="2029" y="5257" width="107" height="54" border="true">
             <text>TRASPORTO DELLA VERNICIATURA</text>
         </labels>
-        <labels x="2163" y="5849" width="108" height="71" border="true">
+        <labels x="2162" y="5848" width="107" height="70" border="true">
             <text>ULTIMO CONTROLLO QUALITA' DELLA VERNICIATURA</text>
         </labels>
         <place id="Ant_Post">
             <graphics>
-                <position x="1500.0" y="3075.0"/>
+                <position x="1500.0" y="3067.5"/>
             </graphics>
             <name>
                 <value>Ant_Post</value>
@@ -35,7 +35,7 @@
         </place>
         <place id="Ant_Post_Buffer">
             <graphics>
-                <position x="1515.0" y="3375.0"/>
+                <position x="1515.0" y="3367.5"/>
             </graphics>
             <name>
                 <value>Ant_Post_Buffer</value>
@@ -1304,7 +1304,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,1</value>
+                <value>Default,0</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -1524,7 +1524,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,1</value>
+                <value>Default,0</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -1869,7 +1869,7 @@
         </transition>
         <transition id="Ant_Post_Trasp">
             <graphics>
-                <position x="1500.0" y="3210.0"/>
+                <position x="1500.0" y="3202.5"/>
             </graphics>
             <name>
                 <value>Ant_Post_Trasp</value>
@@ -3216,7 +3216,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1510" y="2925" curvePoint="false"/>
-            <arcpath id="001" x="1510" y="3071" curvePoint="false"/>
+            <arcpath id="001" x="1510" y="3063" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Ant_Post_su_Robot to Ant_Post_Carico" source="Ant_Post_su_Robot" target="Ant_Post_Carico">
@@ -3345,7 +3345,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1537" y="3395" curvePoint="false"/>
+            <arcpath id="000" x="1537" y="3387" curvePoint="false"/>
             <arcpath id="001" x="1805" y="3620" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3373,7 +3373,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1901" y="846" curvePoint="false"/>
-            <arcpath id="001" x="1886" y="226" curvePoint="false"/>
+            <arcpath id="001" x="1886" y="227" curvePoint="false"/>
             <arcpath id="002" x="2232" y="47" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -3389,19 +3389,6 @@
             <arcpath id="000" x="2680" y="845" curvePoint="false"/>
             <arcpath id="001" x="2681" y="61" curvePoint="false"/>
             <arcpath id="002" x="2260" y="41" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Carrozzeria_Pronta to Inizio_Trasp_Vernic" source="Carrozzeria_Pronta" target="Inizio_Trasp_Vernic">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="1810" y="3760" curvePoint="false"/>
-            <arcpath id="001" x="1810" y="3830" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="DIsp Muletto2 to Lat_SX Carico Muletto2" source="Disp_Muletto2" target="Lat_Carico_Muletto">
@@ -4752,8 +4739,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1510" y="3225" curvePoint="false"/>
-            <arcpath id="001" x="1523" y="3371" curvePoint="false"/>
+            <arcpath id="000" x="1510" y="3217" curvePoint="false"/>
+            <arcpath id="001" x="1523" y="3363" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Post_Dx to Post_Dx_Trasp" source="Ant_Post" target="Ant_Post_Trasp">
@@ -4765,8 +4752,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1510" y="3100" curvePoint="false"/>
-            <arcpath id="001" x="1510" y="3215" curvePoint="false"/>
+            <arcpath id="000" x="1512" y="3092" curvePoint="false"/>
+            <arcpath id="001" x="1510" y="3207" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Presa Robot Lat_SX to P57" source="Lat_Sx_Presa_Robot" target="Lat_Sx_su_Robot">
