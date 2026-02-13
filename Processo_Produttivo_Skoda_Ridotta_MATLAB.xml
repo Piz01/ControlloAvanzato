@@ -3217,7 +3217,7 @@
         <arc id="Saldatura to Carrozzeria_Pronta" source="Saldatura" target="Carrozzeria_Pronta">
             <graphics/>
             <inscription>
-                <value>Default,1</value>
+                <value>Default,0</value>
                 <graphics/>
             </inscription>
             <tagged>
