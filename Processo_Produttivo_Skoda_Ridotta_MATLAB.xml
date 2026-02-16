@@ -161,6 +161,26 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Ant_Post_Pozzo">
+            <graphics>
+                <position x="1380.0" y="3525.0"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Pozzo</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Ant_Post_Robot">
             <graphics>
                 <position x="1650.0" y="1155.0"/>
@@ -581,6 +601,26 @@
                 <value>0</value>
             </capacity>
         </place>
+        <place id="Lat_Dx_Pozzo">
+            <graphics>
+                <position x="2441.25" y="3585.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Pozzo</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
         <place id="Lat_Dx_Tagliato_Pressato">
             <graphics>
                 <position x="2400.0" y="1710.0"/>
@@ -849,6 +889,26 @@
                 <value>Lat_Sx_Pezzo_Ispezionato</value>
                 <graphics>
                     <offset x="-5.666666666666666" y="21.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Pozzo">
+            <graphics>
+                <position x="2220.0" y="3585.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Pozzo</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -1191,6 +1251,32 @@
                 <value>Ant_Post_Scarto</value>
                 <graphics>
                     <offset x="77.5" y="40.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Svuoto_Buffer">
+            <graphics>
+                <position x="1380.0" y="3420.0"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Svuoto_Buffer</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
                 </graphics>
             </name>
             <orientation>
@@ -1599,6 +1685,32 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Lat_Dx_Svuoto_Buffer">
+            <graphics>
+                <position x="2445.0" y="3480.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Svuoto_Buffer</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Lat_Fine_Trasp">
             <graphics>
                 <position x="2220.0" y="3240.0"/>
@@ -1833,6 +1945,32 @@
                 <value>1</value>
             </priority>
         </transition>
+        <transition id="Lat_Sx_Svuoto_Buffer">
+            <graphics>
+                <position x="2220.0" y="3480.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Svuoto_Buffer</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
         <transition id="Lat_Trasp">
             <graphics>
                 <position x="2220.0" y="3075.0"/>
@@ -2028,6 +2166,19 @@
             <arcpath id="001" x="1925" y="2660" curvePoint="false"/>
             <type value="normal"/>
         </arc>
+        <arc id="Ant_Post_Buffer to Ant_Post_Svuoto_Buffer" source="Ant_Post_Buffer" target="Ant_Post_Svuoto_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,3</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1512" y="3363" curvePoint="false"/>
+            <arcpath id="001" x="1405" y="3431" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
         <arc id="Ant_Post_Carico to Ant_Post_Robot" source="Ant_Post_Carico" target="Ant_Post_Robot">
             <graphics/>
             <inscription>
@@ -2065,6 +2216,19 @@
             </tagged>
             <arcpath id="000" x="1751" y="1180" curvePoint="false"/>
             <arcpath id="001" x="1755" y="1371" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Svuoto_Buffer to Ant_Post_Pozzo" source="Ant_Post_Svuoto_Buffer" target="Ant_Post_Pozzo">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1390" y="3435" curvePoint="false"/>
+            <arcpath id="001" x="1390" y="3521" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Ant_SX Presa Robot to Ant_SX su Robot" source="Ant_Post_Presa_Robot" target="Ant_Post_su_Robot">
@@ -2194,7 +2358,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1435" y="1265" curvePoint="false"/>
-            <arcpath id="001" x="1700" y="42" curvePoint="false"/>
+            <arcpath id="001" x="1700" y="41" curvePoint="false"/>
             <arcpath id="002" x="2231" y="41" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -2356,6 +2520,19 @@
             <arcpath id="001" x="2245" y="95" curvePoint="false"/>
             <type value="normal"/>
         </arc>
+        <arc id="Lat_Dx_Buffer to Lat_Dx_Svuoto_Buffer" source="Lat_Dx_Buffer" target="Lat_Dx_Svuoto_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,3</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2387" y="3368" curvePoint="false"/>
+            <arcpath id="001" x="2455" y="3485" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
         <arc id="Lat_Dx_Carico to Lat Robot" source="Lat_Dx_Carico" target="Lat_Robot">
             <graphics/>
             <inscription>
@@ -2471,6 +2648,19 @@
             </tagged>
             <arcpath id="000" x="2411" y="1801" curvePoint="false"/>
             <arcpath id="001" x="2411" y="1991" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Svuoto_Buffer to Lat_Dx_Pozzo" source="Lat_Dx_Svuoto_Buffer" target="Lat_Dx_Pozzo">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2455" y="3495" curvePoint="false"/>
+            <arcpath id="001" x="2452" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_DX Buffer to Saldatura" source="Lat_Dx_Buffer" target="Saldatura">
@@ -2642,6 +2832,19 @@
             <arcpath id="001" x="2115" y="2206" curvePoint="false"/>
             <type value="normal"/>
         </arc>
+        <arc id="Lat_SX_Buffer to Lat_Sx_Svuoto_Buffer" source="Lat_SX_Buffer" target="Lat_Sx_Svuoto_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,3</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2121" y="3366" curvePoint="false"/>
+            <arcpath id="001" x="2230" y="3485" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
         <arc id="Lat_SX_Buffer to Saldatura" source="Lat_SX_Buffer" target="Saldatura">
             <graphics/>
             <inscription>
@@ -2770,6 +2973,19 @@
             </tagged>
             <arcpath id="000" x="2230" y="2995" curvePoint="false"/>
             <arcpath id="001" x="2230" y="3080" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Svuoto_Buffer to Lat_Sx_Pozzo" source="Lat_Sx_Svuoto_Buffer" target="Lat_Sx_Pozzo">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2230" y="3495" curvePoint="false"/>
+            <arcpath id="001" x="2230" y="3581" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_Sx_Tagliato_Pressato to Lat_Sx_Scarico" source="Lat_Sx_Tagliato_Pressato" target="Lat_Sx_Scarico">
