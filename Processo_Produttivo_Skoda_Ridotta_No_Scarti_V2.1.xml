@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="Ant_Post_Buffer">
+            <graphics>
+                <position x="1900.7142857142856" y="2080.7142857142894"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Buffer</value>
+                <graphics>
+                    <offset x="120.0" y="16.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Conforme">
+            <graphics>
+                <position x="1900.7142857142856" y="1474.2857142857183"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Conforme</value>
+                <graphics>
+                    <offset x="-9.999999999999886" y="12.916666666666668"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Disp_Buffer">
+            <graphics>
+                <position x="1795.7142857142858" y="1238.5714285714291"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Disp_Buffer</value>
+                <graphics>
+                    <offset x="7.249999999999988" y="42.89285714285713"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,4</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Grezzi_Tagl_Press">
+            <graphics>
+                <position x="1890.0000000000002" y="822.8571428571424"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Grezzi_Tagl_Press</value>
+                <graphics>
+                    <offset x="184.01190476190487" y="13.698412698412689"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Pezzi_Buffer">
+            <graphics>
+                <position x="1890.0000000000002" y="1240.0"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Pezzi_Buffer</value>
+                <graphics>
+                    <offset x="141.70634920634933" y="3.4523809523809565"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Robot">
+            <graphics>
+                <position x="1799.9999999999998" y="640.7142857142854"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Robot</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_su_Muletto3">
+            <graphics>
+                <position x="1900.7142857142856" y="1677.857142857159"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_su_Muletto3</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_su_Robot">
+            <graphics>
+                <position x="1890.0000000000002" y="640.7142857142854"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_su_Robot</value>
+                <graphics>
+                    <offset x="140.0000000000001" y="13.333333333333329"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Tagliato_Pressato">
+            <graphics>
+                <position x="1890.0000000000002" y="1026.42857142857"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Tagliato_Pressato</value>
+                <graphics>
+                    <offset x="182.53968253968256" y="28.781746031746025"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Tagliatrice_Pressa">
+            <graphics>
+                <position x="1778.5714285714284" y="942.8571428571421"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Tagliatrice_Pressa</value>
+                <graphics>
+                    <offset x="12.968253968254057" y="-1.9166666666666856"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Ant_Post_Trasportati">
+            <graphics>
+                <position x="1900.7142857142856" y="1866.4285714285797"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Trasportati</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Carrozzeria_Pronta">
+            <graphics>
+                <position x="2078.571428571429" y="2277.8571428571468"/>
+            </graphics>
+            <name>
+                <value>Carrozzeria_Pronta</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Muletto1">
+            <graphics>
+                <position x="2370.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Disp_Muletto1</value>
+                <graphics>
+                    <offset x="100.00000000000001" y="18.666666666666675"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Muletto2">
+            <graphics>
+                <position x="2449.2857142857147" y="1767.857142857144"/>
+            </graphics>
+            <name>
+                <value>Disp_Muletto2</value>
+                <graphics>
+                    <offset x="129.46428571428575" y="16.249999999999996"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Disp_Muletto3">
+            <graphics>
+                <position x="2016.4285714285709" y="1789.2857142857297"/>
+            </graphics>
+            <name>
+                <value>Disp_Muletto3</value>
+                <graphics>
+                    <offset x="112.85714285714292" y="-10.357142857142856"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Laminati">
+            <graphics>
+                <position x="1452.8571428571431" y="758.5714285714423"/>
+            </graphics>
+            <name>
+                <value>Laminati</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,4</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Laminati_Trasportati">
+            <graphics>
+                <position x="2235.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Laminati_Trasportati</value>
+                <graphics>
+                    <offset x="0.0" y="10.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Laminati su Mulettto">
+            <graphics>
+                <position x="2235.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>Laminati su Mulettto</value>
+                <graphics>
+                    <offset x="0.0" y="20.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Buffer">
+            <graphics>
+                <position x="2370.0000000000005" y="2080.7142857142894"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Buffer</value>
+                <graphics>
+                    <offset x="111.25" y="-1.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Conforme">
+            <graphics>
+                <position x="2481.4285714285716" y="1474.2857142857154"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Conforme</value>
+                <graphics>
+                    <offset x="133.75" y="21.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Disp_Buffer">
+            <graphics>
+                <position x="2601.428571428568" y="1252.1428571428564"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Disp_Buffer</value>
+                <graphics>
+                    <offset x="102.0" y="43.75"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Grezzi_Tagl_Press">
+            <graphics>
+                <position x="2485.7142857142862" y="831.4285714285705"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Grezzi_Tagl_Press</value>
+                <graphics>
+                    <offset x="-3.988095238095127" y="28.19841269841269"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Grezzo">
+            <graphics>
+                <position x="2433.3333333333335" y="431.66666666666663"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Grezzo</value>
+                <graphics>
+                    <offset x="130.34090909090884" y="35.79545454545455"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Pezzi_Buffer">
+            <graphics>
+                <position x="2485.7142857142862" y="1252.142857142857"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Pezzi_Buffer</value>
+                <graphics>
+                    <offset x="5.39285714285716" y="31.21428571428571"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Tagliato_Pressato">
+            <graphics>
+                <position x="2485.7142857142862" y="1024.2857142857133"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Tagliato_Pressato</value>
+                <graphics>
+                    <offset x="-9.960317460317428" y="5.924603174603174"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Dx_Tagliatrice_Pressa">
+            <graphics>
+                <position x="2582.1428571428437" y="919.285714285714"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Tagliatrice_Pressa</value>
+                <graphics>
+                    <offset x="155.46825396825406" y="46.83333333333333"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_DX su Robot">
+            <graphics>
+                <position x="2483.3333333333335" y="642.2222222222222"/>
+            </graphics>
+            <name>
+                <value>Lat_DX su Robot</value>
+                <graphics>
+                    <offset x="124.52380952380967" y="17.51984126984126"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Robot">
+            <graphics>
+                <position x="2333.3333333333335" y="642.2222222222222"/>
+            </graphics>
+            <name>
+                <value>Lat_Robot</value>
+                <graphics>
+                    <offset x="87.02380952380967" y="22.269841269841265"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_su_Muletto2">
+            <graphics>
+                <position x="2348.5714285714275" y="1662.8571428571418"/>
+            </graphics>
+            <name>
+                <value>Lat_su_Muletto2</value>
+                <graphics>
+                    <offset x="-12.5" y="17.5"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_SX_Buffer">
+            <graphics>
+                <position x="2249.999999999998" y="2080.714285714287"/>
+            </graphics>
+            <name>
+                <value>Lat_SX_Buffer</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Conforme">
+            <graphics>
+                <position x="2198.5714285714275" y="1474.2857142857154"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Conforme</value>
+                <graphics>
+                    <offset x="-12.5" y="21.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Disp_Buffer">
+            <graphics>
+                <position x="2076.428571428574" y="1252.1428571428564"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Disp_Buffer</value>
+                <graphics>
+                    <offset x="67.5" y="54.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Greezzi_Tagl_Press">
+            <graphics>
+                <position x="2185.7142857142853" y="831.4285714285705"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Greezzi_Tagl_Press</value>
+                <graphics>
+                    <offset x="176.01190476190487" y="9.198412698412689"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Grezzo">
+            <graphics>
+                <position x="2233.3333333333335" y="431.66666666666663"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Grezzo</value>
+                <graphics>
+                    <offset x="-5.909090909091162" y="25.795454545454547"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Pezzi_Buffer">
+            <graphics>
+                <position x="2185.7142857142853" y="1252.142857142857"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Pezzi_Buffer</value>
+                <graphics>
+                    <offset x="143.71428571428558" y="19.142857142857142"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_su_Robot">
+            <graphics>
+                <position x="2183.333333333333" y="642.2222222222222"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_su_Robot</value>
+                <graphics>
+                    <offset x="-9.226190476190325" y="18.76984126984126"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Tagliato_Pressato">
+            <graphics>
+                <position x="2185.714285714285" y="1024.2857142857133"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Tagliato_Pressato</value>
+                <graphics>
+                    <offset x="162.71825396825395" y="29.853174603174576"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Sx_Tagliatrice_Pressa">
+            <graphics>
+                <position x="2095.7142857142826" y="919.2857142857132"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Tagliatrice_Pressa</value>
+                <graphics>
+                    <offset x="21.00396825396835" y="3.7976190476190625"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lat_Trasportati">
+            <graphics>
+                <position x="2348.5714285714275" y="1857.8571428571486"/>
+            </graphics>
+            <name>
+                <value>Lat_Trasportati</value>
+                <graphics>
+                    <offset x="-6.25" y="13.75"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Pezzo_Ant_Post_sul_Nastro">
+            <graphics>
+                <position x="2006.6666666666665" y="426.66666666666674"/>
+            </graphics>
+            <name>
+                <value>Pezzo_Ant_Post_sul_Nastro</value>
+                <graphics>
+                    <offset x="-1.25" y="31.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Ant_Post_Carico">
+            <graphics>
+                <position x="1890.0000000000002" y="743.5714285714279"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Carico</value>
+                <graphics>
+                    <offset x="-5.861111111111057" y="17.499999999999996"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Carico_Muletto">
+            <graphics>
+                <position x="1900.7142857142856" y="1566.428571428586"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Carico_Muletto</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Fine_Trasp">
+            <graphics>
+                <position x="1900.7142857142856" y="1962.8571428571524"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Fine_Trasp</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Lav">
+            <graphics>
+                <position x="1890.0000000000002" y="921.4285714285706"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Lav</value>
+                <graphics>
+                    <offset x="117.15476190476201" y="22.007936507936506"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Presa_Robot">
+            <graphics>
+                <position x="1890.0000000000002" y="544.2857142857143"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Presa_Robot</value>
+                <graphics>
+                    <offset x="144.5" y="13.500000000000004"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Scarico">
+            <graphics>
+                <position x="1890.0000000000002" y="1133.5714285714296"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Scarico</value>
+                <graphics>
+                    <offset x="122.8326118326118" y="12.181818181818194"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Scarico_Buffer">
+            <graphics>
+                <position x="1890.0000000000002" y="1349.2857142857147"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Scarico_Buffer</value>
+                <graphics>
+                    <offset x="-3.3174603174602355" y="33.57936507936507"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ant_Post_Trasp">
+            <graphics>
+                <position x="1900.7142857142856" y="1782.8571428571563"/>
+            </graphics>
+            <name>
+                <value>Ant_Post_Trasp</value>
+                <graphics>
+                    <offset x="-11.785714285714333" y="20.53571428571429"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Carico_Laminati">
+            <graphics>
+                <position x="1459.285714285715" y="923.5714285714307"/>
+            </graphics>
+            <name>
+                <value>Carico_Laminati</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Fine_Trasporto">
+            <graphics>
+                <position x="2235.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Fine_Trasporto</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Inizio_Trasporto">
+            <graphics>
+                <position x="2235.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Inizio_Trasporto</value>
+                <graphics>
+                    <offset x="-18.0" y="12.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Carico_Muletto">
+            <graphics>
+                <position x="2348.5714285714275" y="1551.4285714285702"/>
+            </graphics>
+            <name>
+                <value>Lat_Carico_Muletto</value>
+                <graphics>
+                    <offset x="-4.984126984126874" y="21.912698412698404"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Dx_Carico">
+            <graphics>
+                <position x="2485.7142857142862" y="756.4285714285704"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Carico</value>
+                <graphics>
+                    <offset x="-3.7182539682539173" y="21.607142857142854"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Dx_Lav">
+            <graphics>
+                <position x="2485.7142857142812" y="919.2857142857138"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Lav</value>
+                <graphics>
+                    <offset x="-5.166666666666572" y="28.972222222222214"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Dx_Presa_Robot">
+            <graphics>
+                <position x="2466.6666666666665" y="540.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Presa_Robot</value>
+                <graphics>
+                    <offset x="148.38888888888883" y="25.126262626262605"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Dx_Scarico">
+            <graphics>
+                <position x="2485.7142857142853" y="1142.142857142857"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Scarico</value>
+                <graphics>
+                    <offset x="-2.1673881673881965" y="29.681818181818194"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Dx_Scarico_Buffer">
+            <graphics>
+                <position x="2485.7142857142862" y="1354.285714285716"/>
+            </graphics>
+            <name>
+                <value>Lat_Dx_Scarico_Buffer</value>
+                <graphics>
+                    <offset x="168.34920634920644" y="12.74603174603174"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Fine_Trasp">
+            <graphics>
+                <position x="2348.5714285714275" y="1954.285714285714"/>
+            </graphics>
+            <name>
+                <value>Lat_Fine_Trasp</value>
+                <graphics>
+                    <offset x="-7.484126984126874" y="18.162698412698404"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Sx_Carico">
+            <graphics>
+                <position x="2185.7142857142853" y="756.4285714285704"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Carico</value>
+                <graphics>
+                    <offset x="115.78174603174608" y="20.571428571428562"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Sx_Lav">
+            <graphics>
+                <position x="2185.714285714281" y="919.2857142857138"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Lav</value>
+                <graphics>
+                    <offset x="102.33333333333343" y="13.972222222222214"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Sx_Presa_Robot">
+            <graphics>
+                <position x="2200.0" y="540.0"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Presa_Robot</value>
+                <graphics>
+                    <offset x="-9.111111111111171" y="27.6262626262626"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Sx_Scarico">
+            <graphics>
+                <position x="2185.714285714285" y="1142.142857142857"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Scarico</value>
+                <graphics>
+                    <offset x="119.61832611832611" y="27.181818181818183"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Sx_Scarico_Buffer">
+            <graphics>
+                <position x="2185.7142857142853" y="1354.285714285716"/>
+            </graphics>
+            <name>
+                <value>Lat_Sx_Scarico_Buffer</value>
+                <graphics>
+                    <offset x="-4.984126984126874" y="19.412698412698404"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Lat_Trasp">
+            <graphics>
+                <position x="2348.5714285714275" y="1767.857142857144"/>
+            </graphics>
+            <name>
+                <value>Lat_Trasp</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Saldatura">
+            <graphics>
+                <position x="2078.571428571429" y="2179.2857142857256"/>
+            </graphics>
+            <name>
+                <value>Saldatura</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Trasporto_Laminati">
+            <graphics>
+                <position x="2235.0" y="210.0"/>
+            </graphics>
+            <name>
+                <value>Trasporto_Laminati</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>true</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Ant_Disp_Buffer to Ant_Scarico_Tagl" source="Ant_Post_Disp_Buffer" target="Ant_Post_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1814" y="1237" curvePoint="false"/>
+            <arcpath id="001" x="1894" y="1147" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Inizio_Ispezione to Ant_Disp_Buffer" source="Ant_Post_Scarico_Buffer" target="Ant_Post_Disp_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1892" y="1352" curvePoint="false"/>
+            <arcpath id="001" x="1814" y="1259" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Pezzi_Buffer to Ant_Inizio_Ispezione" source="Ant_Post_Pezzi_Buffer" target="Ant_Post_Scarico_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1899" y="1264" curvePoint="false"/>
+            <arcpath id="001" x="1902" y="1354" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Carico_Muletto to Ant_Post_su_Muletto3" source="Ant_Post_Carico_Muletto" target="Ant_Post_su_Muletto3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1905" y="1579" curvePoint="false"/>
+            <arcpath id="001" x="1909" y="1672" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Carico to Ant_Post_Robot" source="Ant_Post_Carico" target="Ant_Post_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1892" y="747" curvePoint="false"/>
+            <arcpath id="001" x="1818" y="661" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Conforme to Ant_Post_Carico_Muletto" source="Ant_Post_Conforme" target="Ant_Post_Carico_Muletto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1909" y="1498" curvePoint="false"/>
+            <arcpath id="001" x="1909" y="1571" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Fine_Trasp to Ant_Post_Buffer" source="Ant_Post_Fine_Trasp" target="Ant_Post_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1911" y="1977" curvePoint="false"/>
+            <arcpath id="001" x="1909" y="2075" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Fine_Trasp to Disp_Muletto3" source="Ant_Post_Fine_Trasp" target="Disp_Muletto3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1915" y="1967" curvePoint="false"/>
+            <arcpath id="001" x="2017" y="1811" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Scarico_Buffer to Ant_Post_Conforme" source="Ant_Post_Scarico_Buffer" target="Ant_Post_Conforme">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1898" y="1362" curvePoint="false"/>
+            <arcpath id="001" x="1908" y="1468" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_su_Muletto3 to Ant_Post_Trasp" source="Ant_Post_su_Muletto3" target="Ant_Post_Trasp">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1909" y="1701" curvePoint="false"/>
+            <arcpath id="001" x="1908" y="1787" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_su_Robot to Ant_Post_Carico" source="Ant_Post_su_Robot" target="Ant_Post_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1898" y="664" curvePoint="false"/>
+            <arcpath id="001" x="1902" y="748" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Trasportati to Ant_Post_Fine_Trasp" source="Ant_Post_Trasportati" target="Ant_Post_Fine_Trasp">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1908" y="1889" curvePoint="false"/>
+            <arcpath id="001" x="1905" y="1967" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_Post_Trasp to Ant_Post_Trasportati" source="Ant_Post_Trasp" target="Ant_Post_Trasportati">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1909" y="1797" curvePoint="false"/>
+            <arcpath id="001" x="1909" y="1861" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant_SX Presa Robot to Ant_SX su Robot" source="Ant_Post_Presa_Robot" target="Ant_Post_su_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1904" y="558" curvePoint="false"/>
+            <arcpath id="001" x="1899" y="635" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ant Robot to Ant_SX Presa Robot" source="Ant_Post_Robot" target="Ant_Post_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1819" y="638" curvePoint="false"/>
+            <arcpath id="001" x="1894" y="558" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer_Post_Dx to Saldatura" source="Ant_Post_Buffer" target="Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1922" y="2097" curvePoint="false"/>
+            <arcpath id="001" x="2072" y="2188" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carico_Laminati to Laminati" source="Carico_Laminati" target="Laminati">
+            <graphics/>
+            <inscription>
+                <value>Default,4</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1468" y="928" curvePoint="false"/>
+            <arcpath id="001" x="1462" y="782" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Carrozzeria_Pronta to Carico_Laminati" source="Carrozzeria_Pronta" target="Carico_Laminati">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2074" y="2280" curvePoint="false"/>
+            <arcpath id="001" x="1484" y="1977" curvePoint="false"/>
+            <arcpath id="002" x="1469" y="938" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Disp_Muletto3 to Ant_Post_Carico_Muletto" source="Disp_Muletto3" target="Ant_Post_Carico_Muletto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2018" y="1785" curvePoint="false"/>
+            <arcpath id="001" x="1915" y="1581" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DIsp Muletto2 to Lat_SX Carico Muletto2" source="Disp_Muletto2" target="Lat_Carico_Muletto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2452" y="1762" curvePoint="false"/>
+            <arcpath id="001" x="2362" y="1565" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Disp Muletto to Inizio trasporto" source="Disp_Muletto1" target="Inizio_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2368" y="224" curvePoint="false"/>
+            <arcpath id="001" x="2248" y="104" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Lat_Dx_Grezzo" source="Fine_Trasporto" target="Lat_Dx_Grezzo">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2258" y="355" curvePoint="false"/>
+            <arcpath id="001" x="2428" y="434" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Lat_Sx_Grezzo" source="Fine_Trasporto" target="Lat_Sx_Grezzo">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2244" y="358" curvePoint="false"/>
+            <arcpath id="001" x="2242" y="425" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine_Trasporto to Pezzo_Ant_Post_sul_Nastro" source="Fine_Trasporto" target="Pezzo_Ant_Post_sul_Nastro">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2228" y="354" curvePoint="false"/>
+            <arcpath id="001" x="2029" y="429" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Fine trasporto to Disp Muletto1" source="Fine_Trasporto" target="Disp_Muletto1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2248" y="349" curvePoint="false"/>
+            <arcpath id="001" x="2368" y="244" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Inizio trasporto to Laminati su Mulettto" source="Inizio_Trasporto" target="Laminati su Mulettto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2238" y="104" curvePoint="false"/>
+            <arcpath id="001" x="2242" y="144" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Laminati_Trasportati to Fine_Trasporto" source="Laminati_Trasportati" target="Fine_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2242" y="308" curvePoint="false"/>
+            <arcpath id="001" x="2238" y="348" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Laminati su Mulettto to Trasporto_Laminati" source="Laminati su Mulettto" target="Trasporto_Laminati">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2244" y="174" curvePoint="false"/>
+            <arcpath id="001" x="2242" y="214" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Laminati to Inizio trasporto" source="Laminati" target="Inizio_Trasporto">
+            <graphics/>
+            <inscription>
+                <value>Default,4</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1462" y="752" curvePoint="false"/>
+            <arcpath id="001" x="1468" y="439" curvePoint="false"/>
+            <arcpath id="002" x="2228" y="99" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Carico to Lat Robot" source="Lat_Dx_Carico" target="Lat_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2488" y="759" curvePoint="false"/>
+            <arcpath id="001" x="2354" y="659" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Conforme to Lat_Carico_Muletto" source="Lat_Dx_Conforme" target="Lat_Carico_Muletto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2477" y="1491" curvePoint="false"/>
+            <arcpath id="001" x="2357" y="1555" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Disp_Buffer to Lat_Dx_Scarico_Tagl" source="Lat_Dx_Disp_Buffer" target="Lat_Dx_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2599" y="1251" curvePoint="false"/>
+            <arcpath id="001" x="2499" y="1157" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Inizio_Ispezione to Lat_Dx_Disp_Buffer" source="Lat_Dx_Scarico_Buffer" target="Lat_Dx_Disp_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2498" y="1358" curvePoint="false"/>
+            <arcpath id="001" x="2599" y="1271" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Pezzi_Buffer to Lat_Dx_Inizio_Ispezione" source="Lat_Dx_Pezzi_Buffer" target="Lat_Dx_Scarico_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2494" y="1275" curvePoint="false"/>
+            <arcpath id="001" x="2488" y="1358" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Scarico_Buffer to Lat_Dx_Conforme" source="Lat_Dx_Scarico_Buffer" target="Lat_Dx_Conforme">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2494" y="1368" curvePoint="false"/>
+            <arcpath id="001" x="2491" y="1468" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Dx_Scarico_Tagl to Lat_Dx_Pezzi_Buffer" source="Lat_Dx_Scarico" target="Lat_Dx_Pezzi_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2489" y="1155" curvePoint="false"/>
+            <arcpath id="001" x="2494" y="1247" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_DX Buffer to Saldatura" source="Lat_Dx_Buffer" target="Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2365" y="2095" curvePoint="false"/>
+            <arcpath id="001" x="2102" y="2190" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_DX su Robot to Lat_Dx_Carico" source="Lat_DX su Robot" target="Lat_Dx_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2492" y="667" curvePoint="false"/>
+            <arcpath id="001" x="2498" y="761" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Fine_Trasp to Lat_DX Buffer" source="Lat_Fine_Trasp" target="Lat_Dx_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2362" y="1968" curvePoint="false"/>
+            <arcpath id="001" x="2377" y="2075" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX_Buffer to Saldatura" source="Lat_SX_Buffer" target="Saldatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2247" y="2098" curvePoint="false"/>
+            <arcpath id="001" x="2102" y="2190" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Carico to Lat Robot" source="Lat_Sx_Carico" target="Lat_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2198" y="761" curvePoint="false"/>
+            <arcpath id="001" x="2330" y="659" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Disp_Buffer to Lat_Sx_Scarico_Tagl" source="Lat_Sx_Disp_Buffer" target="Lat_Sx_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2095" y="1249" curvePoint="false"/>
+            <arcpath id="001" x="2190" y="1155" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Inizio_Ispezione to Lat_Sx_Disp_Buffer" source="Lat_Sx_Scarico_Buffer" target="Lat_Sx_Disp_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2188" y="1358" curvePoint="false"/>
+            <arcpath id="001" x="2097" y="1271" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Pezzi_Buffer to Lat_Sx_Inizio_Ispezione" source="Lat_Sx_Pezzi_Buffer" target="Lat_Sx_Scarico_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2194" y="1275" curvePoint="false"/>
+            <arcpath id="001" x="2198" y="1358" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Scarico_Buffer to Lat_Sx_Conforme" source="Lat_Sx_Scarico_Buffer" target="Lat_Sx_Conforme">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2194" y="1368" curvePoint="false"/>
+            <arcpath id="001" x="2205" y="1468" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Scarico_Tagl to Lat_Sx_Pezzi_Buffer" source="Lat_Sx_Scarico" target="Lat_Sx_Pezzi_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2200" y="1157" curvePoint="false"/>
+            <arcpath id="001" x="2195" y="1247" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_su_Muletto2 to Lat_Sx_Trasp" source="Lat_su_Muletto2" target="Lat_Trasp">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2357" y="1687" curvePoint="false"/>
+            <arcpath id="001" x="2357" y="1771" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Tagliato_Pressato to Lat_Sx_Scarico" source="Lat_Sx_Tagliato_Pressato" target="Lat_Sx_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2195" y="1048" curvePoint="false"/>
+            <arcpath id="001" x="2198" y="1147" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Trasportati to Lat_Sx_Fine_Trasp" source="Lat_Trasportati" target="Lat_Fine_Trasp">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2357" y="1881" curvePoint="false"/>
+            <arcpath id="001" x="2351" y="1958" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_Sx_Trasp to Lat_Sx_Trasportati" source="Lat_Trasp" target="Lat_Trasportati">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2357" y="1781" curvePoint="false"/>
+            <arcpath id="001" x="2357" y="1852" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX Carico Muletto2 to Lat_SX su Muletto2" source="Lat_Carico_Muletto" target="Lat_su_Muletto2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2352" y="1565" curvePoint="false"/>
+            <arcpath id="001" x="2357" y="1657" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX Fine Nastro to Lat_SX Carico Muletto2" source="Lat_Sx_Conforme" target="Lat_Carico_Muletto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2221" y="1491" curvePoint="false"/>
+            <arcpath id="001" x="2342" y="1561" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX Scarico Muletto2 to DIsp Muletto2" source="Lat_Fine_Trasp" target="Disp_Muletto2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2361" y="1958" curvePoint="false"/>
+            <arcpath id="001" x="2451" y="1789" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX Scarico Muletto2 to Lat_SX Buffer" source="Lat_Fine_Trasp" target="Lat_SX_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2352" y="1968" curvePoint="false"/>
+            <arcpath id="001" x="2268" y="2078" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat_SX su Robot to Lat_Sx_Carico" source="Lat_Sx_su_Robot" target="Lat_Sx_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2191" y="667" curvePoint="false"/>
+            <arcpath id="001" x="2188" y="759" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat Robot to Lat_DX Presa Robot" source="Lat_Robot" target="Lat_Dx_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2354" y="642" curvePoint="false"/>
+            <arcpath id="001" x="2469" y="554" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lat Robot to Lat_SX Presa Robot" source="Lat_Robot" target="Lat_Sx_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2330" y="642" curvePoint="false"/>
+            <arcpath id="001" x="2214" y="554" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P48 to T35" source="Lat_Sx_Grezzo" target="Lat_Sx_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2237" y="455" curvePoint="false"/>
+            <arcpath id="001" x="2208" y="544" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P53 to T40" source="Lat_Dx_Grezzo" target="Lat_Dx_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2447" y="455" curvePoint="false"/>
+            <arcpath id="001" x="2475" y="544" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P58 to T42" source="Lat_Sx_Tagliatrice_Pressa" target="Lat_Sx_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2111" y="915" curvePoint="false"/>
+            <arcpath id="001" x="2190" y="769" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P59 to T43" source="Lat_Sx_Greezzi_Tagl_Press" target="Lat_Sx_Lav">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2194" y="855" curvePoint="false"/>
+            <arcpath id="001" x="2194" y="922" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P66 to T48" source="Lat_Dx_Tagliatrice_Pressa" target="Lat_Dx_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2584" y="915" curvePoint="false"/>
+            <arcpath id="001" x="2499" y="771" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P67 to T49" source="Lat_Dx_Grezzi_Tagl_Press" target="Lat_Dx_Lav">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2494" y="855" curvePoint="false"/>
+            <arcpath id="001" x="2494" y="922" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P69 to T51" source="Lat_Dx_Tagliato_Pressato" target="Lat_Dx_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2494" y="1048" curvePoint="false"/>
+            <arcpath id="001" x="2488" y="1145" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P79 to T57" source="Ant_Post_Tagliatrice_Pressa" target="Ant_Post_Carico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1794" y="938" curvePoint="false"/>
+            <arcpath id="001" x="1894" y="757" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P81 to T59" source="Ant_Post_Grezzi_Tagl_Press" target="Ant_Post_Lav">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1898" y="847" curvePoint="false"/>
+            <arcpath id="001" x="1898" y="925" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P86 to T62" source="Ant_Post_Tagliato_Pressato" target="Ant_Post_Scarico">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1899" y="1050" curvePoint="false"/>
+            <arcpath id="001" x="1902" y="1138" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Pezzo_Ant_Post_sul_Nastro to Ant_Post_Presa_Robot" source="Pezzo_Ant_Post_sul_Nastro" target="Ant_Post_Presa_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2005" y="445" curvePoint="false"/>
+            <arcpath id="001" x="1898" y="548" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Presa Robot Lat_SX to P57" source="Lat_Sx_Presa_Robot" target="Lat_Sx_su_Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2204" y="554" curvePoint="false"/>
+            <arcpath id="001" x="2194" y="637" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Saldatura to Carrozzeria_Pronta" source="Saldatura" target="Carrozzeria_Pronta">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2087" y="2192" curvePoint="false"/>
+            <arcpath id="001" x="2087" y="2272" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T40 to P56" source="Lat_Dx_Presa_Robot" target="Lat_DX su Robot">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2479" y="554" curvePoint="false"/>
+            <arcpath id="001" x="2489" y="637" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T42 to P59" source="Lat_Sx_Carico" target="Lat_Sx_Greezzi_Tagl_Press">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2200" y="771" curvePoint="false"/>
+            <arcpath id="001" x="2195" y="825" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T43 to P61" source="Lat_Sx_Lav" target="Lat_Sx_Tagliato_Pressato">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2194" y="932" curvePoint="false"/>
+            <arcpath id="001" x="2194" y="1018" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T46 to P58" source="Lat_Sx_Scarico" target="Lat_Sx_Tagliatrice_Pressa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2188" y="1145" curvePoint="false"/>
+            <arcpath id="001" x="2110" y="942" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T48 to P67" source="Lat_Dx_Carico" target="Lat_Dx_Grezzi_Tagl_Press">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2489" y="769" curvePoint="false"/>
+            <arcpath id="001" x="2494" y="825" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T49 to P69" source="Lat_Dx_Lav" target="Lat_Dx_Tagliato_Pressato">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2494" y="932" curvePoint="false"/>
+            <arcpath id="001" x="2494" y="1018" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T51 to P66" source="Lat_Dx_Scarico" target="Lat_Dx_Tagliatrice_Pressa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2498" y="1147" curvePoint="false"/>
+            <arcpath id="001" x="2585" y="942" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T57 to P81" source="Ant_Post_Carico" target="Ant_Post_Grezzi_Tagl_Press">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1904" y="758" curvePoint="false"/>
+            <arcpath id="001" x="1899" y="817" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T59 to P86" source="Ant_Post_Lav" target="Ant_Post_Tagliato_Pressato">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1898" y="935" curvePoint="false"/>
+            <arcpath id="001" x="1898" y="1021" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T62 to P79" source="Ant_Post_Scarico" target="Ant_Post_Tagliatrice_Pressa">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1892" y="1137" curvePoint="false"/>
+            <arcpath id="001" x="1795" y="965" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T62 to P85" source="Ant_Post_Scarico" target="Ant_Post_Pezzi_Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1904" y="1148" curvePoint="false"/>
+            <arcpath id="001" x="1898" y="1234" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Trasporto_Laminati to Laminati_Trasportati" source="Trasporto_Laminati" target="Laminati_Trasportati">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="2244" y="224" curvePoint="false"/>
+            <arcpath id="001" x="2244" y="280" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
