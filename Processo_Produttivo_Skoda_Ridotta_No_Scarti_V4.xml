@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1371" y="536" width="105" height="36" border="true">
+        <labels x="1372" y="537" width="106" height="37" border="true">
             <text>multipli di 3 laminati</text>
         </labels>
         <place id="Ant_Post_Conforme">
             <graphics>
-                <position x="1886.25" y="1545.0"/>
+                <position x="1890.0" y="1545.0"/>
             </graphics>
             <name>
                 <value>Ant_Post_Conforme</value>
@@ -46,12 +46,12 @@
         </place>
         <place id="Ant_Post_Disp_Conforme">
             <graphics>
-                <position x="1953.75" y="1507.5"/>
+                <position x="1950.0" y="1515.0"/>
             </graphics>
             <name>
                 <value>Ant_Post_Disp_Conforme</value>
                 <graphics>
-                    <offset x="0.0" y="0.0"/>
+                    <offset x="125.0" y="0.0"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -246,7 +246,7 @@
         </place>
         <place id="Lat_Dx_Conforme">
             <graphics>
-                <position x="2531.25" y="1563.75"/>
+                <position x="2535.0" y="1560.0"/>
             </graphics>
             <name>
                 <value>Lat_Dx_Conforme</value>
@@ -286,7 +286,7 @@
         </place>
         <place id="Lat_Dx_Disp_Conforme">
             <graphics>
-                <position x="2441.25" y="1530.0"/>
+                <position x="2445.0" y="1530.0"/>
             </graphics>
             <name>
                 <value>Lat_Dx_Disp_Conforme</value>
@@ -406,7 +406,7 @@
         </place>
         <place id="Lat_Sx_Conforme">
             <graphics>
-                <position x="2186.25" y="1470.0"/>
+                <position x="2190.0" y="1470.0"/>
             </graphics>
             <name>
                 <value>Lat_Sx_Conforme</value>
@@ -446,7 +446,7 @@
         </place>
         <place id="Lat_Sx_Disp_Conforme">
             <graphics>
-                <position x="2242.5" y="1470.0"/>
+                <position x="2250.0" y="1470.0"/>
             </graphics>
             <name>
                 <value>Lat_Sx_Disp_Conforme</value>
@@ -1074,7 +1074,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1911" y="1558" curvePoint="false"/>
+            <arcpath id="000" x="1915" y="1558" curvePoint="false"/>
             <arcpath id="001" x="2200" y="1631" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1087,7 +1087,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1958" y="1503" curvePoint="false"/>
+            <arcpath id="000" x="1956" y="1511" curvePoint="false"/>
             <arcpath id="001" x="1905" y="1366" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1101,7 +1101,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1895" y="1365" curvePoint="false"/>
-            <arcpath id="001" x="1896" y="1541" curvePoint="false"/>
+            <arcpath id="001" x="1900" y="1541" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Carico_Laminati to Laminati" source="Carico_Laminati" target="Laminati">
@@ -1127,7 +1127,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2201" y="1731" curvePoint="false"/>
-            <arcpath id="001" x="1457" y="1532" curvePoint="false"/>
+            <arcpath id="001" x="1456" y="1531" curvePoint="false"/>
             <arcpath id="002" x="1466" y="946" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1245,7 +1245,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1477" y="766" curvePoint="false"/>
-            <arcpath id="001" x="2021" y="332" curvePoint="false"/>
+            <arcpath id="001" x="2021" y="331" curvePoint="false"/>
             <arcpath id="002" x="2200" y="326" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1258,7 +1258,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="2527" y="1577" curvePoint="false"/>
+            <arcpath id="000" x="2531" y="1573" curvePoint="false"/>
             <arcpath id="001" x="2230" y="1631" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1284,7 +1284,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="2455" y="1526" curvePoint="false"/>
+            <arcpath id="000" x="2458" y="1526" curvePoint="false"/>
             <arcpath id="001" x="2495" y="1365" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1337,7 +1337,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2505" y="1366" curvePoint="false"/>
-            <arcpath id="001" x="2538" y="1560" curvePoint="false"/>
+            <arcpath id="001" x="2542" y="1556" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_Dx_Scarico_Tagl to Lat_Dx_Pezzi_Buffer" source="Lat_Dx_Scarico" target="Lat_Dx_Pezzi_Buffer">
@@ -1362,7 +1362,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="2198" y="1495" curvePoint="false"/>
+            <arcpath id="000" x="2201" y="1495" curvePoint="false"/>
             <arcpath id="001" x="2210" y="1625" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1388,7 +1388,7 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="2247" y="1466" curvePoint="false"/>
+            <arcpath id="000" x="2253" y="1467" curvePoint="false"/>
             <arcpath id="001" x="2205" y="1366" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1441,7 +1441,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2195" y="1365" curvePoint="false"/>
-            <arcpath id="001" x="2196" y="1466" curvePoint="false"/>
+            <arcpath id="001" x="2200" y="1466" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lat_Sx_Scarico_Tagl to Lat_Sx_Pezzi_Buffer" source="Lat_Sx_Scarico" target="Lat_Sx_Pezzi_Buffer">
@@ -1597,7 +1597,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2200" y="1631" curvePoint="false"/>
-            <arcpath id="001" x="1977" y="1525" curvePoint="false"/>
+            <arcpath id="001" x="1973" y="1531" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Saldatura to Carrozzeria_Pronta" source="Saldatura" target="Carrozzeria_Pronta">
@@ -1623,8 +1623,8 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2230" y="1631" curvePoint="false"/>
-            <arcpath id="001" x="2227" y="1627" curvePoint="false"/>
-            <arcpath id="002" x="2437" y="1546" curvePoint="false"/>
+            <arcpath id="001" x="2226" y="1626" curvePoint="false"/>
+            <arcpath id="002" x="2441" y="1546" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Saldatura to Lat_Sx_Disp_Conforme" source="Saldatura" target="Lat_Sx_Disp_Conforme">
@@ -1637,7 +1637,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2220" y="1626" curvePoint="false"/>
-            <arcpath id="001" x="2250" y="1495" curvePoint="false"/>
+            <arcpath id="001" x="2256" y="1495" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="T42 to P59" source="Lat_Sx_Carico" target="Lat_Sx_Greezzi_Tagl_Press">
