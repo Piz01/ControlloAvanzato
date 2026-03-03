@@ -1,0 +1,99 @@
+%% CALCOLO INDICI DI PRESTAZIONE
+
+%% --- CALCOLO PROBABILITÀ DI STATO STAZIONARIO (\pi) ---
+disp('Calcolo probabilità stazionarie...');
+
+% 1. Ricostruzione indici Tangibili e Vanescenti (per mappare su list)
+tan = []; van = [];
+for i = 1:ns
+    if isempty(Ragg(i).abi) || maschera_trans(Ragg(i).abi(1)) == 0
+        tan = [tan, i]; % Tangibile (o Deadlock)
+    else
+        van = [van, i]; % Vanescente
+    end
+end
+
+nt = length(tan);
+nv = length(van);
+
+% 2. Matrice di Transizione degli Stati Tangibili (P')
+% P' = F + E * (I - C)^-1 * D
+I_C = eye(nv) - C;
+P_prime = F + E * (I_C \ D);
+
+% 3. Risoluzione sistema lineare discreto (\nu * P' = \nu)
+A_sys = P_prime' - eye(nt);
+A_sys(end, :) = 1; % Sostituisce ultima riga col vincolo di normalizzazione
+b_sys = zeros(nt, 1);
+b_sys(end) = 1;
+nu = (A_sys \ b_sys)'; % Vettore riga delle prob. discrete
+
+% 4. Probabilità a tempo continuo (\pi)
+SJ_tang = SJ(tan); % Tempi di soggiorno degli stati tangibili
+pi_tang = (nu .* SJ_tang') / sum(nu .* SJ_tang');
+
+% Costruiamo il vettore globale 'Prob' lungo 'ns' (0 per i vanescenti)
+Prob = zeros(1, ns);
+Prob(tan) = pi_tang;
+disp('Probabilità stazionarie calcolate con successo!');
+
+%% --- CALCOLO INDICI DI PRESTAZIONE ---
+
+% A) Numero Medio di Token per ogni Posto (Code)
+disp('--- NUMERO MEDIO DI TOKEN NEI POSTI ---');
+Mean_Tokens = Prob * list; 
+for p = 1:size(list, 2)
+    if Mean_Tokens(p) > 0.001 % Stampa solo i posti "attivi"
+        fprintf('Posto %d: %.4f token medi\n', p, Mean_Tokens(p));
+    end
+end
+
+% B) Throughput delle Transizioni (Produttività)
+disp('--- THROUGHPUT TRANSIZIONI TEMPORIZZATE ---');
+Throughput = zeros(1, length(rates));
+
+for i = tan % Solo stati tangibili
+    if Prob(i) > 0
+        for t = Ragg(i).abi
+            if maschera_trans(t) == 0 % Temporizzata
+                
+                % CHIAVE: Controllo se è Single Server (0) o Multiple Server (>0)
+                if servers(t) == 0
+                    f = 1; % Single server: se è abilitata, 1 macchina sta lavorando
+                else
+                    % Multiple Server
+                    p_ing = find(pre(:,t)~=0);
+                    tok_ing = list(i, p_ing);
+                    pesi_ing = pre(p_ing, t)';
+                    ED = min(floor(tok_ing ./ pesi_ing));
+                    f = min(ED, servers(t));
+                end
+                
+                % Calcolo formula Throughput: Probabilità * Rate * Num_Server_Attivi
+                Throughput(t) = Throughput(t) + Prob(i) * rates(t) * f;
+            end
+        end
+    end
+end
+
+% Stampa i risultati
+for t = 1:length(rates)
+    if Throughput(t) > 0
+        fprintf('Transizione %d: %.4f scatti/unita_di_tempo\n', t, Throughput(t));
+    end
+end
+
+%% --- ANALISI AVANZATA (UTILIZZO MACCHINE) ---
+disp('--- UTILIZZO RISORSE ---');
+% Definisci gli indici dei posti "Risorsa Libera" guardando l'ordine dell'XML/Excel
+idx_Muletto = 8;
+idx_Pressa_Ant = 6;
+idx_Pressa_LatSx = 25;
+
+Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
+Utilizzo_PressaAnt = 1 - Mean_Tokens(idx_Pressa_Ant);
+Utilizzo_PressaSx = 1 - Mean_Tokens(idx_Pressa_LatSx);
+
+fprintf('Utilizzo Muletto: %.2f %%\n', Utilizzo_Muletto * 100);
+fprintf('Utilizzo Pressa Frontale: %.2f %%\n', Utilizzo_PressaAnt * 100);
+fprintf('Utilizzo Pressa Laterale: %.2f %%\n', Utilizzo_PressaSx * 100);
