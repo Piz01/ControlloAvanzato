@@ -258,16 +258,19 @@ disp(' ');
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 % Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
 idx_Muletto = 9;
-idx_PressaAnt = 7;
-idx_PressaSx = 28;
+idx_PressaTaglAnt = 7;
+idx_PressaTaglSx = 28;
+idx_PressaTaglDx = 20;
 
 Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
-Utilizzo_PressaAnt = 1 - Mean_Tokens(idx_PressaAnt);
-Utilizzo_PressaSx = 1 - Mean_Tokens(idx_PressaSx);
+Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
+Utilizzo_PressaTaglSx = 1 - Mean_Tokens(idx_PressaTaglSx);
+Utilizzo_PressaTaglDx = 1 - Mean_Tokens(idx_PressaTaglDx);
 
 fprintf('Utilizzo Muletto: %.2f %%\n', Utilizzo_Muletto * 100);
-fprintf('Utilizzo Pressa Frontale: %.2f %%\n', Utilizzo_PressaAnt * 100);
-fprintf('Utilizzo Pressa Laterale Sx: %.2f %%\n', Utilizzo_PressaSx * 100);
+fprintf('Utilizzo Pressa-Tagliatrice Anteriore-Posteriore: %.2f %%\n', Utilizzo_PressaTaglAnt * 100);
+fprintf('Utilizzo Pressa-Tagliatrice Laterale Sx: %.2f %%\n', Utilizzo_PressaTaglSx * 100);
+fprintf('Utilizzo Pressa-Tagliatrice Laterale Dx: %.2f %%\n', Utilizzo_PressaTaglDx * 100);
 disp(' ');
 
 % --- INDICE 4 (Slide 20): Tempo medio di attesa nel posto (Legge di Little locale) ---
@@ -275,11 +278,16 @@ disp('--- TEMPO MEDIO DI ATTESA NEI BUFFER (E[T]p) ---');
 % Matrice Post (I+) per calcolare chi inserisce token nel buffer
 post = I + pre; 
 
-% Inserisci qui gli indici dei buffer che vuoi analizzare (es. Conforme o Disp_Buffer)
-posti_buffer = [5, 18, 26]; % Sostituisci con i tuoi veri indici
+% Nomi e rispettivi indici (Assicurati che l'ordine corrisponda!)
+nomi_posti_buffer = {'Ant_Post_Pezzi_Buffer', 'Lat_Dx_Pezzi_Buffer', 'Lat_Sx_Pezzi_Buffer'};
+posti_buffer = [5, 18, 26]; % SOSTITUISCI con gli indici esatti del tuo Excel
 
-for p = posti_buffer
+% Usiamo 'k' come indice che va da 1 a 3
+for k = 1:length(posti_buffer)
+    
+    p = posti_buffer(k); % 'p' ora è il vero indice del posto (es. 4, poi 16...)
     T_in_totale = 0;
+    
     % Trova transizioni in ingresso al posto p
     trans_ingresso = find(post(p, :) > 0); 
     
@@ -291,7 +299,8 @@ for p = posti_buffer
     
     if T_in_totale > 0
         Attesa_Media = Mean_Tokens(p) / T_in_totale;
-        fprintf('Posto %d: Tempo attesa medio = %.4f unita_tempo\n', p, Attesa_Media);
+        % Ora usiamo 'k' per pescare il nome corretto dal cell array
+        fprintf('%s: Tempo attesa medio = %.4f unita_tempo\n', nomi_posti_buffer{k}, Attesa_Media);
     end
 end
 disp(' ');
