@@ -81,20 +81,32 @@ for i = 1:Hp
 end
 
 % Generazione della figura
-figure('Name', 'MPC Esercizio 1 - Predizione Open-Loop');
+fig1 = figure('Name', 'MPC Esercizio 1 - Predizione Open-Loop', 'Color', 'w', 'Position', [100, 100, 800, 600]);
+
+% Colori personalizzati moderni
+color_y = [0 0.4470 0.7410];       % Blu
+color_ref = [0.8500 0.3250 0.0980]; % Rosso scuro
+color_u = [0.4660 0.6740 0.1880];   % Verde
+font_name = 'Helvetica';
+
 subplot(2,1,1);
-plot(time_pred, y_pred_plot, '-o', 'LineWidth', 1.5); hold on;
-plot(time_pred, ref_plot, '--r', 'LineWidth', 1.5);
-xlabel('Tempo (s)'); ylabel('Uscita y(k+i|k)');
-title('Predizione dell''uscita all''istante k (Orizzonte Hp=3)');
-legend('y predetta', 'Reference Trajectory', 'Location', 'SouthEast');
+plot(time_pred, y_pred_plot, '-o', 'Color', color_y, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_y); hold on;
+plot(time_pred, ref_plot, '--', 'Color', color_ref, 'LineWidth', 1.5);
+xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+ylabel('Uscita y(k+i|k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+title({'Predizione dell''uscita all''istante k (Orizzonte Hp=3)'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
+leg1 = legend('y predetta', 'Reference Trajectory', 'Location', 'southeast', 'FontSize', 10, 'Box', 'off');
+set(leg1, 'TextColor', 'k');
 grid on;
+set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
 
 subplot(2,1,2);
-stairs(time_pred, u_pred_plot, '-s', 'LineWidth', 1.5);
-xlabel('Tempo (s)'); ylabel('Ingresso u(k+i|k)');
-title('Sequenza di controllo ottima (Hu=1)');
+stairs(time_pred, u_pred_plot, '-s', 'Color', color_u, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_u);
+xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+ylabel('Ingresso u(k+i|k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+title({'Sequenza di controllo ottima (Hu=1)'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
 grid on;
+set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
 
 %% --- ESERCIZIO 2: Calcolo all'istante k+1 ---
 fprintf('\n--- ESERCIZIO 2: Calcolo all''istante k+1 ---\n');
@@ -151,19 +163,31 @@ end
 
 time = (0:N_sim-1) * Ts;
 
-figure('Name', 'MPC Esercizi 1 e 2');
+fig2 = figure('Name', 'MPC Esercizi 1 e 2', 'Color', 'w', 'Position', [150, 150, 800, 600]);
+
+% Colori personalizzati moderni
+color_y = [0 0.4470 0.7410];       % Blu
+color_ref = [0.8500 0.3250 0.0980]; % Rosso scuro
+color_u = [0.4660 0.6740 0.1880];   % Verde
+font_name = 'Helvetica';
+
 subplot(2,1,1);
-plot(time, y_sim, '-o', 'LineWidth', 1.5); hold on;
-plot(time, set_point*ones(1, N_sim), '--r', 'LineWidth', 1.2);
-xlabel('Tempo (s)'); ylabel('Uscita y(k)');
-title('Evoluzione della risposta del sistema con MPC');
-legend('y(k) simulata', 'Setpoint r(k)', 'Location', 'SouthEast');
+plot(time, y_sim, '-o', 'Color', color_y, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_y); hold on;
+plot(time, set_point*ones(1, N_sim), '--', 'Color', color_ref, 'LineWidth', 1.5);
+xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+ylabel('Uscita y(k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+title({'Evoluzione della risposta del sistema con MPC'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
+leg2 = legend('y(k) simulata', 'Setpoint r(k)', 'Location', 'southeast', 'FontSize', 10, 'Box', 'off');
+set(leg2, 'TextColor', 'k');
 grid on;
+set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
 
 subplot(2,1,2);
-stairs(time, u_sim, '-s', 'LineWidth', 1.5);
-xlabel('Tempo (s)'); ylabel('Ingresso di controllo u(k)');
-title('Andamento del segnale di controllo');
+stairs(time, u_sim, '-s', 'Color', color_u, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_u);
+xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+ylabel('Ingresso di controllo u(k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
+title({'Andamento del segnale di controllo'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
 grid on;
+set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
 
 save('Dati_Esercizio_1_2.mat');
