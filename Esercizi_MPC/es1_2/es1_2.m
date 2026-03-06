@@ -2,21 +2,16 @@
 clear; clc; close all;
 
 % --- Parametri del Processo ---
-num = 1.3;
-den = [1 -0.7];
-Ts = 3;              % Tempo di campionamento (sec)
+num = 1.3; den = [1 -0.7]; Ts = 3; Hp = 3; Hu = 1; set_point = 2.5; Tref = 0;
+u_prec = 0.3; y_prec = 1.3; y_attuale = 1.3;
 
-Hp = 3;              % Orizzonte di predizione (9 sec)
-Hu = 1;              % Orizzonte di controllo (singola mossa)
-set_point = 2.5;     % Traiettoria di set-point s(k+i)
-Tref = 0;            % Costante di tempo della reference trajectory
+% Funzione per risposta libera a Hp passi: y(k+Hp)
+Hp_sum = (1-0.7^Hp)/(1-0.7);
+calc_yf = @(y, u) 0.7^Hp * y + 1.3 * u * Hp_sum; 
+y_step_finale = calc_yf(0, 1);
 
-u_prec = 0.3;        % u(k-1)
-y_prec = 1.3;        % y(k-1)
-y_attuale = 1.3;     % y(k)
-
+%% --- ESERCIZIO 1: Calcolo all'istante k ---
 fprintf('--- ESERCIZIO 1: Calcolo all''istante k ---\n');
-
 % 1. Calcolo della Reference Trajectory all'istante Hp
 epsilon = set_point - y_attuale; 
 if Tref == 0
@@ -51,65 +46,24 @@ fprintf('y_step(3): %.4f\n', y_step_finale);
 fprintf('delta_u(k|k): %.4f\n', delta_u_hat);
 fprintf('u(k|k) ottima: %.4f\n', u_hat);
 
-%% --- GRAFICI ESERCIZIO 1 (Predizione all'istante k) ---
-% Vogliamo plottare l'andamento da k-1 (passato) fino a k+Hp (futuro predetto)
-time_pred = (-1:Hp) * Ts; % Asse dei tempi da -3 sec a +9 sec
+%% --- GRAFICI ESERCIZIO 1 ---
+time_pred = (-1:Hp) * Ts;
+y_pred_plot = [y_prec, y_attuale, zeros(1,Hp)];
+for i=1:Hp, y_pred_plot(2+i) = 0.7*y_pred_plot(2+i-1) + 1.3*u_hat; end
 
-y_pred_plot = zeros(1, length(time_pred));
-u_pred_plot = zeros(1, length(time_pred));
-ref_plot = zeros(1, length(time_pred));
-
-% Valori al tempo k-1 (istante -3s)
-y_pred_plot(1) = y_prec;
-u_pred_plot(1) = u_prec;
-ref_plot(1) = y_prec; % Prima del gradino
-
-% Valori al tempo k (istante 0s)
-y_pred_plot(2) = y_attuale;
-u_pred_plot(2) = u_hat; % Da qui in poi applichiamo la mossa calcolata
-ref_plot(2) = set_point;
-
-% Calcoliamo l'evoluzione futura predetta per i prossimi Hp passi
-for i = 1:Hp
-    if i == 1
-        y_pred_plot(2+i) = 0.7 * y_attuale + 1.3 * u_hat;
-    else
-        y_pred_plot(2+i) = 0.7 * y_pred_plot(2+i-1) + 1.3 * u_hat;
-    end
-    u_pred_plot(2+i) = u_hat; % Essendo Hu=1, l'ingresso rimane costante
-    ref_plot(2+i) = set_point; % Tref=0, quindi reference coincide con set_point
-end
-
-% Generazione della figura
-fig1 = figure('Name', 'MPC Esercizio 1 - Predizione Open-Loop', 'Color', 'w', 'Position', [100, 100, 800, 600]);
-
-% Colori personalizzati moderni
-color_y = [0 0.4470 0.7410];       % Blu
-color_ref = [0.8500 0.3250 0.0980]; % Rosso scuro
-color_u = [0.4660 0.6740 0.1880];   % Verde
-font_name = 'Helvetica';
-
+fig1 = create_fig('MPC Esercizio 1 - Predizione Open-Loop');
 subplot(2,1,1);
-plot(time_pred, y_pred_plot, '-o', 'Color', color_y, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_y); hold on;
-plot(time_pred, ref_plot, '--', 'Color', color_ref, 'LineWidth', 1.5);
-xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-ylabel('Uscita y(k+i|k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-title({'Predizione dell''uscita all''istante k (Orizzonte Hp=3)'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
-leg1 = legend('y predetta', 'Reference Trajectory', 'Location', 'southeast', 'FontSize', 10, 'Box', 'off');
-set(leg1, 'TextColor', 'k');
-grid on;
-set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
+plot(time_pred, y_pred_plot, '-o', 'Color', [0 0.447 0.741], 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', [0 0.447 0.741]); hold on;
+plot(time_pred, [y_prec, set_point*ones(1,Hp+1)], '--', 'Color', [0.85 0.325 0.098], 'LineWidth', 1.5);
+format_ax('Tempo (s)', 'Uscita y(k+i|k)', 'Predizione dell''uscita all''istante k (Orizzonte Hp=3)', {'y predetta', 'Reference Trajectory'});
 
 subplot(2,1,2);
-stairs(time_pred, u_pred_plot, '-s', 'Color', color_u, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_u);
-xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-ylabel('Ingresso u(k+i|k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-title({'Sequenza di controllo ottima (Hu=1)'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
-grid on;
-set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
+stairs(time_pred, [u_prec, u_hat*ones(1,Hp+1)], '-s', 'Color', [0.466 0.674 0.188], 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', [0.466 0.674 0.188]);
+format_ax('Tempo (s)', 'Ingresso u(k+i|k)', 'Sequenza di controllo ottima (Hu=1)', {});
 
 %% --- ESERCIZIO 2: Calcolo all'istante k+1 ---
 fprintf('\n--- ESERCIZIO 2: Calcolo all''istante k+1 ---\n');
+y_next = 0.7 * y_attuale + 1.3 * u_hat;
 
 % Applico l'ingresso calcolato per trovare la vera nuova uscita y(k+1)
 y_next = 0.7 * y_attuale + 1.3 * u_hat;
@@ -134,19 +88,15 @@ y_free_finale_2 = y_free_2(end);
 delta_u_hat_2 = (r_finale_2 - y_free_finale_2) / y_step_finale;
 u_hat_2 = u_prec_2 + delta_u_hat_2;
 
-fprintf('y(k+1): %.4f\n', y_attuale_2);
+fprintf('y(k+1): %.4f\n', y_next);
 fprintf('y_free(k+4|k+1): %.4f\n', y_free_finale_2);
 fprintf('delta_u(k+1|k+1): %.4f\n', delta_u_hat_2);
 fprintf('u(k+1|k+1) ottima: %.4f\n', u_hat_2);
 
 %% --- SIMULAZIONE E GRAFICI ---
-% Eseguiamo una simulazione per mostrare l'andamento effettivo
-N_sim = 10;
-y_sim = zeros(1, N_sim);
-u_sim = zeros(1, N_sim);
-
-y_sim(1) = y_prec;
-u_sim(1) = u_hat; 
+N_sim = 10; time = (0:N_sim-1) * Ts;
+y_sim = zeros(1, N_sim); u_sim = zeros(1, N_sim);
+[y_sim(1), u_sim(1)] = deal(y_prec, u_hat); 
 
 for k = 2:N_sim
     y_sim(k) = 0.7 * y_sim(k-1) + 1.3 * u_sim(k-1);
@@ -161,33 +111,31 @@ for k = 2:N_sim
     u_sim(k) = u_sim(k-1) + du;
 end
 
-time = (0:N_sim-1) * Ts;
-
-fig2 = figure('Name', 'MPC Esercizi 1 e 2', 'Color', 'w', 'Position', [150, 150, 800, 600]);
-
-% Colori personalizzati moderni
-color_y = [0 0.4470 0.7410];       % Blu
-color_ref = [0.8500 0.3250 0.0980]; % Rosso scuro
-color_u = [0.4660 0.6740 0.1880];   % Verde
-font_name = 'Helvetica';
-
+fig2 = create_fig('MPC Esercizi 1 e 2');
 subplot(2,1,1);
-plot(time, y_sim, '-o', 'Color', color_y, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_y); hold on;
-plot(time, set_point*ones(1, N_sim), '--', 'Color', color_ref, 'LineWidth', 1.5);
-xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-ylabel('Uscita y(k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-title({'Evoluzione della risposta del sistema con MPC'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
-leg2 = legend('y(k) simulata', 'Setpoint r(k)', 'Location', 'southeast', 'FontSize', 10, 'Box', 'off');
-set(leg2, 'TextColor', 'k');
-grid on;
-set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
+plot(time, y_sim, '-o', 'Color', [0 0.447 0.741], 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', [0 0.447 0.741]); hold on;
+plot(time, set_point*ones(1, N_sim), '--', 'Color', [0.85 0.325 0.098], 'LineWidth', 1.5);
+format_ax('Tempo (s)', 'Uscita y(k)', 'Evoluzione della risposta del sistema con MPC', {'y(k) simulata', 'Setpoint r(k)'});
 
 subplot(2,1,2);
-stairs(time, u_sim, '-s', 'Color', color_u, 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', color_u);
-xlabel('Tempo (s)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-ylabel('Ingresso di controllo u(k)', 'FontSize', 11, 'FontName', font_name, 'Color', 'k');
-title({'Andamento del segnale di controllo'; ''}, 'FontSize', 12, 'FontName', font_name, 'FontWeight', 'bold', 'Color', 'k');
-grid on;
-set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', font_name, 'LineWidth', 0.8, 'GridAlpha', 0.2);
+stairs(time, u_sim, '-s', 'Color', [0.466 0.674 0.188], 'LineWidth', 1.5, 'MarkerSize', 6, 'MarkerFaceColor', [0.466 0.674 0.188]);
+format_ax('Tempo (s)', 'Ingresso di controllo u(k)', 'Andamento del segnale di controllo', {});
 
 save('Dati_Esercizio_1_2.mat');
+
+%% --- FUNZIONI LOCALI ---
+function fig = create_fig(name)
+    fig = figure('Name', name, 'Color', 'w', 'Position', [100, 100, 800, 600]);
+end
+
+function format_ax(xl, yl, tit, leg_num)
+    xlabel(xl, 'FontSize', 11, 'FontName', 'Helvetica', 'Color', 'k');
+    ylabel(yl, 'FontSize', 11, 'FontName', 'Helvetica', 'Color', 'k');
+    title({tit; ''}, 'FontSize', 12, 'FontName', 'Helvetica', 'FontWeight', 'bold', 'Color', 'k');
+    if ~isempty(leg_num)
+        leg = legend(leg_num, 'Location', 'southeast', 'FontSize', 10, 'Box', 'off');
+        set(leg, 'TextColor', 'k');
+    end
+    grid on;
+    set(gca, 'Color', 'w', 'XColor', 'k', 'YColor', 'k', 'FontSize', 10, 'FontName', 'Helvetica', 'LineWidth', 0.8, 'GridAlpha', 0.2);
+end
