@@ -5,11 +5,6 @@ clear; clc; close all;
 num = 1.3; den = [1 -0.7]; Ts = 3; Hp = 3; Hu = 1; set_point = 2.5; Tref = 0;
 u_prec = 0.3; y_prec = 1.3; y_attuale = 1.3;
 
-% Funzione per risposta libera a Hp passi: y(k+Hp)
-Hp_sum = (1-0.7^Hp)/(1-0.7);
-calc_yf = @(y, u) 0.7^Hp * y + 1.3 * u * Hp_sum; 
-y_step_finale = calc_yf(0, 1);
-
 %% --- ESERCIZIO 1: Calcolo all'istante k ---
 fprintf('--- ESERCIZIO 1: Calcolo all''istante k ---\n');
 % 1. Calcolo della Reference Trajectory all'istante Hp
