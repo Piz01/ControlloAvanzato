@@ -96,9 +96,6 @@ xlabel('Tempo (s)'); ylabel('Ingresso u(k+i|k)');
 title('Sequenza di controllo ottima (Hu=1)');
 grid on;
 
-exportgraphics(gcf, 'Esercizio1_Simulazione.png', 'Resolution', 300);
-savefig(gcf, 'Sessione_Grafici_Esercizio_1.fig');
-
 %% --- ESERCIZIO 2: Calcolo all'istante k+1 ---
 fprintf('\n--- ESERCIZIO 2: Calcolo all''istante k+1 ---\n');
 
@@ -170,6 +167,3 @@ title('Andamento del segnale di controllo');
 grid on;
 
 save('Dati_Esercizio_1_2.mat');
-
-exportgraphics(gcf, 'Esercizio2_Simulazione.png', 'Resolution', 300);
-savefig(gcf, 'Sessione_Grafici_Esercizio_2.fig');
