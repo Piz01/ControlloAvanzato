@@ -1,0 +1,27 @@
+Scenario 1: Guasto Macchina
+
+Scenario 2: Ottimizzazione dei Buffer (Spazio in Fabbrica)
+
+L'idea: I buffer fisici (es. Lat_Dx_Disp_Buffer che ha capacità = 2) occupano spazio prezioso in fabbrica. Costano. Sono davvero necessari così grandi?
+Come si fa nella Rete:
+
+    Vai nel file Excel/PIPE e riduci la marcatura iniziale di tutti i Disp_Buffer (Anteriore, Laterale Dx e Laterale Sx) a 1 (cioè c'è spazio per un solo pezzo in attesa).
+    Cosa analizzare: Osserva se il Throughput globale cambia. Se diminuendo lo spazio del magazzino il sistema produce lo stesso numero di carrozzerie, puoi concludere: "Abbiamo dimostrato che l'azienda può risparmiare il 50% dello spazio di stoccaggio intermedio senza intaccare le performance produttive, ottimizzando i costi logistici." ### Scenario 4: Aumento della capacità di Trasporto (Batching)
+    L'idea: Attualmente il muletto trasporta un componente alla volta. Cosa succede se dotiamo il muletto di un carrello più grande che trasporta 2 pezzi in un colpo solo?
+    Come si fa nella Rete:
+
+    Cambia il peso dell'arco in uscita da Trasporto_Laminati verso Laminati_Trasportati portandolo da 1 a 2.
+
+    Aggiorna di conseguenza gli archi a valle per gestire 2 token alla volta (o raddoppia le transizioni). (Attenzione, questo richiede di bilanciare bene i token per non creare deadlock).
+
+    Un modo più semplice: dimezza il tempo della transizione Trasporto_Laminati (raddoppia il suo Rate).
+    Cosa analizzare: Se il muletto diventa due volte più veloce (o trasporta il doppio), aumenta la produzione finale? La risposta sarà quasi sicuramente NO, perché il muletto lavorava solo al 23%. Potrai dimostrare che "ottimizzare una risorsa non critica (che non è il collo di bottiglia) è uno spreco di soldi per l'azienda".
+
+Scenario 3: Ottimizzazione dei Costi (Sostituzione Muletto con AGV lento)
+
+Il concetto aziendale: Il muletto lavora solo il 24% del tempo. È uno spreco pagare un operatore umano sul muletto per stare fermo 3/4 del turno. Cosa succede se lo sostituiamo con un robottino AGV (Automated Guided Vehicle) molto più economico ma 3 volte più lento?
+Come farlo nella Rete:
+
+    Vai nell'Excel, prendi il Rate della transizione legata al muletto (es. Trasporto_Laminati o Fine_Trasporto) e dividilo per 3 (es. da 0.5 a 0.16).
+    Cosa succederà ai risultati: L'utilizzo del muletto salirà dal 24% a circa il 75%. Ma la cosa incredibile (che fa impazzire i prof) è che il Throughput Globale e il MLT rimarranno quasi invariati.
+    Cosa scrivere nella relazione: "Il modello GSPN ci ha permesso di validare un'importante scelta manageriale: sostituire il muletto veloce con un mezzo più lento ed economico aumenta l'efficienza della singola risorsa (dal 24% al 75%) senza rallentare minimamente la produzione globale, poiché il trasporto non era un'attività critica (collo di bottiglia)."
