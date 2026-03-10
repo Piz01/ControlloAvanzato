@@ -6,16 +6,7 @@ L'idea: I buffer fisici (es. Lat_Dx_Disp_Buffer che ha capacità = 2) occupano s
 Come si fa nella Rete:
 
     Vai nel file Excel/PIPE e riduci la marcatura iniziale di tutti i Disp_Buffer (Anteriore, Laterale Dx e Laterale Sx) a 1 (cioè c'è spazio per un solo pezzo in attesa).
-    Cosa analizzare: Osserva se il Throughput globale cambia. Se diminuendo lo spazio del magazzino il sistema produce lo stesso numero di carrozzerie, puoi concludere: "Abbiamo dimostrato che l'azienda può risparmiare il 50% dello spazio di stoccaggio intermedio senza intaccare le performance produttive, ottimizzando i costi logistici." ### Scenario 4: Aumento della capacità di Trasporto (Batching)
-    L'idea: Attualmente il muletto trasporta un componente alla volta. Cosa succede se dotiamo il muletto di un carrello più grande che trasporta 2 pezzi in un colpo solo?
-    Come si fa nella Rete:
-
-    Cambia il peso dell'arco in uscita da Trasporto_Laminati verso Laminati_Trasportati portandolo da 1 a 2.
-
-    Aggiorna di conseguenza gli archi a valle per gestire 2 token alla volta (o raddoppia le transizioni). (Attenzione, questo richiede di bilanciare bene i token per non creare deadlock).
-
-    Un modo più semplice: dimezza il tempo della transizione Trasporto_Laminati (raddoppia il suo Rate).
-    Cosa analizzare: Se il muletto diventa due volte più veloce (o trasporta il doppio), aumenta la produzione finale? La risposta sarà quasi sicuramente NO, perché il muletto lavorava solo al 23%. Potrai dimostrare che "ottimizzare una risorsa non critica (che non è il collo di bottiglia) è uno spreco di soldi per l'azienda".
+    Cosa analizzare: Osserva se il Throughput globale cambia. Se diminuendo lo spazio del magazzino il sistema produce lo stesso numero di carrozzerie, puoi concludere: "Abbiamo dimostrato che l'azienda può risparmiare il 50% dello spazio di stoccaggio intermedio senza intaccare le performance produttive, ottimizzando i costi logistici." 
 
 Scenario 3: Ottimizzazione dei Costi (Sostituzione Muletto con AGV lento)
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1376" y="541" width="110" height="41" border="true">
+        <labels x="1377" y="542" width="111" height="42" border="true">
             <text>multipli di 3 laminati</text>
         </labels>
         <place id="Ant_Post_Conforme">
@@ -215,7 +215,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,12</value>
+                <value>Default,9</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>

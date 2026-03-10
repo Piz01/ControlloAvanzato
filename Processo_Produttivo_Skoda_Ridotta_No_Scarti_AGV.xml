@@ -195,7 +195,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,0</value>
+                <value>Default,1</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -215,7 +215,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,12</value>
+                <value>Default,9</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
