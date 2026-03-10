@@ -2,34 +2,34 @@
       ANALISI DEGLI INDICI DI PRESTAZIONE         
 ==================================================
 --- WIP PER OGNI POSTO (Numero medio di token) ---
-Posto 1: 0.5184 token medi
-Posto 2: 3.7632 token medi
-Posto 3: 0.4816 token medi
-Posto 4: 0.3698 token medi
-Posto 5: 0.2368 token medi
-Posto 6: 0.1183 token medi
-Posto 7: 0.1463 token medi
-Posto 9: 0.8207 token medi
-Posto 10: 0.0731 token medi
-Posto 12: 0.1793 token medi
-Posto 13: 0.9369 token medi
-Posto 14: 0.8940 token medi
-Posto 15: 0.0631 token medi
-Posto 16: 0.2958 token medi
-Posto 17: 0.3393 token medi
-Posto 18: 1.1060 token medi
-Posto 19: 0.1183 token medi
-Posto 20: 0.5858 token medi
-Posto 21: 0.9369 token medi
-Posto 22: 0.8940 token medi
-Posto 23: 0.0631 token medi
-Posto 24: 0.2958 token medi
-Posto 25: 0.3393 token medi
-Posto 26: 1.1060 token medi
-Posto 27: 0.1183 token medi
-Posto 28: 0.5858 token medi
-Posto 29: 1.5531 token medi
-Posto 30: 0.3656 token medi
+Ant_Post_Conforme: 0.5184 token medi
+Ant_Post_Disp_Buffer: 3.7632 token medi
+Ant_Post_Disp_Conforme: 0.4816 token medi
+Ant_Post_Grezzi_Tagl_Press: 0.3698 token medi
+Ant_Post_Pezzi_Buffer: 0.2368 token medi
+Ant_Post_Tagliato_Pressato: 0.1183 token medi
+Ant_Post_Tagliatrice_Pressa: 0.1463 token medi
+Disp_Muletto1: 0.8207 token medi
+Laminati: 0.0731 token medi
+Laminati su Muletto: 0.1793 token medi
+Lat_Dx_Conforme: 0.9369 token medi
+Lat_Dx_Disp_Buffer: 0.8940 token medi
+Lat_Dx_Disp_Conforme: 0.0631 token medi
+Lat_Dx_Grezzi_Tagl_Press: 0.2958 token medi
+Lat_Dx_Grezzo: 0.3393 token medi
+Lat_Dx_Pezzi_Buffer: 1.1060 token medi
+Lat_Dx_Tagliato_Pressato: 0.1183 token medi
+Lat_Dx_Tagliatrice_Pressa: 0.5858 token medi
+Lat_Sx_Conforme: 0.9369 token medi
+Lat_Sx_Disp_Buffer: 0.8940 token medi
+Lat_Sx_Disp_Conforme: 0.0631 token medi
+Lat_Sx_Grezzi_Tagl_Press: 0.2958 token medi
+Lat_Sx_Grezzo: 0.3393 token medi
+Lat_Sx_Pezzi_Buffer: 1.1060 token medi
+Lat_Sx_Tagliato_Pressato: 0.1183 token medi
+Lat_Sx_Tagliatrice_Pressa: 0.5858 token medi
+Pezzo_Ant_Post_sul_Nastro: 1.5531 token medi
+Ant_Post_Tagliatrice_Pressa_Guasta: 0.3656 token medi
  
 --- THROUGHPUT TRANSIZIONI TEMPORIZZATE ---
 Transizione 1: 0.0592 scatti/unita_di_tempo

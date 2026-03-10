@@ -1,0 +1,60 @@
+==================================================
+      ANALISI DEGLI INDICI DI PRESTAZIONE         
+==================================================
+--- WIP PER OGNI POSTO (Numero medio di token) ---
+Ant_Post_Conforme: 0.7810 token medi
+Ant_Post_Disp_Buffer: 3.3927 token medi
+Ant_Post_Disp_Conforme: 0.2190 token medi
+Ant_Post_Grezzi_Tagl_Press: 0.4597 token medi
+Ant_Post_Pezzi_Buffer: 0.6073 token medi
+Ant_Post_Tagliato_Pressato: 0.1532 token medi
+Ant_Post_Tagliatrice_Pressa: 0.3871 token medi
+Disp_Muletto1: 0.7701 token medi
+Laminati: 0.1212 token medi
+Laminati su Muletto: 0.2299 token medi
+Lat_Dx_Conforme: 0.8514 token medi
+Lat_Dx_Disp_Buffer: 1.2311 token medi
+Lat_Dx_Disp_Conforme: 0.1486 token medi
+Lat_Dx_Grezzi_Tagl_Press: 0.3831 token medi
+Lat_Dx_Grezzo: 0.5731 token medi
+Lat_Dx_Pezzi_Buffer: 0.7689 token medi
+Lat_Dx_Tagliato_Pressato: 0.1532 token medi
+Lat_Dx_Tagliatrice_Pressa: 0.4637 token medi
+Lat_Sx_Conforme: 0.8514 token medi
+Lat_Sx_Disp_Buffer: 1.2311 token medi
+Lat_Sx_Disp_Conforme: 0.1486 token medi
+Lat_Sx_Grezzi_Tagl_Press: 0.3831 token medi
+Lat_Sx_Grezzo: 0.5731 token medi
+Lat_Sx_Pezzi_Buffer: 0.7689 token medi
+Lat_Sx_Tagliato_Pressato: 0.1532 token medi
+Lat_Sx_Tagliatrice_Pressa: 0.4637 token medi
+Pezzo_Ant_Post_sul_Nastro: 0.7285 token medi
+ 
+--- THROUGHPUT TRANSIZIONI TEMPORIZZATE ---
+Transizione 1: 0.0766 scatti/unita_di_tempo
+Transizione 2: 0.0766 scatti/unita_di_tempo
+Transizione 3: 0.0766 scatti/unita_di_tempo
+Transizione 8: 0.0766 scatti/unita_di_tempo
+Transizione 9: 0.0766 scatti/unita_di_tempo
+Transizione 10: 0.0766 scatti/unita_di_tempo
+Transizione 12: 0.0766 scatti/unita_di_tempo
+Transizione 13: 0.0766 scatti/unita_di_tempo
+Transizione 14: 0.0766 scatti/unita_di_tempo
+Transizione 16: 0.0766 scatti/unita_di_tempo
+Transizione 17: 0.0766 scatti/unita_di_tempo
+ 
+--- UTILIZZO RISORSE (Efficienza Macchine) ---
+Utilizzo Muletto: 22.99 %
+Utilizzo Pressa-Tagliatrice Anteriore-Posteriore: 61.29 %
+Utilizzo Pressa-Tagliatrice Laterale Sx: 53.63 %
+Utilizzo Pressa-Tagliatrice Laterale Dx: 53.63 %
+ 
+--- TEMPO MEDIO DI ATTESA NEI BUFFER (E[T]p) ---
+Ant_Post_Pezzi_Buffer: Tempo attesa medio = 7.9262 unita_tempo
+Lat_Dx_Pezzi_Buffer: Tempo attesa medio = 10.0354 unita_tempo
+Lat_Sx_Pezzi_Buffer: Tempo attesa medio = 10.0354 unita_tempo
+ 
+--- ANALISI GLOBALE DI SISTEMA ---
+WIP Totale (Pezzi fisici nel sistema): 8.5403
+Throughput Globale (Uscita sistema): 0.0766
+MANUFACTURING LEAD TIME (MLT): 111.4653 unita_tempo
