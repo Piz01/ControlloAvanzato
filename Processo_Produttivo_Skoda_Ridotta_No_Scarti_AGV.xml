@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1375" y="540" width="109" height="40" border="true">
+        <labels x="1377" y="542" width="111" height="42" border="true">
             <text>multipli di 3 laminati</text>
         </labels>
         <place id="Ant_Post_Conforme">
@@ -164,26 +164,6 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Ant_Post_Tagliatrice_Pressa_Guasta">
-            <graphics>
-                <position x="1680.0" y="825.0"/>
-            </graphics>
-            <name>
-                <value>Ant_Post_Tagliatrice_Pressa_Guasta</value>
-                <graphics>
-                    <offset x="123.33333333333346" y="46.66666666666664"/>
-                </graphics>
-            </name>
-            <initialMarking>
-                <value>Default,0</value>
-                <graphics>
-                    <offset x="0.0" y="0.0"/>
-                </graphics>
-            </initialMarking>
-            <capacity>
-                <value>0</value>
-            </capacity>
-        </place>
         <place id="Carrozzeria_Pronta">
             <graphics>
                 <position x="2205.0" y="1410.0"/>
@@ -204,12 +184,12 @@
                 <value>0</value>
             </capacity>
         </place>
-        <place id="Disp_Muletto1">
+        <place id="Disp_AGV">
             <graphics>
                 <position x="2280.0" y="435.0"/>
             </graphics>
             <name>
-                <value>Disp_Muletto1</value>
+                <value>Disp_AGV</value>
                 <graphics>
                     <offset x="101.81818181818183" y="18.666666666666675"/>
                 </graphics>
@@ -708,58 +688,6 @@
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="Ant_Post_Tagliatrice_Pressa_Guasto">
-            <graphics>
-                <position x="1755.0" y="918.3333333333333"/>
-            </graphics>
-            <name>
-                <value>Ant_Post_Tagliatrice_Pressa_Guasto</value>
-                <graphics>
-                    <offset x="91.66666666666674" y="46.111111111111114"/>
-                </graphics>
-            </name>
-            <orientation>
-                <value>0</value>
-            </orientation>
-            <rate>
-                <value>1.0</value>
-            </rate>
-            <timed>
-                <value>true</value>
-            </timed>
-            <infiniteServer>
-                <value>false</value>
-            </infiniteServer>
-            <priority>
-                <value>1</value>
-            </priority>
-        </transition>
-        <transition id="Ant_Post_Tagliatrice_Pressa_Riparata">
-            <graphics>
-                <position x="1755.0" y="735.0"/>
-            </graphics>
-            <name>
-                <value>Ant_Post_Tagliatrice_Pressa_Riparata</value>
-                <graphics>
-                    <offset x="91.66666666666674" y="-12.777777777777775"/>
-                </graphics>
-            </name>
-            <orientation>
-                <value>0</value>
-            </orientation>
-            <rate>
-                <value>1.0</value>
-            </rate>
-            <timed>
-                <value>true</value>
-            </timed>
-            <infiniteServer>
-                <value>false</value>
-            </infiniteServer>
-            <priority>
-                <value>1</value>
-            </priority>
-        </transition>
         <transition id="Carico_Laminati">
             <graphics>
                 <position x="1590.0" y="960.0"/>
@@ -1176,58 +1104,6 @@
             <arcpath id="001" x="1900" y="1271" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Ant_Post_Tagliatrice_Pressa_Guasta to Ant_Post_Tagliatrice_Pressa_Riparata" source="Ant_Post_Tagliatrice_Pressa_Guasta" target="Ant_Post_Tagliatrice_Pressa_Riparata">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="1700" y="823" curvePoint="false"/>
-            <arcpath id="001" x="1760" y="746" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Ant_Post_Tagliatrice_Pressa_Guasto to Ant_Post_Tagliatrice_Pressa_Guasta" source="Ant_Post_Tagliatrice_Pressa_Guasto" target="Ant_Post_Tagliatrice_Pressa_Guasta">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="1760" y="930" curvePoint="false"/>
-            <arcpath id="001" x="1700" y="847" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Ant_Post_Tagliatrice_Pressa_Riparata to Ant_Post_Tagliatrice_Pressa" source="Ant_Post_Tagliatrice_Pressa_Riparata" target="Ant_Post_Tagliatrice_Pressa">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="1770" y="745" curvePoint="false"/>
-            <arcpath id="001" x="1831" y="823" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Ant_Post_Tagliatrice_Pressa to Ant_Post_Tagliatrice_Pressa_Guasto" source="Ant_Post_Tagliatrice_Pressa" target="Ant_Post_Tagliatrice_Pressa_Guasto">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="1831" y="847" curvePoint="false"/>
-            <arcpath id="001" x="1770" y="928" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
         <arc id="Carico_Laminati to Laminati" source="Carico_Laminati" target="Laminati">
             <graphics/>
             <inscription>
@@ -1255,7 +1131,7 @@
             <arcpath id="002" x="1601" y="975" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Disp Muletto to Inizio trasporto" source="Disp_Muletto1" target="Inizio_Trasporto">
+        <arc id="Disp Muletto to Inizio trasporto" source="Disp_AGV" target="Inizio_Trasporto">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1307,7 +1183,7 @@
             <arcpath id="001" x="1930" y="636" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Fine trasporto to Disp Muletto1" source="Fine_Trasporto" target="Disp_Muletto1">
+        <arc id="Fine trasporto to Disp Muletto1" source="Fine_Trasporto" target="Disp_AGV">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1369,7 +1245,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1601" y="791" curvePoint="false"/>
-            <arcpath id="001" x="1807" y="327" curvePoint="true"/>
+            <arcpath id="001" x="1806" y="326" curvePoint="true"/>
             <arcpath id="002" x="2200" y="325" curvePoint="false"/>
             <type value="normal"/>
         </arc>
