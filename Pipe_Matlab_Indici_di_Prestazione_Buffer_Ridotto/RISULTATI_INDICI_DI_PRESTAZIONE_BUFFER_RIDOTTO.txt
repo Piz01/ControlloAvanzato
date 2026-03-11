@@ -50,9 +50,9 @@ Utilizzo Pressa-Tagliatrice Laterale Sx: 78.28 %
 Utilizzo Pressa-Tagliatrice Laterale Dx: 78.28 %
  
 --- TEMPO MEDIO DI ATTESA NEI BUFFER (E[T]p) ---
-Ant_Post_Pezzi_Buffer: Tempo attesa medio = 2.0000 unita_tempo
-Lat_Dx_Pezzi_Buffer: Tempo attesa medio = 5.2733 unita_tempo
-Lat_Sx_Pezzi_Buffer: Tempo attesa medio = 5.2733 unita_tempo
+Ant_Post_Pezzi_Buffer: Tempo attesa medio = 8.1169 unita_tempo
+Lat_Dx_Pezzi_Buffer: Tempo attesa medio = 6.6300 unita_tempo
+Lat_Sx_Pezzi_Buffer: Tempo attesa medio = 6.6300 unita_tempo
  
 --- ANALISI GLOBALE DI SISTEMA ---
 WIP Totale (Pezzi fisici nel sistema): 8.5428
