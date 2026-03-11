@@ -291,17 +291,17 @@ disp(' ');
 % --- INDICE 1 (Slide 18): Probabilità di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 % Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
-idx_Muletto = 10;
+idx_AGV = 10;
 idx_PressaTaglAnt = 8;
 idx_PressaTaglSx = 29;
 idx_PressaTaglDx = 21;
 
-Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
+Utilizzo_AGV = 1 - Mean_Tokens(idx_AGV);
 Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
 Utilizzo_PressaTaglSx = 1 - Mean_Tokens(idx_PressaTaglSx);
 Utilizzo_PressaTaglDx = 1 - Mean_Tokens(idx_PressaTaglDx);
 
-fprintf('Utilizzo AGV: %.2f %%\n', Utilizzo_Muletto * 100);
+fprintf('Utilizzo AGV: %.2f %%\n', Utilizzo_AGV * 100);
 fprintf('Utilizzo Pressa-Tagliatrice Anteriore-Posteriore: %.2f %%\n', Utilizzo_PressaTaglAnt * 100);
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Sx: %.2f %%\n', Utilizzo_PressaTaglSx * 100);
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Dx: %.2f %%\n', Utilizzo_PressaTaglDx * 100);
