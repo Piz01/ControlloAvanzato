@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1377" y="542" width="111" height="42" border="true">
+        <labels x="1783" y="626" width="105" height="36" border="true">
+            <text>Ant_Post_Grezzi_Tagl_Press</text>
+        </labels>
+        <labels x="2045" y="877" width="89" height="36" border="true">
+            <text>Ant_Post_Tagliato_Pressato</text>
+        </labels>
+        <labels x="2041" y="506" width="41" height="20" border="true">
+            <text>Manca</text>
+        </labels>
+        <labels x="2057" y="783" width="41" height="20" border="true">
+            <text>Manca</text>
+        </labels>
+        <labels x="1378" y="543" width="112" height="43" border="true">
             <text>multipli di 3 laminati</text>
         </labels>
         <place id="Ant_Post_Conforme">
@@ -131,7 +143,7 @@
             <name>
                 <value>Ant_Post_Tagl_Press</value>
                 <graphics>
-                    <offset x="146.7391774891777" y="20.971139971139966"/>
+                    <offset x="143.4058441558444" y="14.304473304473298"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -191,7 +203,7 @@
             <name>
                 <value>Disp_Muletto1</value>
                 <graphics>
-                    <offset x="101.81818181818183" y="18.666666666666675"/>
+                    <offset x="111.81818181818186" y="22.000000000000007"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -231,7 +243,7 @@
             <name>
                 <value>Laminati_Trasportati</value>
                 <graphics>
-                    <offset x="5.0" y="27.0"/>
+                    <offset x="-10.555555555555554" y="29.22222222222222"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -511,7 +523,7 @@
             <name>
                 <value>Lat_Sx_Lavorato</value>
                 <graphics>
-                    <offset x="119.08189033189036" y="13.489538239538232"/>
+                    <offset x="122.41522366522369" y="12.378427128427122"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -551,7 +563,7 @@
             <name>
                 <value>Lat_Sx_Tagl_Press</value>
                 <graphics>
-                    <offset x="124.1937229437232" y="21.01659451659451"/>
+                    <offset x="144.19372294372326" y="15.461038961038955"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -571,7 +583,7 @@
             <name>
                 <value>Lat_Sx_Tagliatrice_Pressa</value>
                 <graphics>
-                    <offset x="22.82215007215021" y="-16.20238095238086"/>
+                    <offset x="25.044372294372433" y="-6.202380952380864"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -591,7 +603,7 @@
             <name>
                 <value>Ant_Post_Carico</value>
                 <graphics>
-                    <offset x="114.13888888888894" y="24.5"/>
+                    <offset x="134.138888888889" y="28.944444444444443"/>
                 </graphics>
             </name>
             <orientation>
@@ -747,7 +759,7 @@
             <name>
                 <value>Inizio_Trasporto</value>
                 <graphics>
-                    <offset x="116.54545454545443" y="24.727272727272737"/>
+                    <offset x="128.76767676767668" y="24.727272727272737"/>
                 </graphics>
             </name>
             <orientation>
@@ -773,7 +785,7 @@
             <name>
                 <value>Lat_Dx_Carico</value>
                 <graphics>
-                    <offset x="-6.445526695526644" y="18.879870129870124"/>
+                    <offset x="-12.001082251082199" y="33.32431457431457"/>
                 </graphics>
             </name>
             <orientation>
@@ -1007,7 +1019,7 @@
             <name>
                 <value>Trasporto_Laminati</value>
                 <graphics>
-                    <offset x="-5.0" y="35.0"/>
+                    <offset x="-0.5555555555555558" y="12.777777777777779"/>
                 </graphics>
             </name>
             <orientation>
