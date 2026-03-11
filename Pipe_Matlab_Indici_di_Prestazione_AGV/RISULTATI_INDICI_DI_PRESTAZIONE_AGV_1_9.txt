@@ -1,5 +1,7 @@
 NUMERO DI MARCATURA RAGGIUNGIBILI = 5955
 
+RATE "Trasporto_Laminati" = 1/9
+
 ==================================================
       ANALISI DEGLI INDICI DI PRESTAZIONE         
 ==================================================
