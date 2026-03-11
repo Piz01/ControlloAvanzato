@@ -216,36 +216,36 @@ disp('==================================================');
 disp('--- WIP PER OGNI POSTO (Numero medio di token) ---');
 
 nomi_posti = {
-    'Ant_Post_Conforme';
-    'Ant_Post_Disp_Buffer';
-    'Ant_Post_Disp_Conforme';
-    'Ant_Post_Grezzi_Tagl_Press';
-    'Ant_Post_Pezzi_Buffer';
-    'Ant_Post_Tagliato_Pressato';
-    'Ant_Post_Tagliatrice_Pressa';
-    'Carrozzeria_Pronta';
-    'Disp_Muletto1';
-    'Laminati';
-    'Laminati_Trasportati';
-    'Laminati su Muletto';       
-    'Lat_Dx_Conforme';
-    'Lat_Dx_Disp_Buffer';
-    'Lat_Dx_Disp_Conforme';
-    'Lat_Dx_Grezzi_Tagl_Press';
-    'Lat_Dx_Grezzo';
-    'Lat_Dx_Pezzi_Buffer';
-    'Lat_Dx_Tagliato_Pressato';
-    'Lat_Dx_Tagliatrice_Pressa';
-    'Lat_Sx_Conforme';
-    'Lat_Sx_Disp_Buffer';
-    'Lat_Sx_Disp_Conforme';
-    'Lat_Sx_Grezzi_Tagl_Press';  
-    'Lat_Sx_Grezzo';
-    'Lat_Sx_Pezzi_Buffer';
-    'Lat_Sx_Tagliato_Pressato';
-    'Lat_Sx_Tagliatrice_Pressa';
-    'Pezzo_Ant_Post_sul_Nastro';
-    'Ant_Post_Tagliatrice_Pressa_Guasta'
+    'Ant_Post_Conforme';           
+    'Ant_Post_Disp_Buffer';        
+    'Ant_Post_Disp_Conforme';     
+    'Ant_Post_Grezzo';             
+    'Ant_Post_Lavorato';          
+    'Ant_Post_Pezzi_Buffer';      
+    'Ant_Post_Tagl_Press';        
+    'Ant_Post_Tagliatrice_Pressa'; 
+    'Ant_Post_Tagliatrice_Pressa_Guasta';
+    'Carrozzeria_Pronta';          
+    'Disp_Muletto1';               
+    'Laminati';                    
+    'Laminati_Trasportati';        
+    'Laminati su Mulettto';        
+    'Lat_Dx_Conforme';             
+    'Lat_Dx_Disp_Buffer';          
+    'Lat_Dx_Disp_Conforme';        
+    'Lat_Dx_Grezzo';               
+    'Lat_Dx_Lavorato';             
+    'Lat_Dx_Pezzi_Buffer';         
+    'Lat_Dx_Tagl_Press';           
+    'Lat_Dx_Tagliatrice_Pressa';   
+    'Lat_Sx_Conforme';             
+    'Lat_Sx_Disp_Buffer';          
+    'Lat_Sx_Disp_Conforme';        
+    'Lat_Sx_Grezzo';               
+    'Lat_Sx_Lavorato';             
+    'Lat_Sx_Pezzi_Buffer';         
+    'Lat_Sx_Tagl_Press';           
+    'Lat_Sx_Tagliatrice_Pressa';   
 };
 
 Mean_Tokens = Prob * list; 
@@ -292,10 +292,10 @@ disp(' ');
 % --- INDICE 1 (Slide 18): Probabilità di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 % Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
-idx_Muletto = 9;
-idx_PressaTaglAnt = 7;
-idx_PressaTaglSx = 28;
-idx_PressaTaglDx = 20;
+idx_Muletto = 11;
+idx_PressaTaglAnt = 8;
+idx_PressaTaglSx = 30;
+idx_PressaTaglDx = 22;
 
 Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
 Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
@@ -315,7 +315,7 @@ post = I + pre;
 
 % Nomi e rispettivi indici (Assicurati che l'ordine corrisponda!)
 nomi_posti_buffer = {'Ant_Post_Pezzi_Buffer', 'Lat_Dx_Pezzi_Buffer', 'Lat_Sx_Pezzi_Buffer'};
-posti_buffer = [5, 18, 26]; % SOSTITUISCI con gli indici esatti del tuo Excel
+posti_buffer = [6, 20, 28]; % SOSTITUISCI con gli indici esatti del tuo Excel
 
 % Usiamo 'k' come indice che va da 1 a 3
 for k = 1:length(posti_buffer)
@@ -347,7 +347,7 @@ disp('--- ANALISI GLOBALE DI SISTEMA ---');
 
 % Mappa qui TUTTI E SOLI gli indici dei posti che rappresentano pezzi fisici 
 % (Grezzi, Tagliati, Buffer, Conforme). Escludi Muletti, Robot e Operatori.
-posti_pezzi_fisici = [1, 4, 5, 6, 8, 10, 11, 12, 13, 16, 17, 18, 19, 21, 24, 25, 26, 27, 29]; 
+posti_pezzi_fisici = [1, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 18, 19, 20, 21, 23, 26, 27, 28, 29]; 
 
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
