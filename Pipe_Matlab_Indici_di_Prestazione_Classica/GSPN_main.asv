@@ -205,14 +205,14 @@ Prob(tan) = pi_tang;
 disp('Probabilità stazionarie calcolate con successo!');
 
 %% ======================================================================
-%      CALCOLO DEGLI INDICI DI PRESTAZIONE (Rif. Slide 17-20 + Relazione)
+%      CALCOLO DEGLI INDICI DI PRESTAZIONE
 % =======================================================================
 disp(' ');
 disp('==================================================');
 disp('      ANALISI DEGLI INDICI DI PRESTAZIONE         ');
 disp('==================================================');
 
-% --- INDICE 2 (Slide 18): Valore atteso di token nei posti (WIP locale) ---
+% --- Valore atteso di token nei posti (WIP locale) ---
 disp('--- WIP PER OGNI POSTO (Numero medio di token) ---');
 
 nomi_posti = {
@@ -247,7 +247,8 @@ nomi_posti = {
     'Lat_Sx_Tagliatrice_Pressa';
 };         
 
-Mean_Tokens = Prob * list; 
+Mean_Tokens = Prob * list;
+
 for p = 1:size(list, 2)
     if Mean_Tokens(p) > 0.001 % Stampa solo i posti non vuoti
         fprintf('%s: %.4f token medi\n', nomi_posti{p}, Mean_Tokens(p));
@@ -255,7 +256,7 @@ for p = 1:size(list, 2)
 end
 disp(' ');
 
-% --- INDICE 3 (Slide 19): Throughput delle Transizioni ---
+% --- Throughput delle Transizioni ---
 disp('--- THROUGHPUT TRANSIZIONI TEMPORIZZATE ---');
 Throughput = zeros(1, length(rates));
 for i = tan 
@@ -287,9 +288,9 @@ for t = 1:length(rates)
 end
 disp(' ');
 
-% --- INDICE 1 (Slide 18): Probabilità di condizione (Utilizzo Macchine) ---
+% --- Probabilità di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
-% Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
+
 idx_Muletto = 10;
 idx_PressaTaglAnt = 8;
 idx_PressaTaglSx = 29;
@@ -306,19 +307,19 @@ fprintf('Utilizzo Pressa-Tagliatrice Laterale Sx: %.2f %%\n', Utilizzo_PressaTag
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Dx: %.2f %%\n', Utilizzo_PressaTaglDx * 100);
 disp(' ');
 
-% --- INDICE 4 (Slide 20): Tempo medio di attesa nel posto (Legge di Little locale) ---
+% --- Tempo medio di attesa nel posto  ---
 disp('--- TEMPO MEDIO DI ATTESA NEI BUFFER (E[T]p) ---');
-% Matrice Post (I+) per calcolare chi inserisce token nel buffer
+% Matrice Post (I+)
 post = I + pre; 
 
-% Nomi e rispettivi indici (Assicurati che l'ordine corrisponda!)
+% Nomi e rispettivi indici
 nomi_posti_buffer = {'Ant_Post_Pezzi_Buffer', 'Lat_Dx_Pezzi_Buffer', 'Lat_Sx_Pezzi_Buffer'};
-posti_buffer = [5, 18, 26]; % SOSTITUISCI con gli indici esatti del tuo Excel
+posti_buffer = [6, 19, 27];
 
-% Usiamo 'k' come indice che va da 1 a 3
+% Usiamo 'k' come indice
 for k = 1:length(posti_buffer)
     
-    p = posti_buffer(k); % 'p' ora è il vero indice del posto (es. 4, poi 16...)
+    p = posti_buffer(k);
     T_in_totale = 0;
     
     % Trova transizioni in ingresso al posto p
@@ -332,7 +333,6 @@ for k = 1:length(posti_buffer)
     
     if T_in_totale > 0
         Attesa_Media = Mean_Tokens(p) / T_in_totale;
-        % Ora usiamo 'k' per pescare il nome corretto dal cell array
         fprintf('%s: Tempo attesa medio = %.4f unita_tempo\n', nomi_posti_buffer{k}, Attesa_Media);
     end
 end
@@ -343,13 +343,12 @@ disp(' ');
 % =======================================================================
 disp('--- ANALISI GLOBALE DI SISTEMA ---');
 
-% Mappa qui TUTTI E SOLI gli indici dei posti che rappresentano pezzi fisici 
-% (Grezzi, Tagliati, Buffer, Conforme). Escludi Muletti, Robot e Operatori.
-posti_pezzi_fisici = [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 17, 18, 19, 20, 22, 2 25, 26, 27, 29]; 
+% Indici dei posti che rappresentano pezzi fisici 
+posti_pezzi_fisici = [1, 4, 5, 6, 7, , 10, 11, 12, 13, 16, 17, 18, 19, 21, 24, 25, 26, 27, 29]; 
 
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
-% Indica la transizione finale che "sforna" il prodotto (es. Saldatura)
+% Indichiamo la transizione finale che realizza il prodotto (Saldatura)
 idx_Saldatura = 16; 
 
 if Throughput(idx_Saldatura) > 0

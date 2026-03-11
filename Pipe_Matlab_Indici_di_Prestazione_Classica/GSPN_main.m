@@ -291,10 +291,10 @@ disp(' ');
 % --- Probabilità di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 
-idx_Muletto = 9;
-idx_PressaTaglAnt = 7;
-idx_PressaTaglSx = 28;
-idx_PressaTaglDx = 20;
+idx_Muletto = 10;
+idx_PressaTaglAnt = 8;
+idx_PressaTaglSx = 29;
+idx_PressaTaglDx = 21;
 
 Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
 Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
@@ -314,7 +314,7 @@ post = I + pre;
 
 % Nomi e rispettivi indici
 nomi_posti_buffer = {'Ant_Post_Pezzi_Buffer', 'Lat_Dx_Pezzi_Buffer', 'Lat_Sx_Pezzi_Buffer'};
-posti_buffer = [5, 18, 26];
+posti_buffer = [6, 19, 27];
 
 % Usiamo 'k' come indice
 for k = 1:length(posti_buffer)
@@ -344,7 +344,7 @@ disp(' ');
 disp('--- ANALISI GLOBALE DI SISTEMA ---');
 
 % Indici dei posti che rappresentano pezzi fisici 
-posti_pezzi_fisici = [1, 4, 5, 6, 8, 10, 11, 12, 13, 16, 17, 18, 19, 21, 24, 25, 26, 27, 29]; 
+posti_pezzi_fisici = [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 17, 18, 19, 20, 22, 25, 26, 27, 28]; 
 
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
