@@ -219,9 +219,10 @@ nomi_posti = {
     'Ant_Post_Conforme';
     'Ant_Post_Disp_Buffer';
     'Ant_Post_Disp_Conforme';
-    'Ant_Post_Grezzi_Tagl_Press';
+    'Ant_Post_Grezzo';
+    'Ant_Post_Lavorato';
     'Ant_Post_Pezzi_Buffer';
-    'Ant_Post_Tagliato_Pressato';
+    'Ant_Post_Tagl_Press';
     'Ant_Post_Tagliatrice_Pressa';
     'Carrozzeria_Pronta';
     'Disp_Muletto1';
@@ -231,21 +232,20 @@ nomi_posti = {
     'Lat_Dx_Conforme';
     'Lat_Dx_Disp_Buffer';
     'Lat_Dx_Disp_Conforme';
-    'Lat_Dx_Grezzi_Tagl_Press';
     'Lat_Dx_Grezzo';
+    'Lat_Dx_Lavorato';
     'Lat_Dx_Pezzi_Buffer';
-    'Lat_Dx_Tagliato_Pressato';
+    'Lat_Dx_Tagl_Press';
     'Lat_Dx_Tagliatrice_Pressa';
     'Lat_Sx_Conforme';
     'Lat_Sx_Disp_Buffer';
     'Lat_Sx_Disp_Conforme';
-    'Lat_Sx_Grezzi_Tagl_Press';  
     'Lat_Sx_Grezzo';
+    'Lat_Sx_Lavorato';
     'Lat_Sx_Pezzi_Buffer';
-    'Lat_Sx_Tagliato_Pressato';
+    'Lat_Sx_Tagl_Press';  
     'Lat_Sx_Tagliatrice_Pressa';
-    'Pezzo_Ant_Post_sul_Nastro'
-};
+};         
 
 Mean_Tokens = Prob * list;
 

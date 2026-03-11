@@ -251,7 +251,7 @@ Mean_Tokens = Prob * list;
 
 for p = 1:size(list, 2)
     if Mean_Tokens(p) > 0.001 % Stampa solo i posti non vuoti
-        fprintf('Posto %d: %.4f token medi\n', p, Mean_Tokens(p));
+        fprintf('%s: %.4f token medi\n', nomi_posti{p}, Mean_Tokens(p));
     end
 end
 disp(' ');

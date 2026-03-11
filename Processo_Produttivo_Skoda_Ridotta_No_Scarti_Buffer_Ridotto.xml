@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="1376" y="541" width="110" height="41" border="true">
+        <labels x="1377" y="542" width="111" height="42" border="true">
             <text>multipli di 3 laminati</text>
         </labels>
         <place id="Ant_Post_Conforme">
@@ -195,7 +195,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,0</value>
+                <value>Default,1</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -1127,7 +1127,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2200" y="1419" curvePoint="false"/>
-            <arcpath id="001" x="1602" y="1211" curvePoint="true"/>
+            <arcpath id="001" x="1601" y="1209" curvePoint="true"/>
             <arcpath id="002" x="1599" y="974" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1245,7 +1245,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="1599" y="789" curvePoint="false"/>
-            <arcpath id="001" x="1805" y="325" curvePoint="true"/>
+            <arcpath id="001" x="1804" y="324" curvePoint="true"/>
             <arcpath id="002" x="2198" y="324" curvePoint="false"/>
             <type value="normal"/>
         </arc>
@@ -1623,7 +1623,7 @@
                 <value>false</value>
             </tagged>
             <arcpath id="000" x="2220" y="1324" curvePoint="false"/>
-            <arcpath id="001" x="2222" y="1322" curvePoint="false"/>
+            <arcpath id="001" x="2221" y="1321" curvePoint="false"/>
             <arcpath id="002" x="2424" y="1258" curvePoint="false"/>
             <type value="normal"/>
         </arc>

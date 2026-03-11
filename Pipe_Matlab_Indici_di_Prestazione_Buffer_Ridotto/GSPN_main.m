@@ -214,10 +214,43 @@ disp('==================================================');
 
 % --- INDICE 2 (Slide 18): Valore atteso di token nei posti (WIP locale) ---
 disp('--- WIP PER OGNI POSTO (Numero medio di token) ---');
+
+nomi_posti = {
+    'Ant_Post_Conforme';
+    'Ant_Post_Disp_Buffer';
+    'Ant_Post_Disp_Conforme';
+    'Ant_Post_Grezzo';
+    'Ant_Post_Lavorato';
+    'Ant_Post_Pezzi_Buffer';
+    'Ant_Post_Tagl_Press';
+    'Ant_Post_Tagliatrice_Pressa';
+    'Carrozzeria_Pronta';
+    'Disp_Muletto1';
+    'Laminati';
+    'Laminati_Trasportati';
+    'Laminati su Muletto';       
+    'Lat_Dx_Conforme';
+    'Lat_Dx_Disp_Buffer';
+    'Lat_Dx_Disp_Conforme';
+    'Lat_Dx_Grezzo';
+    'Lat_Dx_Lavorato';
+    'Lat_Dx_Pezzi_Buffer';
+    'Lat_Dx_Tagl_Press';
+    'Lat_Dx_Tagliatrice_Pressa';
+    'Lat_Sx_Conforme';
+    'Lat_Sx_Disp_Buffer';
+    'Lat_Sx_Disp_Conforme';
+    'Lat_Sx_Grezzo';
+    'Lat_Sx_Lavorato';
+    'Lat_Sx_Pezzi_Buffer';
+    'Lat_Sx_Tagl_Press';  
+    'Lat_Sx_Tagliatrice_Pressa';
+};         
+
 Mean_Tokens = Prob * list; 
 for p = 1:size(list, 2)
     if Mean_Tokens(p) > 0.001 % Stampa solo i posti non vuoti
-        fprintf('Posto %d: %.4f token medi\n', p, Mean_Tokens(p));
+        fprintf('%s: %.4f token medi\n', nomi_posti{p}, Mean_Tokens(p));
     end
 end
 disp(' ');
