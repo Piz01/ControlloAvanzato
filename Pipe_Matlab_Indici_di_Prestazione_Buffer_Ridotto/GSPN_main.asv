@@ -10,7 +10,7 @@ format short;
 % maschera_trans: vettore classificazione transizioni (1 immediate, 0 temporizzate)
 % rates: vettore rates delle transiz. temporizzate (0 se immediata)
 % weights: vettore pesi delle transiz. immediate (0 se temporizzata)
-% t_pr: vettore priorit‡ transiz. (0 se temporizzate)
+% t_pr: vettore priorit√† transiz. (0 se temporizzate)
 % servers: vettore numero server delle transizioni
 % we_ra: combinazione dei vettori dei rates e dei pesi
 % list: lista marcature
@@ -22,12 +22,12 @@ load('FOLDER/MATLAB.mat') % contiene filemane e indici
 [pre, I, H, m_ini, maschera_trans, rates, weights, t_pr, servers] = matrici_pre_I(filename,indici);
 we_ra = weights+rates;
 
-%% Calcolo grafo di Raggiungibilit‡
+%% Calcolo grafo di Raggiungibilit√†
 list=[];
 Ragg=[];
 % genera la lista degli stati raggiungibili a partire dalla marcatura iniziale m0
 [list,Ragg]=Calcola_Marc_Ragg(m_ini,list,Ragg,I,pre,H,t_pr);
-%il numero degli stati Ë dato dalle righe della lista delle marcature raggiungibili
+%il numero degli stati √® dato dalle righe della lista delle marcature raggiungibili
 [ns, ~]=size(Ragg);      %provare con lenght
 
 %% CALCOLO DELLA MATRICE A
@@ -52,7 +52,7 @@ ind_multiple = find(servers>0);
 
 for i=1:ns
     for t = Ragg(i).abi % scorre le transizioni attive in i
-        if isempty(find(ind_multiple == t, 1)) % se la transizione non Ë multiple server
+        if isempty(find(ind_multiple == t, 1)) % se la transizione non √® multiple server
            qi(i) = qi(i) + we_ra(t);
         else
             p_ing = find(pre(:,t)~=0);          % si prendono i posti in ingresso alla transizione t
@@ -61,7 +61,7 @@ for i=1:ns
             ED = min(floor(tok_ing./pesi_ing)); % si calcola il grado di abilitazione di t
             K = servers(t);                     % si prende il grado di parallelismo di t
             f = min(ED,K);                      % f: funzione di dipendenza dalla marcatura
-            qi(i) = qi(i) + we_ra(t)*f;         %il rate Ë moltiplicato per f
+            qi(i) = qi(i) + we_ra(t)*f;         %il rate √® moltiplicato per f
         end
     end
 end
@@ -69,17 +69,17 @@ end
 %% indici stati tangibili e vanescenti in Ragg
 tan = []; van = [];
 for i = 1:ns
-    % FIX: Controllo preventivo se lo stato Ë un Deadlock (abi vuoto)
+    % FIX: Controllo preventivo se lo stato √® un Deadlock (abi vuoto)
     if isempty(Ragg(i).abi)
-        % Se non ci sono transizioni abilitate, Ë un Deadlock.
-        % Lo consideriamo "Tangibile" perchÈ il sistema ci rimane per sempre.
+        % Se non ci sono transizioni abilitate, √® un Deadlock.
+        % Lo consideriamo "Tangibile" perch√© il sistema ci rimane per sempre.
         tan = [tan, i]; 
-        fprintf('Attenzione: Lo stato %d Ë un Deadlock (nessuna uscita).\n', i);
+        fprintf('Attenzione: Lo stato %d √® un Deadlock (nessuna uscita).\n', i);
     elseif maschera_trans(Ragg(i).abi(1)) == 0
-        % Se la prima transizione abilitata Ë temporizzata (0), lo stato Ë Tangibile
+        % Se la prima transizione abilitata √® temporizzata (0), lo stato √® Tangibile
         tan = [tan, i];
     else
-        % Se la prima transizione abilitata Ë immediata (1), lo stato Ë Vanescente
+        % Se la prima transizione abilitata √® immediata (1), lo stato √® Vanescente
         van = [van, i];
     end
 end
@@ -103,7 +103,7 @@ for i=1:ns              % costruzione della matrice U_g
     for j=1:ns
         t = A(i,j);
         if t ~= 0      
-            if isempty(find(ind_multiple == t, 1)) % se la transizione non Ë multiple server
+            if isempty(find(ind_multiple == t, 1)) % se la transizione non √® multiple server
                 U_g(i,j) = U_g(i,j) + we_ra(t);
             else
                 p_ing = find(pre(:,t)~=0);
@@ -140,8 +140,8 @@ for i=1:ns
     c0 = 0; e0 = 0;
     for j=1:ns
         if(maschera_trans(Ragg(i).abi(1))==1)       % basta guardare solo la prima transizione abilitata 
-                                                    % perchÈ o sono tutte immediate o tutte temporizzate,
-                                                    % non Ë possibile un mix come quello di baggiogero
+                                                    % perch√© o sono tutte immediate o tutte temporizzate,
+                                                    % non √® possibile un mix come quello di baggiogero
             if(maschera_trans(Ragg(j).abi(1))==1)
                 C(ci,cj)=U_g(i,j);
                 cj=cj+1;
@@ -167,10 +167,10 @@ end
 U = [C D; E F];
 
 %% ======================================================================
-%      CALCOLO DELLE PROBABILIT¿ DI STATO STAZIONARIO (\pi)
+%      CALCOLO DELLE PROBABILIT√Ä DI STATO STAZIONARIO (\pi)
 % =======================================================================
 disp(' ');
-disp('Calcolo probabilit‡ stazionarie...');
+disp('Calcolo probabilit√† stazionarie...');
 
 % 1. Ricostruzione indici Tangibili e Vanescenti (per mappare su list)
 tan = []; van = [];
@@ -195,14 +195,14 @@ b_sys = zeros(nt, 1);
 b_sys(end) = 1;
 nu = (A_sys \ b_sys)'; 
 
-% 4. Probabilit‡ a tempo continuo (\pi)
+% 4. Probabilit√† a tempo continuo (\pi)
 SJ_tang = SJ(tan); 
 pi_tang = (nu .* SJ_tang') / sum(nu .* SJ_tang');
 
 % Vettore globale 'Prob' lungo 'ns' (0 per i vanescenti)
 Prob = zeros(1, ns);
 Prob(tan) = pi_tang;
-disp('Probabilit‡ stazionarie calcolate con successo!');
+disp('Probabilit√† stazionarie calcolate con successo!');
 
 %% ======================================================================
 %      CALCOLO DEGLI INDICI DI PRESTAZIONE (Rif. Slide 17-20 + Relazione)
@@ -287,7 +287,7 @@ for t = 1:length(rates)
 end
 disp(' ');
 
-% --- INDICE 1 (Slide 18): Probabilit‡ di condizione (Utilizzo Macchine) ---
+% --- INDICE 1 (Slide 18): Probabilit√† di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 % Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
 idx_Muletto = 10;
@@ -318,7 +318,7 @@ posti_buffer = [6, 19, 27]; % SOSTITUISCI con gli indici esatti del tuo Excel
 % Usiamo 'k' come indice che va da 1 a 3
 for k = 1:length(posti_buffer)
     
-    p = posti_buffer(k); % 'p' ora Ë il vero indice del posto (es. 4, poi 16...)
+    p = posti_buffer(k); % 'p' ora √® il vero indice del posto (es. 4, poi 16...)
     T_in_totale = 0;
     
     % Trova transizioni in ingresso al posto p
@@ -345,7 +345,7 @@ disp('--- ANALISI GLOBALE DI SISTEMA ---');
 
 % Mappa qui TUTTI E SOLI gli indici dei posti che rappresentano pezzi fisici 
 % (Grezzi, Tagliati, Buffer, Conforme). Escludi Muletti, Robot e Operatori.
-posti_pezzi_fisici = [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 17, 18, 19, 20, 22, 25, 26, 27, 28]; 
+posti_pezzi_fisici = [1, 4, 5, 6, 7, 9, 11, 12, 13, 14, 16, 17, 18, 19, 22, 23, 24, 26, 27, 28]; 
 
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
