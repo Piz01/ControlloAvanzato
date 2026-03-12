@@ -13,6 +13,9 @@ Ant_Post_Tagliatrice_Pressa: 0.8888 token medi
 Ant_Post_Tagliatrice_Pressa_Guasta: 0.2922 token medi
 Disp_Muletto1: 0.7624 token medi
 Laminati: 0.1339 token medi
+
+Laminati_Trasportati: MINORE DI 0.1 TOKEN MEDI
+
 Laminati su Mulettto: 0.2376 token medi
 Lat_Dx_Conforme: 0.8352 token medi
 Lat_Dx_Disp_Buffer: 1.2732 token medi
