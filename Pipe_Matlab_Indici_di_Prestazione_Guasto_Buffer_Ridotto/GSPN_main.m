@@ -10,7 +10,7 @@ format short;
 % maschera_trans: vettore classificazione transizioni (1 immediate, 0 temporizzate)
 % rates: vettore rates delle transiz. temporizzate (0 se immediata)
 % weights: vettore pesi delle transiz. immediate (0 se temporizzata)
-% t_pr: vettore prioritÃ  transiz. (0 se temporizzate)
+% t_pr: vettore priorità transiz. (0 se temporizzate)
 % servers: vettore numero server delle transizioni
 % we_ra: combinazione dei vettori dei rates e dei pesi
 % list: lista marcature
@@ -22,12 +22,12 @@ load('FOLDER/MATLAB.mat') % contiene filemane e indici
 [pre, I, H, m_ini, maschera_trans, rates, weights, t_pr, servers] = matrici_pre_I(filename,indici);
 we_ra = weights+rates;
 
-%% Calcolo grafo di RaggiungibilitÃ 
+%% Calcolo grafo di Raggiungibilità
 list=[];
 Ragg=[];
 % genera la lista degli stati raggiungibili a partire dalla marcatura iniziale m0
 [list,Ragg]=Calcola_Marc_Ragg(m_ini,list,Ragg,I,pre,H,t_pr);
-%il numero degli stati Ã¨ dato dalle righe della lista delle marcature raggiungibili
+%il numero degli stati è dato dalle righe della lista delle marcature raggiungibili
 [ns, ~]=size(Ragg);      %provare con lenght
 
 %% CALCOLO DELLA MATRICE A
@@ -52,7 +52,7 @@ ind_multiple = find(servers>0);
 
 for i=1:ns
     for t = Ragg(i).abi % scorre le transizioni attive in i
-        if isempty(find(ind_multiple == t, 1)) % se la transizione non Ã¨ multiple server
+        if isempty(find(ind_multiple == t, 1)) % se la transizione non è multiple server
            qi(i) = qi(i) + we_ra(t);
         else
             p_ing = find(pre(:,t)~=0);          % si prendono i posti in ingresso alla transizione t
@@ -61,7 +61,7 @@ for i=1:ns
             ED = min(floor(tok_ing./pesi_ing)); % si calcola il grado di abilitazione di t
             K = servers(t);                     % si prende il grado di parallelismo di t
             f = min(ED,K);                      % f: funzione di dipendenza dalla marcatura
-            qi(i) = qi(i) + we_ra(t)*f;         %il rate Ã¨ moltiplicato per f
+            qi(i) = qi(i) + we_ra(t)*f;         %il rate è moltiplicato per f
         end
     end
 end
@@ -69,17 +69,17 @@ end
 %% indici stati tangibili e vanescenti in Ragg
 tan = []; van = [];
 for i = 1:ns
-    % FIX: Controllo preventivo se lo stato Ã¨ un Deadlock (abi vuoto)
+    % FIX: Controllo preventivo se lo stato è un Deadlock (abi vuoto)
     if isempty(Ragg(i).abi)
-        % Se non ci sono transizioni abilitate, Ã¨ un Deadlock.
-        % Lo consideriamo "Tangibile" perchÃ© il sistema ci rimane per sempre.
+        % Se non ci sono transizioni abilitate, è un Deadlock.
+        % Lo consideriamo "Tangibile" perché il sistema ci rimane per sempre.
         tan = [tan, i]; 
-        fprintf('Attenzione: Lo stato %d Ã¨ un Deadlock (nessuna uscita).\n', i);
+        fprintf('Attenzione: Lo stato %d è un Deadlock (nessuna uscita).\n', i);
     elseif maschera_trans(Ragg(i).abi(1)) == 0
-        % Se la prima transizione abilitata Ã¨ temporizzata (0), lo stato Ã¨ Tangibile
+        % Se la prima transizione abilitata è temporizzata (0), lo stato è Tangibile
         tan = [tan, i];
     else
-        % Se la prima transizione abilitata Ã¨ immediata (1), lo stato Ã¨ Vanescente
+        % Se la prima transizione abilitata è immediata (1), lo stato è Vanescente
         van = [van, i];
     end
 end
@@ -103,7 +103,7 @@ for i=1:ns              % costruzione della matrice U_g
     for j=1:ns
         t = A(i,j);
         if t ~= 0      
-            if isempty(find(ind_multiple == t, 1)) % se la transizione non Ã¨ multiple server
+            if isempty(find(ind_multiple == t, 1)) % se la transizione non è multiple server
                 U_g(i,j) = U_g(i,j) + we_ra(t);
             else
                 p_ing = find(pre(:,t)~=0);
@@ -140,8 +140,8 @@ for i=1:ns
     c0 = 0; e0 = 0;
     for j=1:ns
         if(maschera_trans(Ragg(i).abi(1))==1)       % basta guardare solo la prima transizione abilitata 
-                                                    % perchÃ© o sono tutte immediate o tutte temporizzate,
-                                                    % non Ã¨ possibile un mix come quello di baggiogero
+                                                    % perché o sono tutte immediate o tutte temporizzate,
+                                                    % non è possibile un mix come quello di baggiogero
             if(maschera_trans(Ragg(j).abi(1))==1)
                 C(ci,cj)=U_g(i,j);
                 cj=cj+1;
@@ -167,10 +167,10 @@ end
 U = [C D; E F];
 
 %% ======================================================================
-%      CALCOLO DELLE PROBABILITÃ€ DI STATO STAZIONARIO (\pi)
+%      CALCOLO DELLE PROBABILITÀ DI STATO STAZIONARIO (\pi)
 % =======================================================================
 disp(' ');
-disp('Calcolo probabilitÃ  stazionarie...');
+disp('Calcolo probabilità stazionarie...');
 
 % 1. Ricostruzione indici Tangibili e Vanescenti (per mappare su list)
 tan = []; van = [];
@@ -195,17 +195,17 @@ b_sys = zeros(nt, 1);
 b_sys(end) = 1;
 nu = (A_sys \ b_sys)'; 
 
-% 4. ProbabilitÃ  a tempo continuo (\pi)
+% 4. Probabilità a tempo continuo (\pi)
 SJ_tang = SJ(tan); 
 pi_tang = (nu .* SJ_tang') / sum(nu .* SJ_tang');
 
 % Vettore globale 'Prob' lungo 'ns' (0 per i vanescenti)
 Prob = zeros(1, ns);
 Prob(tan) = pi_tang;
-disp('ProbabilitÃ  stazionarie calcolate con successo!');
+disp('Probabilità stazionarie calcolate con successo!');
 
 %% ======================================================================
-%      CALCOLO DEGLI INDICI DI PRESTAZIONE
+%      CALCOLO DEGLI INDICI DI PRESTAZIONE (Rif. Slide 17-20 + Relazione)
 % =======================================================================
 disp(' ');
 disp('==================================================');
@@ -216,38 +216,39 @@ disp('==================================================');
 disp('--- WIP PER OGNI POSTO (Numero medio di token) ---');
 
 nomi_posti = {
-    'Ant_Post_Conforme';
-    'Ant_Post_Disp_Buffer';
-    'Ant_Post_Disp_Conforme';
-    'Ant_Post_Grezzo';
-    'Ant_Post_Lavorato';
-    'Ant_Post_Pezzi_Buffer';
-    'Ant_Post_Tagl_Press';
-    'Ant_Post_Tagliatrice_Pressa';
-    'Carrozzeria_Pronta';
-    'Disp_Muletto1';
-    'Laminati';
-    'Laminati_Trasportati';
-    'Laminati su Muletto';       
-    'Lat_Dx_Conforme';
-    'Lat_Dx_Disp_Buffer';
-    'Lat_Dx_Disp_Conforme';
-    'Lat_Dx_Grezzo';
-    'Lat_Dx_Lavorato';
-    'Lat_Dx_Pezzi_Buffer';
-    'Lat_Dx_Tagl_Press';
-    'Lat_Dx_Tagliatrice_Pressa';
-    'Lat_Sx_Conforme';
-    'Lat_Sx_Disp_Buffer';
-    'Lat_Sx_Disp_Conforme';
-    'Lat_Sx_Grezzo';
-    'Lat_Sx_Lavorato';
-    'Lat_Sx_Pezzi_Buffer';
-    'Lat_Sx_Tagl_Press';  
-    'Lat_Sx_Tagliatrice_Pressa';
-};         
+    'Ant_Post_Conforme';           
+    'Ant_Post_Disp_Buffer';        
+    'Ant_Post_Disp_Conforme';     
+    'Ant_Post_Grezzo';             
+    'Ant_Post_Lavorato';          
+    'Ant_Post_Pezzi_Buffer';      
+    'Ant_Post_Tagl_Press';        
+    'Ant_Post_Tagliatrice_Pressa'; 
+    'Ant_Post_Tagliatrice_Pressa_Guasta';
+    'Carrozzeria_Pronta';          
+    'Disp_Muletto1';               
+    'Laminati';                    
+    'Laminati_Trasportati';        
+    'Laminati su Mulettto';        
+    'Lat_Dx_Conforme';             
+    'Lat_Dx_Disp_Buffer';          
+    'Lat_Dx_Disp_Conforme';        
+    'Lat_Dx_Grezzo';               
+    'Lat_Dx_Lavorato';             
+    'Lat_Dx_Pezzi_Buffer';         
+    'Lat_Dx_Tagl_Press';           
+    'Lat_Dx_Tagliatrice_Pressa';   
+    'Lat_Sx_Conforme';             
+    'Lat_Sx_Disp_Buffer';          
+    'Lat_Sx_Disp_Conforme';        
+    'Lat_Sx_Grezzo';               
+    'Lat_Sx_Lavorato';             
+    'Lat_Sx_Pezzi_Buffer';         
+    'Lat_Sx_Tagl_Press';           
+    'Lat_Sx_Tagliatrice_Pressa';   
+};
 
-Mean_Tokens = Prob * list;
+Mean_Tokens = Prob * list; 
 
 for p = 1:size(list, 2)
     if Mean_Tokens(p) > 0.001 % Stampa solo i posti non vuoti
@@ -256,7 +257,7 @@ for p = 1:size(list, 2)
 end
 disp(' ');
 
-% --- Throughput delle Transizioni ---
+% --- INDICE 3 (Slide 19): Throughput delle Transizioni ---
 disp('--- THROUGHPUT TRANSIZIONI TEMPORIZZATE ---');
 Throughput = zeros(1, length(rates));
 for i = tan 
@@ -288,13 +289,13 @@ for t = 1:length(rates)
 end
 disp(' ');
 
-% --- ProbabilitÃ  di condizione (Utilizzo Macchine) ---
+% --- INDICE 1 (Slide 18): Probabilità di condizione (Utilizzo Macchine) ---
 disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
-
-idx_Muletto = 10;
+% Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
+idx_Muletto = 11;
 idx_PressaTaglAnt = 8;
-idx_PressaTaglSx = 29;
-idx_PressaTaglDx = 21;
+idx_PressaTaglSx = 30;
+idx_PressaTaglDx = 22;
 
 Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
 Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
@@ -307,19 +308,19 @@ fprintf('Utilizzo Pressa-Tagliatrice Laterale Sx: %.2f %%\n', Utilizzo_PressaTag
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Dx: %.2f %%\n', Utilizzo_PressaTaglDx * 100);
 disp(' ');
 
-% --- Tempo medio di attesa nel posto  ---
+% --- INDICE 4 (Slide 20): Tempo medio di attesa nel posto (Legge di Little locale) ---
 disp('--- TEMPO MEDIO DI ATTESA NEI BUFFER (E[T]p) ---');
-% Matrice Post (I+)
+% Matrice Post (I+) per calcolare chi inserisce token nel buffer
 post = I + pre; 
 
-% Nomi e rispettivi indici
+% Nomi e rispettivi indici (Assicurati che l'ordine corrisponda!)
 nomi_posti_buffer = {'Ant_Post_Pezzi_Buffer', 'Lat_Dx_Pezzi_Buffer', 'Lat_Sx_Pezzi_Buffer'};
-posti_buffer = [6, 19, 27];
+posti_buffer = [6, 20, 28]; % SOSTITUISCI con gli indici esatti del tuo Excel
 
-% Usiamo 'k' come indice
+% Usiamo 'k' come indice che va da 1 a 3
 for k = 1:length(posti_buffer)
     
-    p = posti_buffer(k);
+    p = posti_buffer(k); % 'p' ora è il vero indice del posto (es. 4, poi 16...)
     T_in_totale = 0;
     
     % Trova transizioni in ingresso al posto p
@@ -333,6 +334,7 @@ for k = 1:length(posti_buffer)
     
     if T_in_totale > 0
         Attesa_Media = Mean_Tokens(p) / T_in_totale;
+        % Ora usiamo 'k' per pescare il nome corretto dal cell array
         fprintf('%s: Tempo attesa medio = %.4f unita_tempo\n', nomi_posti_buffer{k}, Attesa_Media);
     end
 end
@@ -343,12 +345,13 @@ disp(' ');
 % =======================================================================
 disp('--- ANALISI GLOBALE DI SISTEMA ---');
 
-% Indici dei posti che rappresentano pezzi fisici 
-posti_pezzi_fisici = [1, 4, 5, 6, 7, , 10, 11, 12, 13, 16, 17, 18, 19, 21, 24, 25, 26, 27, 29]; 
+% Mappa qui TUTTI E SOLI gli indici dei posti che rappresentano pezzi fisici 
+% (Grezzi, Tagliati, Buffer, Conforme). Escludi Muletti, Robot e Operatori.
+posti_pezzi_fisici = [1, 4, 5, 6, 7, 10, 12, 13, 14, 15, 18, 19, 20, 21, 23, 26, 27, 28, 29]; 
 
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
-% Indichiamo la transizione finale che realizza il prodotto (Saldatura)
+% Indica la transizione finale che "sforna" il prodotto (es. Saldatura)
 idx_Saldatura = 16; 
 
 if Throughput(idx_Saldatura) > 0
