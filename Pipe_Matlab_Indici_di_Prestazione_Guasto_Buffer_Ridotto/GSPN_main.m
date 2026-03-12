@@ -294,16 +294,18 @@ disp('--- UTILIZZO RISORSE (Efficienza Macchine) ---');
 % Mappa qui gli indici dei posti che rappresentano macchine/robot liberi
 idx_Muletto = 11;
 idx_PressaTaglAnt = 8;
+idx_PressaTaglAnt_Guasta = 9;
 idx_PressaTaglSx = 30;
 idx_PressaTaglDx = 22;
 
 Utilizzo_Muletto = 1 - Mean_Tokens(idx_Muletto);
-Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt);
+Utilizzo_PressaTaglAnt = 1 - Mean_Tokens(idx_PressaTaglAnt) - Mean_Tokens(idx_PressaTaglAnt_Guasta);
 Utilizzo_PressaTaglSx = 1 - Mean_Tokens(idx_PressaTaglSx);
 Utilizzo_PressaTaglDx = 1 - Mean_Tokens(idx_PressaTaglDx);
 
 fprintf('Utilizzo Muletto: %.2f %%\n', Utilizzo_Muletto * 100);
-fprintf('Utilizzo Pressa-Tagliatrice Anteriore-Posteriore: %.2f %%\n', Utilizzo_PressaTaglAnt * 100);
+fprintf('Utilizzo Reale Pressa Anteriore: %.2f %%\n', Utilizzo_PressaTaglAnt * 100);
+fprintf('Tempo di DOWN (Guasto) Pressa Anteriore: %.2f %%\n', Mean_Tokens(idx_PressaTaglAnt_Guasta) * 100);
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Sx: %.2f %%\n', Utilizzo_PressaTaglSx * 100);
 fprintf('Utilizzo Pressa-Tagliatrice Laterale Dx: %.2f %%\n', Utilizzo_PressaTaglDx * 100);
 disp(' ');
