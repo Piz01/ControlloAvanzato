@@ -352,7 +352,7 @@ posti_pezzi_fisici = [1, 4, 5, 6, 7, 10, 12, 13, 14, 15, 18, 19, 20, 21, 23, 26,
 WIP_Totale = sum(Mean_Tokens(posti_pezzi_fisici));
 
 % Indica la transizione finale che "sforna" il prodotto (es. Saldatura)
-idx_Saldatura = 16; 
+idx_Saldatura = 18; 
 
 if Throughput(idx_Saldatura) > 0
     MLT = WIP_Totale / Throughput(idx_Saldatura);
