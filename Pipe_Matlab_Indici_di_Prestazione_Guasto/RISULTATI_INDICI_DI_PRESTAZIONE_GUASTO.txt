@@ -48,7 +48,8 @@ Transizione 19: 0.0736 scatti/unita_di_tempo
  
 --- UTILIZZO RISORSE (Efficienza Macchine) ---
 Utilizzo Muletto: 22.31 %
-Utilizzo Pressa-Tagliatrice Anteriore-Posteriore: 71.95 %
+Utilizzo Reale Pressa Anteriore: 60.74 %
+Tempo di DOWN (Guasto) Pressa Anteriore: 11.22 %
 Utilizzo Pressa-Tagliatrice Laterale Sx: 51.53 %
 Utilizzo Pressa-Tagliatrice Laterale Dx: 51.53 %
  
