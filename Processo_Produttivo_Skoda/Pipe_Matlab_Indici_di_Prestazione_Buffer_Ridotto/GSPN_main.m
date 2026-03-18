@@ -204,4 +204,4 @@ Prob = zeros(1, ns);
 Prob(tan) = pi_tang;
 disp('Probabilità stazionarie calcolate con successo!');
 
-load('Workspace_Buffer_Ridotto.mat');
+save('Workspace_Buffer_Ridotto.mat');
