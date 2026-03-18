@@ -20,40 +20,40 @@ Il progetto è organizzato in due cartelle principali per separare agevolmente i
 
 ```text
 📦 ControlloAvanzato
- ┣ 📂 Processo_Produttivo_Skoda <-- *Cartella per la prima parte del progetto*
- ┃ ┣ 📂 File_Pipe <-- *File di modellazione per il software PIPE*
- ┃ ┃ ┣ 📜 Lavorazione_Laminati.xml <-- *Prima lavorazione della Rete completa*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_AGV.xml <-- *Rete ridotta caso AGV al posto del muletto*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Buffer_Ridotto.xml <-- *Rete ridotta caso del buffer ridotto*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Classica.xml <-- *Rete ridotta caso classico*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto.xml <-- *Rete ridotta caso guasto a una macchina*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_AGV.xml <-- *Rete ridotta caso guasto a una macchina e AGV al posto del muletto*
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_Buffer_Ridotto.xml <-- *Rete ridotta caso guasto a una macchina e buffer ridotto*
- ┃ ┃ ┣ 📜 Saldatura.xml <-- *Seconda lavorazione della Rete completa*
- ┃ ┃ ┣ 📜 Verniciatura.xml <-- *Terza lavorazione della Rete completa*
- ┃ ┣ 📂 Pipe_Matlab_Indici_di_Prestazione_Classica <-- Scenario: AGV al posto del muletto*
- ┃ ┃ ┣ 📂 FOLDER <-- Cartella utilizzata nel codice MATLAB*
- ┃ ┃ ┣ 📜 Calcola_Marc_Ragg.m <-- *Script utilizzato dal Main*
- ┃ ┃ ┣ 📜 Crea_Struttura.m <-- *Script utilizzato dal Main*
- ┃ ┃ ┣ 📜 GSPN_main.m <-- *Script Main molto pesante, il suo workspace è già stato salvato*
- ┃ ┃ ┣ 📜 Indici_di_Prestazione.m <-- *Script da lanciare per calcolare gli indici di prestazione*
+ ┣ 📂 Processo_Produttivo_Skoda <-- Cartella per la prima parte del progetto
+ ┃ ┣ 📂 File_Pipe <-- File di modellazione per il software PIPE
+ ┃ ┃ ┣ 📜 'Lavorazione_Laminati'.xml <-- Prima lavorazione della Rete completa
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_AGV.xml <-- Rete ridotta caso AGV al posto del muletto
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Buffer_Ridotto.xml <-- Rete ridotta caso del buffer ridotto
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Classica.xml <-- Rete ridotta caso classico
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto.xml <-- Rete ridotta caso guasto a una macchina
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_AGV.xml <-- Rete ridotta caso guasto a una macchina e AGV al posto del muletto
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_Buffer_Ridotto.xml <-- Rete ridotta caso guasto a una macchina e buffer ridotto
+ ┃ ┃ ┣ 📜 Saldatura.xml <-- Seconda lavorazione della Rete completa
+ ┃ ┃ ┣ 📜 Verniciatura.xml <-- Terza lavorazione della Rete completa
+ ┃ ┣ 📂 Pipe_Matlab_Indici_di_Prestazione_Classica <-- Scenario: AGV al posto del muletto
+ ┃ ┃ ┣ 📂 FOLDER <-- Cartella utilizzata nel codice MATLAB
+ ┃ ┃ ┣ 📜 Calcola_Marc_Ragg.m <-- Script utilizzato dal Main
+ ┃ ┃ ┣ 📜 Crea_Struttura.m <-- Script utilizzato dal Main
+ ┃ ┃ ┣ 📜 GSPN_main.m <-- Script Main molto pesante, il suo workspace è già stato salvato
+ ┃ ┃ ┣ 📜 Indici_di_Prestazione.m <-- Script da lanciare per calcolare gli indici di prestazione
  ┃ ┃ ┣ 📜 matrici_pre_I.m <-- Script utilizzato dal Main
- ┃ ┃ ┗ 📜 Workspace_Classica.mat         <-- *Dati ottenuti dal Main*
- ┃ ┣ 📂 AGV                              <-- *Scenario: AGV al posto del muletto*
+ ┃ ┃ ┗ 📜 Workspace_Classica.mat         <-- Dati ottenuti dal Main
+ ┃ ┣ 📂 AGV                              <-- Scenario: AGV al posto del muletto
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Buffer_ridotto                   <-- *Scenario: Capacità buffer limitata*
+ ┃ ┣ 📂 Buffer_ridotto                   <-- Scenario: Capacità buffer limitata
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Guasto                           <-- *Scenario: Presenza di guasto ad una macchina*
+ ┃ ┣ 📂 Guasto                           <-- Scenario: Presenza di guasto ad una macchina
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Guasto_AGV                       <-- *Scenario: Guasto combinato con AGV*
+ ┃ ┣ 📂 Guasto_AGV                       <-- Scenario: Guasto combinato con AGV
  ┃ ┃ ┣ 📜 ...
- ┃ ┗ 📂 Guasto_Buffer_ridotto            <-- *Scenario: Guasto combinato con buffer ridotto*
+ ┃ ┗ 📂 Guasto_Buffer_ridotto            <-- Scenario: Guasto combinato con buffer ridotto
  ┃   ┣ 📜 ...
  ┃
- ┣ 📂 Esercizi_MPC <-- *Esercizi sviluppati su Matlab riguardanti MPC*
+ ┣ 📂 Esercizi_MPC <-- Esercizi sviluppati su Matlab riguardanti MPC
  ┃ ┣ 📂 es1
  ┃ ┣ 📂 ...
- ┗ 📜 README.md                          <-- *Questo file*
+ ┗ 📜 README.md                          <-- Questo file
 ```
 
 ## 🚀 Come utilizzare la Repository
