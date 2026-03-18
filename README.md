@@ -16,62 +16,44 @@ Questo repository contiene il codice, i modelli e la documentazione relativi al 
 
 ## 📂 Struttura della Repository
 
-Il progetto è organizzato in cartelle principali per separare agevolmente i due macro-argomenti trattati:
-
-- **`Processo produttivo skoda/`**
-  Questa cartella contiene i file di modellazione per il software **PIPE** e le sotto-cartelle relative ai vari scenari industriali analizzati. Nello specifico, i casi di studio sono suddivisi in:
-  - `Classica` (Linea base)
-  - `AGV` (Integrazione di veicoli a guida autonoma)
-  - `Buffer ridotto`
-  - `Guasto`
-  - `Guasto + AGV`
-  - `Guasto + Buffer ridotto`
-
-  All'interno di ciascuna di queste sotto-cartelle sono presenti gli script MATLAB pre-impostati per calcolare rapidamente gli indici di prestazione della specifica configurazione.
-
-- **`Esercizi MPC/`** _(o nome della cartella che hai usato per l'MPC)_
-  Contiene gli script MATLAB, le sessioni salvate (`.mat`) e i controllori progettati tramite l'applicativo _mpcDesigner_.
-
-## 📂 Struttura della Repository
-
-Il progetto è organizzato nelle seguenti cartelle principali per separare agevolmente i due macro-argomenti:
+Il progetto è organizzato in due cartelle principali per separare agevolmente i due macro-argomenti trattati, di seguito la struttura della repository con descrizione di ogni file e cartella:
 
 ```text
 📦 ControlloAvanzato
- ┣ 📂 Processo_Produttivo_Skoda <-- Cartella per la prima parte del progetto
- ┃ ┣ 📂 File_Pipe <-- File di modellazione per il software PIPE
- ┃ ┃ ┣ 📜 Lavorazione_Laminati.xml <-- Prima lavorazione della Rete completa
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_AGV.xml <-- Rete ridotta caso AGV al posto del muletto
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Buffer_Ridotto.xml <-- Rete ridotta caso del buffer ridotto
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Classica.xml <-- Rete ridotta caso classico
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto.xml <-- Rete ridotta caso guasto a una macchina
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_AGV.xml <-- Rete ridotta caso guasto a una macchina e AGV al posto del muletto
- ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_Buffer_Ridotto.xml <-- Rete ridotta caso guasto a una macchina e buffer ridotto
- ┃ ┃ ┣ 📜 Saldatura.xml <-- Seconda lavorazione della Rete completa
- ┃ ┃ ┣ 📜 Verniciatura.xml <-- Terza lavorazione della Rete completa
- ┃ ┣ 📂 Pipe_Matlab_Indici_di_Prestazione_Classica <-- Scenario: AGV al posto del muletto
- ┃ ┃ ┣ 📂 FOLDER <-- Cartella utilizzata nel codice MATLAB
- ┃ ┃ ┣ 📜 Calcola_Marc_Ragg.m <-- Script utilizzato dal Main
- ┃ ┃ ┣ 📜 Crea_Struttura.m <-- Script utilizzato dal Main
- ┃ ┃ ┣ 📜 GSPN_main.m <-- Script Main molto pesante, il suo workspace è già stato salvato
- ┃ ┃ ┣ 📜 Indici_di_Prestazione.m <-- Script da lanciare per calcolare gli indici di prestazione
+ ┣ 📂 Processo_Produttivo_Skoda <-- *Cartella per la prima parte del progetto*
+ ┃ ┣ 📂 File_Pipe <-- *File di modellazione per il software PIPE*
+ ┃ ┃ ┣ 📜 Lavorazione_Laminati.xml <-- *Prima lavorazione della Rete completa*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_AGV.xml <-- *Rete ridotta caso AGV al posto del muletto*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Buffer_Ridotto.xml <-- *Rete ridotta caso del buffer ridotto*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Classica.xml <-- *Rete ridotta caso classico*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto.xml <-- *Rete ridotta caso guasto a una macchina*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_AGV.xml <-- *Rete ridotta caso guasto a una macchina e AGV al posto del muletto*
+ ┃ ┃ ┣ 📜 Processo_Produttivo_Skoda_Guasto_Buffer_Ridotto.xml <-- *Rete ridotta caso guasto a una macchina e buffer ridotto*
+ ┃ ┃ ┣ 📜 Saldatura.xml <-- *Seconda lavorazione della Rete completa*
+ ┃ ┃ ┣ 📜 Verniciatura.xml <-- *Terza lavorazione della Rete completa*
+ ┃ ┣ 📂 Pipe_Matlab_Indici_di_Prestazione_Classica <-- Scenario: AGV al posto del muletto*
+ ┃ ┃ ┣ 📂 FOLDER <-- Cartella utilizzata nel codice MATLAB*
+ ┃ ┃ ┣ 📜 Calcola_Marc_Ragg.m <-- *Script utilizzato dal Main*
+ ┃ ┃ ┣ 📜 Crea_Struttura.m <-- *Script utilizzato dal Main*
+ ┃ ┃ ┣ 📜 GSPN_main.m <-- *Script Main molto pesante, il suo workspace è già stato salvato*
+ ┃ ┃ ┣ 📜 Indici_di_Prestazione.m <-- *Script da lanciare per calcolare gli indici di prestazione*
  ┃ ┃ ┣ 📜 matrici_pre_I.m <-- Script utilizzato dal Main
- ┃ ┃ ┗ 📜 Workspace_Classica.mat         <-- Dati ottenuti dal Main
- ┃ ┣ 📂 AGV                              <-- Scenario: AGV al posto del muletto
+ ┃ ┃ ┗ 📜 Workspace_Classica.mat         <-- *Dati ottenuti dal Main*
+ ┃ ┣ 📂 AGV                              <-- *Scenario: AGV al posto del muletto*
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Buffer_ridotto                   <-- Scenario: Capacità buffer limitata
+ ┃ ┣ 📂 Buffer_ridotto                   <-- *Scenario: Capacità buffer limitata*
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Guasto                           <-- Scenario: Presenza di guasto ad una macchina
+ ┃ ┣ 📂 Guasto                           <-- *Scenario: Presenza di guasto ad una macchina*
  ┃ ┃ ┣ 📜 ...
- ┃ ┣ 📂 Guasto_AGV                       <-- Scenario: Guasto combinato con AGV
+ ┃ ┣ 📂 Guasto_AGV                       <-- *Scenario: Guasto combinato con AGV*
  ┃ ┃ ┣ 📜 ...
- ┃ ┗ 📂 Guasto_Buffer_ridotto            <-- Scenario: Guasto combinato con buffer ridotto
+ ┃ ┗ 📂 Guasto_Buffer_ridotto            <-- *Scenario: Guasto combinato con buffer ridotto*
  ┃   ┣ 📜 ...
  ┃
- ┣ 📂 Esercizi_MPC <-- Esercizi sviluppati su Matlab riguardanti MPC
+ ┣ 📂 Esercizi_MPC <-- *Esercizi sviluppati su Matlab riguardanti MPC*
  ┃ ┣ 📂 es1
  ┃ ┣ 📂 ...
- ┗ 📜 README.md                          <-- Questo file
+ ┗ 📜 README.md                          <-- *Questo file*
 ```
 
 ## 🚀 Come utilizzare la Repository
