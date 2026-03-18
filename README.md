@@ -74,7 +74,3 @@ Per testare e riprodurre i risultati del progetto sul proprio ambiente di lavoro
 ## 📄 Documentazione Completa
 
 Per qualsiasi ulteriore chiarimento, per l'analisi dettagliata dei grafici o per comprendere le scelte implementative effettuate durante la scrittura del codice, all'interno di questa repository è presente una **Relazione Tecnica completa in formato PDF**. Si raccomanda la lettura del documento per avere una visione approfondita e completa di tutti gli aspetti del progetto.
-
-```
-
-```
