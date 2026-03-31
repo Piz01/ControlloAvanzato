@@ -1,9 +1,0 @@
-1) Finire e rileggere tutta la relazione
-
-2) Ricontrollare tutti gli indici di prestazione dopo l'ultima modifica, ovvero quella di aver messo in un file a parte il codice per il calcolo degli indici di prestazione, e vedere che essi coincidano rispetto a quelli nel file di testo 
-
-3) Finire esercizi MPC
-
-4) Ricontrollare tutti gli script con i vari commenti
-
-5) Cambiare immagine gspn ridotta
