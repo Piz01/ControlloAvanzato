@@ -5,3 +5,5 @@
 3) Finire esercizi MPC
 
 4) Ricontrollare tutti gli script con i vari commenti
+
+5) Cambiare immagine gspn ridotta
