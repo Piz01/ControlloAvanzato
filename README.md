@@ -56,8 +56,8 @@ Il progetto è organizzato in due cartelle principali per separare agevolmente i
  ┃ ┣ 📂 es1
  ┃ ┗ 📂 ...
  ┃
- ┗ 📜 README.md                                            <-- Questo file
- ┣ 📜 Relazione_Salice_Piangente                           <-- PDF che documenta in maniera dettagliata il lavoro svolto
+ ┣ 📜 README.md                                            <-- Questo file
+ ┗ 📜 Relazione_Salice_Piangente                           <-- PDF che documenta in maniera dettagliata il lavoro svolto
 ```
 
 ## 🚀 Come utilizzare la Repository
@@ -65,7 +65,8 @@ Il progetto è organizzato in due cartelle principali per separare agevolmente i
 Per testare e riprodurre i risultati del progetto sul proprio ambiente di lavoro, seguire questi passaggi:
 
 1. **Scaricare il codice:** Clonare o scaricare questa repository come file ZIP ed estrarla sul proprio computer.
-2. **Calcolo degli Indici di Prestazione (Skoda):** \* Aprire **MATLAB**.
+2. **Calcolo degli Indici di Prestazione (Skoda):**
+   - Aprire **MATLAB**.
    - Navigare all'interno della cartella `Processo produttivo skoda/` e aprire la sotto-cartella relativa al caso di studio che si desidera analizzare (es. `Classica`).
    - Eseguire lo script denominato `Indici_di_prestazione.m`. Il programma sfrutterà i dati di simulazione già calcolati per stampare istantaneamente a schermo tutti gli indici di performance (Throughput, WIP, MLT, ecc.).
 3. **Analisi MPC:** Gli script degli esercizi MPC possono essere eseguiti singolarmente aprendoli in MATLAB per visualizzare l'evoluzione temporale di ingressi e uscite.
