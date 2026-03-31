@@ -2,7 +2,7 @@
 
 # Progetto di Controllo Avanzato, Ottimizzazione e Analisi di Processi
 
-Questo repository contiene il codice, i modelli e la documentazione relativi al progetto finale del corso di _Controllo Avanzato, Ottimizzazione e Analisi di Processi_. L'elaborato documenta in modo chiaro e ordinato le attività svolte, le quali si articolano in due sezioni principali.
+Questo repository contiene il codice, i modelli e la documentazione relativi al progetto finale del corso di _Controllo Avanzato, Ottimizzazione e Analisi di Processi_. L'elaborato documenta le attività svolte, le quali si articolano in due sezioni principali.
 
 ## 📝 Descrizione del Progetto
 
@@ -57,6 +57,7 @@ Il progetto è organizzato in due cartelle principali per separare agevolmente i
  ┃ ┗ 📂 ...
  ┃
  ┗ 📜 README.md                                            <-- Questo file
+ ┣ 📜 Relazione_Salice_Piangente                           <-- PDF che documenta in maniera dettagliata il lavoro svolto
 ```
 
 ## 🚀 Come utilizzare la Repository
@@ -73,4 +74,4 @@ Per testare e riprodurre i risultati del progetto sul proprio ambiente di lavoro
 
 ## 📄 Documentazione Completa
 
-Per qualsiasi ulteriore chiarimento, per l'analisi dettagliata dei grafici o per comprendere le scelte implementative effettuate durante la scrittura del codice, all'interno di questa repository è presente una **Relazione Tecnica completa in formato PDF**. Si raccomanda la lettura del documento per avere una visione approfondita e completa di tutti gli aspetti del progetto.
+Per qualsiasi ulteriore chiarimento, per l'analisi dettagliata dei grafici o per comprendere le scelte implementative effettuate durante la scrittura del codice, all'interno di questa repository è presente una relazione tecnica completa in formato PDF denominata **Relazione_Salice_Piangente**.
